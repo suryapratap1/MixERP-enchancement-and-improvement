@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAED8523-9388-42C4-881D-34720FE8E4AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Core.Modules.HRM.Data</RootNamespace>
+    <AssemblyName>MixERP.Net.Core.Modules.HRM.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MixERP.Net.DbFactory, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\MixERP.Net.DbFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.EntityParser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\MixERP.Net.EntityParser.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.Framework, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\MixERP.Net.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Npgsql.2.2.3\lib\net45\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PetaPoco, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\PetaPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Serilog.1.5.7\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance.cs" />
+    <Compile Include="AttendanceView.cs" />
+    <Compile Include="Contract.cs" />
+    <Compile Include="ContractScrudView.cs" />
+    <Compile Include="ContractVerificationScrudView.cs" />
+    <Compile Include="EducationLevel.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeExperience.cs" />
+    <Compile Include="EmployeeExperienceScrudView.cs" />
+    <Compile Include="EmployeeIdentificationDetail.cs" />
+    <Compile Include="EmployeeIdentificationDetailScrudView.cs" />
+    <Compile Include="EmployeeQualification.cs" />
+    <Compile Include="EmployeeQualificationScrudView.cs" />
+    <Compile Include="EmployeeSocialNetworkDetail.cs" />
+    <Compile Include="EmployeeSocialNetworkDetailScrudView.cs" />
+    <Compile Include="EmployeeType.cs" />
+    <Compile Include="EmployeeTypeScrudView.cs" />
+    <Compile Include="EmployeeView.cs" />
+    <Compile Include="EmploymentStatus.cs" />
+    <Compile Include="EmploymentStatusCode.cs" />
+    <Compile Include="Exit.cs" />
+    <Compile Include="ExitScrudView.cs" />
+    <Compile Include="ExitType.cs" />
+    <Compile Include="GetEmployeeByEmployeeIdProcedure.cs" />
+    <Compile Include="GetEmployeeCodeByEmployeeIdProcedure.cs" />
+    <Compile Include="GetEmployeeNameByEmployeeIdProcedure.cs" />
+    <Compile Include="IAttendanceRepository.cs" />
+    <Compile Include="IAttendanceViewRepository.cs" />
+    <Compile Include="IContractRepository.cs" />
+    <Compile Include="IContractScrudViewRepository.cs" />
+    <Compile Include="IContractVerificationScrudViewRepository.cs" />
+    <Compile Include="IEducationLevelRepository.cs" />
+    <Compile Include="IEmployeeExperienceRepository.cs" />
+    <Compile Include="IEmployeeExperienceScrudViewRepository.cs" />
+    <Compile Include="IEmployeeIdentificationDetailRepository.cs" />
+    <Compile Include="IEmployeeIdentificationDetailScrudViewRepository.cs" />
+    <Compile Include="IEmployeeQualificationRepository.cs" />
+    <Compile Include="IEmployeeQualificationScrudViewRepository.cs" />
+    <Compile Include="IEmployeeRepository.cs" />
+    <Compile Include="IEmployeeSocialNetworkDetailRepository.cs" />
+    <Compile Include="IEmployeeSocialNetworkDetailScrudViewRepository.cs" />
+    <Compile Include="IEmployeeTypeRepository.cs" />
+    <Compile Include="IEmployeeTypeScrudViewRepository.cs" />
+    <Compile Include="IEmployeeViewRepository.cs" />
+    <Compile Include="IEmploymentStatusCodeRepository.cs" />
+    <Compile Include="IEmploymentStatusRepository.cs" />
+    <Compile Include="IExitRepository.cs" />
+    <Compile Include="IExitScrudViewRepository.cs" />
+    <Compile Include="IExitTypeRepository.cs" />
+    <Compile Include="IGetEmployeeByEmployeeIdRepository.cs" />
+    <Compile Include="IGetEmployeeCodeByEmployeeIdRepository.cs" />
+    <Compile Include="IGetEmployeeNameByEmployeeIdRepository.cs" />
+    <Compile Include="IJobTitleRepository.cs" />
+    <Compile Include="ILeaveApplicationRepository.cs" />
+    <Compile Include="ILeaveApplicationScrudViewRepository.cs" />
+    <Compile Include="ILeaveApplicationVerificationScrudViewRepository.cs" />
+    <Compile Include="ILeaveBenefitRepository.cs" />
+    <Compile Include="ILeaveTypeRepository.cs" />
+    <Compile Include="IOfficeHourRepository.cs" />
+    <Compile Include="IOfficeHourScrudViewRepository.cs" />
+    <Compile Include="IPayGradeRepository.cs" />
+    <Compile Include="IResignationRepository.cs" />
+    <Compile Include="IResignationScrudViewRepository.cs" />
+    <Compile Include="IResignationVerificationScrudViewRepository.cs" />
+    <Compile Include="IShiftRepository.cs" />
+    <Compile Include="ITerminationRepository.cs" />
+    <Compile Include="ITerminationScrudViewRepository.cs" />
+    <Compile Include="ITerminationVerificationScrudViewRepository.cs" />
+    <Compile Include="JobTitle.cs" />
+    <Compile Include="LeaveApplication.cs" />
+    <Compile Include="LeaveApplicationScrudView.cs" />
+    <Compile Include="LeaveApplicationVerificationScrudView.cs" />
+    <Compile Include="LeaveBenefit.cs" />
+    <Compile Include="LeaveType.cs" />
+    <Compile Include="OfficeHour.cs" />
+    <Compile Include="OfficeHourScrudView.cs" />
+    <Compile Include="PayGrade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resignation.cs" />
+    <Compile Include="ResignationScrudView.cs" />
+    <Compile Include="ResignationVerificationScrudView.cs" />
+    <Compile Include="Shift.cs" />
+    <Compile Include="Termination.cs" />
+    <Compile Include="TerminationScrudView.cs" />
+    <Compile Include="TerminationVerificationScrudView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRM.Entities\MixERP.Net.Entities.HRM.csproj">
+      <Project>{c21d8d23-ae76-4427-b5a6-36016f01e40f}</Project>
+      <Name>MixERP.Net.Entities.HRM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAD31619-BD16-4ED3-8E58-E4C92000C8B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Api.Config</RootNamespace>
+    <AssemblyName>MixERP.Net.Api.Config</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.assert.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.core.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttachmentFactoryController.cs" />
+    <Compile Include="AttachmentFactoryScrudViewController.cs" />
+    <Compile Include="CurrencyLayerController.cs" />
+    <Compile Include="CurrencyLayerScrudViewController.cs" />
+    <Compile Include="DbParameterController.cs" />
+    <Compile Include="DbParameterScrudViewController.cs" />
+    <Compile Include="Fakes\AttachmentFactoryRepository.cs" />
+    <Compile Include="Fakes\AttachmentFactoryScrudViewRepository.cs" />
+    <Compile Include="Fakes\CurrencyLayerRepository.cs" />
+    <Compile Include="Fakes\CurrencyLayerScrudViewRepository.cs" />
+    <Compile Include="Fakes\DbParameterRepository.cs" />
+    <Compile Include="Fakes\DbParameterScrudViewRepository.cs" />
+    <Compile Include="Fakes\MixerpRepository.cs" />
+    <Compile Include="Fakes\MixerpScrudViewRepository.cs" />
+    <Compile Include="Fakes\OpenExchangeRateRepository.cs" />
+    <Compile Include="Fakes\OpenExchangeRateScrudViewRepository.cs" />
+    <Compile Include="Fakes\ScrudFactoryRepository.cs" />
+    <Compile Include="Fakes\ScrudFactoryScrudViewRepository.cs" />
+    <Compile Include="Fakes\SmtpRepository.cs" />
+    <Compile Include="Fakes\SwitchRepository.cs" />
+    <Compile Include="Fakes\SwitchScrudViewRepository.cs" />
+    <Compile Include="MixerpController.cs" />
+    <Compile Include="MixerpScrudViewController.cs" />
+    <Compile Include="OpenExchangeRateController.cs" />
+    <Compile Include="OpenExchangeRateScrudViewController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScrudFactoryController.cs" />
+    <Compile Include="ScrudFactoryScrudViewController.cs" />
+    <Compile Include="SmtpController.cs" />
+    <Compile Include="SwitchController.cs" />
+    <Compile Include="SwitchScrudViewController.cs" />
+    <Compile Include="Tests\AttachmentFactoryRouteTests.cs" />
+    <Compile Include="Tests\AttachmentFactoryScrudViewRouteTests.cs" />
+    <Compile Include="Tests\AttachmentFactoryScrudViewTests.cs" />
+    <Compile Include="Tests\AttachmentFactoryTests.cs" />
+    <Compile Include="Tests\CurrencyLayerRouteTests.cs" />
+    <Compile Include="Tests\CurrencyLayerScrudViewRouteTests.cs" />
+    <Compile Include="Tests\CurrencyLayerScrudViewTests.cs" />
+    <Compile Include="Tests\CurrencyLayerTests.cs" />
+    <Compile Include="Tests\DbParameterRouteTests.cs" />
+    <Compile Include="Tests\DbParameterScrudViewRouteTests.cs" />
+    <Compile Include="Tests\DbParameterScrudViewTests.cs" />
+    <Compile Include="Tests\DbParameterTests.cs" />
+    <Compile Include="Tests\MixerpRouteTests.cs" />
+    <Compile Include="Tests\MixerpScrudViewRouteTests.cs" />
+    <Compile Include="Tests\MixerpScrudViewTests.cs" />
+    <Compile Include="Tests\MixerpTests.cs" />
+    <Compile Include="Tests\OpenExchangeRateRouteTests.cs" />
+    <Compile Include="Tests\OpenExchangeRateScrudViewRouteTests.cs" />
+    <Compile Include="Tests\OpenExchangeRateScrudViewTests.cs" />
+    <Compile Include="Tests\OpenExchangeRateTests.cs" />
+    <Compile Include="Tests\ScrudFactoryRouteTests.cs" />
+    <Compile Include="Tests\ScrudFactoryScrudViewRouteTests.cs" />
+    <Compile Include="Tests\ScrudFactoryScrudViewTests.cs" />
+    <Compile Include="Tests\ScrudFactoryTests.cs" />
+    <Compile Include="Tests\SmtpRouteTests.cs" />
+    <Compile Include="Tests\SmtpTests.cs" />
+    <Compile Include="Tests\SwitchRouteTests.cs" />
+    <Compile Include="Tests\SwitchScrudViewRouteTests.cs" />
+    <Compile Include="Tests\SwitchScrudViewTests.cs" />
+    <Compile Include="Tests\SwitchTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\Config\MixERP.Net.Schemas.Config.Data.csproj">
+      <Project>{afc0a358-4a3a-4ccb-a6f6-1e4d0038fffd}</Project>
+      <Name>MixERP.Net.Schemas.Config.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entities\Config\MixERP.Net.Entities.Config.csproj">
+      <Project>{47215bbd-4afa-48f4-bbb4-519f3f1c78a8}</Project>
+      <Name>MixERP.Net.Entities.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixER.Net.StateServer\MixERP.Net.ApplicationState.csproj">
+      <Project>{61AB8B69-2097-4595-97B7-4A930A70163D}</Project>
+      <Name>MixERP.Net.ApplicationState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.net.Common\MixERP.Net.Common.csproj">
+      <Project>{D5A09C22-8F48-4FB2-A14D-C62C8C8FCEC0}</Project>
+      <Name>MixERP.Net.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.EntityParser\MixERP.Net.EntityParser.csproj">
+      <Project>{eac19d71-3969-4b34-ad7b-8b05d4672861}</Project>
+      <Name>MixERP.Net.EntityParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.Framework\MixERP.Net.Framework.csproj">
+      <Project>{1509332f-ae98-44d9-9072-5bbc59a65fc4}</Project>
+      <Name>MixERP.Net.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969D7960-52E2-40FC-91E5-1393B71E23B0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\MixERP.Net.Api.Framework.csproj">
+      <Project>{2ed31492-84c8-4c84-94ae-1818eb641a9a}</Project>
+      <Name>MixERP.Net.Api.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

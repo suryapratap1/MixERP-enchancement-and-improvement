@@ -1,0 +1,4 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_jobs =
+[
+    [ "BackupJob", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_jobs_1_1_backup_job.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_jobs_1_1_backup_job" ]
+];

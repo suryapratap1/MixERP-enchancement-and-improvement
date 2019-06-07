@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a65beaebe453d75c0a96e47cdb8245061", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a8cd932877e6c434135142382b24bff5a", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a6b13005360fecd7eb53896eeac46e23e", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a8d5f001980ba86a4c7f45bc50c094d06", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a44e5a012a4c592314ff5a92815aee4a7", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a5bb84f999873e7dd5f5d556b5fa8aadc", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#acfc88d1b235f937d7485dafd8359ddc7", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a58ce91b6083f691457098a7a6f22435c", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#ae0bd1c519e81e8d4e473c9d239a9710d", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a39dd1b2f50bb5c6affe4636a323091bc", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a325eb7f91b60c5ba56e60e958adbfc38", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a3c9ed7609267892c88d2aab6f832a088", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a74b82aff0fb86d1c9bcd7c390fdb8cfe", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a902aba701d4d7fa8d22fb6e374dc9431", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#ac40b5d5ebaee267ae847641df47caece", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a2d6d7fb4dd6aa53c55d8cca2cef581ff", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a6c3080b55de6ad86ba01b749582f369b", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a67d77e41b45c36b981c39cff0b2af41a", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a9d63c2053e009595ebf2073c3f36e31c", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#aaa2334a219e26f5fd9ea9cda67bffe81", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a577f946ee9f6dc1fc031ff9f52d2189e", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_h_r_m_1_1_data_1_1_contract.html#a6ba6bbd455ab29d4df9d8340b011fa14", null ]
+];

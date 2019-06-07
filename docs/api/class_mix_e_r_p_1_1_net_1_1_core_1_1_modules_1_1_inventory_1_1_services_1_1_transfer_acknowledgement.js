@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_services_1_1_transfer_acknowledgement =
+[
+    [ "Receive", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_services_1_1_transfer_acknowledgement.html#a5bf2ed1e00097ecdc0c0be58266a9413", null ]
+];

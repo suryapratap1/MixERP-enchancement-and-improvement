@@ -1,0 +1,27 @@
+var class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller =
+[
+    [ "EntityController", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#aa7692d30bcf451468c2af25dc4e06667", null ],
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#af135e7429d037fb6ead60d276ff977b6", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a63ace0d3486b4c9ec8ee275b4506c776", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a63f18f85100f155fb7b5d380c4dbb959", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a36afadfd4f64ff6863003524fa1d9bdc", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a9ddbec69c53c65368a43398aca12c6ed", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a4a70cec157fff40d6b3dec3273e2f817", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#aab3200025f6c5707ae1d666a91640221", null ],
+    [ "Edit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a88aa32a8b3636237e4b30adbf71a6ddd", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a17e9ff469bf20e7db4ed2176d6008467", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#adaaf0677b8bc41e9397f3b2d22796caa", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a9cf6c7ee6aef7075df8aaf59b9c295b3", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#ae28d6fde58083e8486aca8d9f1d927fd", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a176286247b4ed69fb1815bfa55b4e3d7", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#afd15e8a6678dd51d55f62c50ad47441d", null ],
+    [ "GetEntityView", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#aacc6ad58258d0b8c69dddde0d8bf4dad", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a6ab2ea4390217aba32ccce8a5c3be69f", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#ae257cfb5a10e4add8de6b20f7efae5d5", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a9eeab2e2018382f8a30f215159322bd2", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#ad72869fd01467dc55fc54db909168072", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#adf74a62e858cc2a5c01cbeeb57d24735", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#af412336a6f4ae92b556b278cde0df8a8", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#a978f5429c01955890af13994d9b37689", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_core_1_1_entity_controller.html#ab0be65c6b3a8b36d903bfc47512c29c8", null ]
+];

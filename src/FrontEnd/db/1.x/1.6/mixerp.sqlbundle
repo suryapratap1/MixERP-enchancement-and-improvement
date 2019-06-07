@@ -1,0 +1,3 @@
+- default-language : 
+- script-directory : db/1.x/1.6/src
+- output-directory:db/1.x/1.6

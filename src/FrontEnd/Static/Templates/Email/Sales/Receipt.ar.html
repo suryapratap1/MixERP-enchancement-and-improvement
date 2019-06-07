@@ -1,0 +1,35 @@
+﻿<div style="padding:6px 0;">
+    <p style="padding-bottom:8px;font-weight:bold;">السيد {CustomerName},</p>{Header}
+    <p style="padding-bottom:8px;">هذا اشعار باستلام مدفوعاتك.</p>
+
+    <table style="border-collapse: collapse" border="1">
+        <tbody>
+            <tr>
+                <th>رقم ادن الاستلام #</th>
+                <td>{TranId}</td>
+            </tr>
+            <tr>
+                <th>Ref #</th>
+                <td>{ReferenceNumber}</td>
+            </tr>
+            <tr>
+                <th>العملة</th>
+                <td>{CurrencyCode}</td>
+            </tr>
+            <tr>
+                <th>المبلغ المستلم</th>
+                <td>{Amount}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="padding-bottom:8px;">
+       في حالة وجود استفسارات، من فضلك اتصل بالبريد الالكتروني <a href="mailto:{Email}">{Email}</a>.
+    </p>
+
+    <p style="padding-bottom:8px;">
+    مع خالص التقدير.
+    </p>
+
+    {Footer}
+</div>

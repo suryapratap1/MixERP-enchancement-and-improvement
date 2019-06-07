@@ -1,0 +1,80 @@
+DO
+$$
+    DECLARE objects text[];
+    DECLARE users int[];
+    DECLARE _user_id int;
+    DECLARE _obj text;
+BEGIN
+    SELECT array_agg(user_id)
+        INTO users
+    FROM office.users INNER JOIN office.roles ON office.users.role_id = office.roles.role_id AND NOT is_system;
+
+    objects := array[
+        'core.account_scrud_view',
+        'core.currency_scrud_view',
+        'core.bank_account_scrud_view',
+        'core.ageing_slab_scrud_view',
+        'core.cash_flow_heading_scrud_view',
+        'core.cash_flow_setup_scrud_view',
+        'office.cost_center_scrud_view',
+        'core.payment_card_scrud_view',
+        'core.merchant_fee_setup_scrud_view',
+        'policy.auto_verification_policy_scrud_view',
+        'policy.default_entity_access_scrud_view',
+        'policy.entity_access_scrud_view',
+        'policy.voucher_verification_policy_scrud_view',
+        'core.county_sales_tax_scrud_view',
+        'core.sales_tax_detail_scrud_view',
+        'core.sales_tax_scrud_view',
+        'core.sales_tax_exempt_detail_scrud_view',
+        'core.sales_tax_exempt_scrud_view',
+        'core.sales_tax_type_scrud_view',
+        'core.state_sales_tax_scrud_view',
+        'core.tax_authority_scrud_view',
+        'core.tax_exempt_type_scrud_view',
+        'core.tax_master_scrud_view',
+        'core.brand_scrud_view',
+        'core.compound_item_detail_scrud_view',
+        'core.compound_item_scrud_view',
+        'core.item_cost_price_scrud_view',
+        'core.compound_unit_scrud_view',
+        'core.item_group_scrud_view',
+        'core.item_scrud_view',
+        'core.item_type_scrud_view',
+        'core.party_type_scrud_view',
+        'core.item_selling_price_scrud_view',
+        'core.shipper_scrud_view',
+        'core.shipping_address_scrud_view',
+        'core.store_scrud_view',
+        'core.store_type_scrud_view',
+        'core.unit_scrud_view',
+        'core.salesperson_bonus_setup_scrud_view',
+        'core.bonus_slab_detail_scrud_view',
+        'core.bonus_slab_scrud_view',
+        'core.late_fee_scrud_view',
+        'core.payment_term_scrud_view',
+        'core.recurring_invoice_scrud_view',
+        'core.recurring_invoice_setup_scrud_view',
+        'core.salesperson_scrud_view',
+        'core.sales_team_scrud_view'
+        ];
+
+    
+
+    FOREACH _user_id IN ARRAY users
+    LOOP
+        FOREACH _obj IN ARRAY objects
+        LOOP
+            PERFORM core.create_kanban(_obj, _user_id, 'Checklist');
+            PERFORM core.create_kanban(_obj, _user_id, 'High Priority');
+            PERFORM core.create_kanban(_obj, _user_id, 'Done');
+        END LOOP;
+
+        PERFORM core.create_kanban('core.party_scrud_view', _user_id, 'Associates');
+        PERFORM core.create_kanban('core.party_scrud_view', _user_id, 'Important');
+        PERFORM core.create_kanban('core.party_scrud_view', _user_id, 'Influencers');
+        PERFORM core.create_kanban('core.party_scrud_view', _user_id, 'Acquaintances');
+    END LOOP;
+END
+$$
+LANGUAGE plpgsql;

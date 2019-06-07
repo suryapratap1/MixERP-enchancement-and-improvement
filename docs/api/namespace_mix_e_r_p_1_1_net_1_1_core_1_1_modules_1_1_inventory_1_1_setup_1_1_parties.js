@@ -1,0 +1,4 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_setup_1_1_parties =
+[
+    [ "Entry", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_setup_1_1_parties_1_1_entry.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_setup_1_1_parties_1_1_entry" ]
+];

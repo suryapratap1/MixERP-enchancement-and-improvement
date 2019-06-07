@@ -1,0 +1,23 @@
+﻿<div class="ui header">
+    {{partyView.PartyName}}
+</div>
+<div class="ui raised segments">
+    <div class="ui segment" data-ng-repeat="address in addresses">
+        <address>
+            <strong>
+                {{address.ZipCode}}<br />
+                {{address.AddressLine1}}<br />
+                {{address.AddressLine2}}
+            </strong>
+
+            <div class="ui divider"></div>
+            <p>
+                {{address.Street}}
+                {{address.City}}
+                <br />
+                {{address.StateName}}
+                {{address.CountryName}}
+            </p>
+        </address>
+    </div>
+</div>

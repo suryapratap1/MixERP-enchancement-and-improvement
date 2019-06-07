@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C21D8D23-AE76-4427-B5A6-36016F01E40F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Entities.HRM</RootNamespace>
+    <AssemblyName>MixERP.Net.Entities.HRM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PetaPoco, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\PetaPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance.cs" />
+    <Compile Include="AttendanceView.cs" />
+    <Compile Include="Contract.cs" />
+    <Compile Include="ContractScrudView.cs" />
+    <Compile Include="ContractVerificationScrudView.cs" />
+    <Compile Include="EducationLevel.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeExperience.cs" />
+    <Compile Include="EmployeeExperienceScrudView.cs" />
+    <Compile Include="EmployeeIdentificationDetail.cs" />
+    <Compile Include="EmployeeIdentificationDetailScrudView.cs" />
+    <Compile Include="EmployeeQualification.cs" />
+    <Compile Include="EmployeeQualificationScrudView.cs" />
+    <Compile Include="EmployeeSocialNetworkDetail.cs" />
+    <Compile Include="EmployeeSocialNetworkDetailScrudView.cs" />
+    <Compile Include="EmployeeType.cs" />
+    <Compile Include="EmployeeTypeScrudView.cs" />
+    <Compile Include="EmployeeView.cs" />
+    <Compile Include="EmploymentStatus.cs" />
+    <Compile Include="EmploymentStatusCode.cs" />
+    <Compile Include="Exit.cs" />
+    <Compile Include="ExitScrudView.cs" />
+    <Compile Include="ExitType.cs" />
+    <Compile Include="JobTitle.cs" />
+    <Compile Include="LeaveApplication.cs" />
+    <Compile Include="LeaveApplicationScrudView.cs" />
+    <Compile Include="LeaveApplicationVerificationScrudView.cs" />
+    <Compile Include="LeaveBenefit.cs" />
+    <Compile Include="LeaveType.cs" />
+    <Compile Include="OfficeHour.cs" />
+    <Compile Include="OfficeHourScrudView.cs" />
+    <Compile Include="PayGrade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resignation.cs" />
+    <Compile Include="ResignationScrudView.cs" />
+    <Compile Include="ResignationVerificationScrudView.cs" />
+    <Compile Include="Shift.cs" />
+    <Compile Include="Termination.cs" />
+    <Compile Include="TerminationScrudView.cs" />
+    <Compile Include="TerminationVerificationScrudView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mix Open Foundation.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

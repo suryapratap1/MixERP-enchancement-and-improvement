@@ -1,0 +1,27 @@
+var class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view =
+[
+    [ "AddressLine1", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a3fd9157ac353497040cb799e82805797", null ],
+    [ "AddressLine2", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a2c5df8c768979f6bbe8a35bb3a877811", null ],
+    [ "AllowTransactionPosting", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a907fc9f420273875f0bacb0b4f19cda5", null ],
+    [ "AuditTs", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a0a746c4fd71d3f94feb36a5f58511c05", null ],
+    [ "AuditUserId", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a604b607bef9facc8ecb00f410aad62eb", null ],
+    [ "City", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a1fb56d715b92d3509e8d0cb721dd24ad", null ],
+    [ "Country", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a200f9b928942f68ea7a5846b58d2f2a6", null ],
+    [ "CurrencyCode", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#ab1000357cfbe33f27dc98dcb8466b0fe", null ],
+    [ "Email", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a828a72a4613c122b8efe26edc1e32da1", null ],
+    [ "Fax", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a1fdb141be86d9a445f9c1a48a1d3f57c", null ],
+    [ "NickName", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a6ddc538914e52e6ab8226ea63fda998f", null ],
+    [ "OfficeCode", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a8bff74fb000bc128b6f4206de1d6285d", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a55cfd7f5b1b68dcbf3a7593dd60bf925", null ],
+    [ "OfficeName", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a0d35abef235a3a14b08b72dc631bf963", null ],
+    [ "PanNumber", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#ad009a4a7eab379c31a4ee78c70f27f4f", null ],
+    [ "ParentOfficeId", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#ad3b873076ba63a4de0aad49e7066d7d0", null ],
+    [ "Phone", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#ad308be4d9aed922e0c1f45e06d6231a2", null ],
+    [ "PoBox", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a89deb4696ccbf486a6860c5293e4dfda", null ],
+    [ "RegistrationDate", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a76eb3b688b70c07d8202b703d30e2f66", null ],
+    [ "RegistrationNumber", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#af9f3fb982770e087ae273d981ec49b7d", null ],
+    [ "State", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a11865050c3727c0f29af62ab704e9765", null ],
+    [ "Street", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#aa3a85d054c7102c00c9c4f2494a1aa36", null ],
+    [ "Url", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a1c43877549379c1fe11712e3ea3fefc2", null ],
+    [ "ZipCode", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_office_1_1_office_view.html#a7a6102f815f1dbd3fd01d35ca5439b41", null ]
+];

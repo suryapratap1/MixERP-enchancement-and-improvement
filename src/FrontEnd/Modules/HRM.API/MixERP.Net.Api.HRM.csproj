@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BFDBE33-40F5-47A1-90C6-9428472877D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Api.HRM</RootNamespace>
+    <AssemblyName>MixERP.Net.Api.HRM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MixERP.Net.Api.Framework">
+      <HintPath>..\..\bin\MixERP.Net.Api.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.ApplicationState">
+      <HintPath>..\..\bin\MixERP.Net.ApplicationState.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.Common">
+      <HintPath>..\..\bin\MixERP.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.EntityParser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\MixERP.Net.EntityParser.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.Framework">
+      <HintPath>..\..\bin\MixERP.Net.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcRouteTester, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\MvcRouteTester.Mvc5.2.2.0.0\lib\net45\MvcRouteTester.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PetaPoco, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\PetaPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\xunit.assert.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\HRM\packages\xunit.extensibility.core.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttendanceController.cs" />
+    <Compile Include="AttendanceViewController.cs" />
+    <Compile Include="ContractController.cs" />
+    <Compile Include="ContractScrudViewController.cs" />
+    <Compile Include="ContractVerificationScrudViewController.cs" />
+    <Compile Include="EducationLevelController.cs" />
+    <Compile Include="EmployeeController.cs" />
+    <Compile Include="EmployeeExperienceController.cs" />
+    <Compile Include="EmployeeExperienceScrudViewController.cs" />
+    <Compile Include="EmployeeIdentificationDetailController.cs" />
+    <Compile Include="EmployeeIdentificationDetailScrudViewController.cs" />
+    <Compile Include="EmployeeQualificationController.cs" />
+    <Compile Include="EmployeeQualificationScrudViewController.cs" />
+    <Compile Include="EmployeeSocialNetworkDetailController.cs" />
+    <Compile Include="EmployeeSocialNetworkDetailScrudViewController.cs" />
+    <Compile Include="EmployeeTypeController.cs" />
+    <Compile Include="EmployeeTypeScrudViewController.cs" />
+    <Compile Include="EmployeeViewController.cs" />
+    <Compile Include="EmploymentStatusCodeController.cs" />
+    <Compile Include="EmploymentStatusController.cs" />
+    <Compile Include="ExitController.cs" />
+    <Compile Include="ExitScrudViewController.cs" />
+    <Compile Include="ExitTypeController.cs" />
+    <Compile Include="Fakes\AttendanceViewRepository.cs" />
+    <Compile Include="Fakes\ContractRepository.cs" />
+    <Compile Include="Fakes\ContractScrudViewRepository.cs" />
+    <Compile Include="Fakes\ContractVerificationScrudViewRepository.cs" />
+    <Compile Include="Fakes\EducationLevelRepository.cs" />
+    <Compile Include="Fakes\EmployeeExperienceRepository.cs" />
+    <Compile Include="Fakes\EmployeeExperienceScrudViewRepository.cs" />
+    <Compile Include="Fakes\EmployeeIdentificationDetailRepository.cs" />
+    <Compile Include="Fakes\EmployeeIdentificationDetailScrudViewRepository.cs" />
+    <Compile Include="Fakes\EmployeeQualificationRepository.cs" />
+    <Compile Include="Fakes\EmployeeQualificationScrudViewRepository.cs" />
+    <Compile Include="Fakes\EmployeeRepository.cs" />
+    <Compile Include="Fakes\EmployeeSocialNetworkDetailRepository.cs" />
+    <Compile Include="Fakes\EmployeeSocialNetworkDetailScrudViewRepository.cs" />
+    <Compile Include="Fakes\EmployeeTypeRepository.cs" />
+    <Compile Include="Fakes\EmployeeTypeScrudViewRepository.cs" />
+    <Compile Include="Fakes\EmployeeViewRepository.cs" />
+    <Compile Include="Fakes\EmploymentStatusCodeRepository.cs" />
+    <Compile Include="Fakes\EmploymentStatusRepository.cs" />
+    <Compile Include="Fakes\ExitRepository.cs" />
+    <Compile Include="Fakes\ExitScrudViewRepository.cs" />
+    <Compile Include="Fakes\ExitTypeRepository.cs" />
+    <Compile Include="Fakes\GetEmployeeByEmployeeIdRepository.cs" />
+    <Compile Include="Fakes\GetEmployeeCodeByEmployeeIdRepository.cs" />
+    <Compile Include="Fakes\GetEmployeeNameByEmployeeIdRepository.cs" />
+    <Compile Include="Fakes\JobTitleRepository.cs" />
+    <Compile Include="Fakes\LeaveApplicationRepository.cs" />
+    <Compile Include="Fakes\LeaveApplicationScrudViewRepository.cs" />
+    <Compile Include="Fakes\LeaveApplicationVerificationScrudViewRepository.cs" />
+    <Compile Include="Fakes\LeaveBenefitRepository.cs" />
+    <Compile Include="Fakes\LeaveTypeRepository.cs" />
+    <Compile Include="Fakes\OfficeHourRepository.cs" />
+    <Compile Include="Fakes\OfficeHourScrudViewRepository.cs" />
+    <Compile Include="Fakes\PayGradeRepository.cs" />
+    <Compile Include="Fakes\ResignationRepository.cs" />
+    <Compile Include="Fakes\ResignationScrudViewRepository.cs" />
+    <Compile Include="Fakes\ResignationVerificationScrudViewRepository.cs" />
+    <Compile Include="Fakes\ShiftRepository.cs" />
+    <Compile Include="Fakes\TerminationRepository.cs" />
+    <Compile Include="Fakes\TerminationScrudViewRepository.cs" />
+    <Compile Include="Fakes\TerminationVerificationScrudViewRepository.cs" />
+    <Compile Include="GetEmployeeByEmployeeIdController.cs" />
+    <Compile Include="GetEmployeeCodeByEmployeeIdController.cs" />
+    <Compile Include="GetEmployeeNameByEmployeeIdController.cs" />
+    <Compile Include="JobTitleController.cs" />
+    <Compile Include="LeaveApplicationController.cs" />
+    <Compile Include="LeaveApplicationScrudViewController.cs" />
+    <Compile Include="LeaveApplicationVerificationScrudViewController.cs" />
+    <Compile Include="LeaveBenefitController.cs" />
+    <Compile Include="LeaveTypeController.cs" />
+    <Compile Include="OfficeHourController.cs" />
+    <Compile Include="OfficeHourScrudViewController.cs" />
+    <Compile Include="PayGradeController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResignationController.cs" />
+    <Compile Include="ResignationScrudViewController.cs" />
+    <Compile Include="ResignationVerificationScrudViewController.cs" />
+    <Compile Include="ShiftController.cs" />
+    <Compile Include="TerminationController.cs" />
+    <Compile Include="TerminationScrudViewController.cs" />
+    <Compile Include="TerminationVerificationScrudViewController.cs" />
+    <Compile Include="Tests\AttendanceRouteTests.cs" />
+    <Compile Include="Tests\AttendanceTests.cs" />
+    <Compile Include="Fakes\AttendanceRepository.cs" />
+    <Compile Include="Tests\AttendanceViewRouteTests.cs" />
+    <Compile Include="Tests\AttendanceViewTests.cs" />
+    <Compile Include="Tests\ContractRouteTests.cs" />
+    <Compile Include="Tests\ContractScrudViewRouteTests.cs" />
+    <Compile Include="Tests\ContractScrudViewTests.cs" />
+    <Compile Include="Tests\ContractTests.cs" />
+    <Compile Include="Tests\ContractVerificationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\ContractVerificationScrudViewTests.cs" />
+    <Compile Include="Tests\EducationLevelRouteTests.cs" />
+    <Compile Include="Tests\EducationLevelTests.cs" />
+    <Compile Include="Tests\EmployeeExperienceRouteTests.cs" />
+    <Compile Include="Tests\EmployeeExperienceScrudViewRouteTests.cs" />
+    <Compile Include="Tests\EmployeeExperienceScrudViewTests.cs" />
+    <Compile Include="Tests\EmployeeExperienceTests.cs" />
+    <Compile Include="Tests\EmployeeIdentificationDetailRouteTests.cs" />
+    <Compile Include="Tests\EmployeeIdentificationDetailScrudViewRouteTests.cs" />
+    <Compile Include="Tests\EmployeeIdentificationDetailScrudViewTests.cs" />
+    <Compile Include="Tests\EmployeeIdentificationDetailTests.cs" />
+    <Compile Include="Tests\EmployeeQualificationRouteTests.cs" />
+    <Compile Include="Tests\EmployeeQualificationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\EmployeeQualificationScrudViewTests.cs" />
+    <Compile Include="Tests\EmployeeQualificationTests.cs" />
+    <Compile Include="Tests\EmployeeRouteTests.cs" />
+    <Compile Include="Tests\EmployeeSocialNetworkDetailRouteTests.cs" />
+    <Compile Include="Tests\EmployeeSocialNetworkDetailScrudViewRouteTests.cs" />
+    <Compile Include="Tests\EmployeeSocialNetworkDetailScrudViewTests.cs" />
+    <Compile Include="Tests\EmployeeSocialNetworkDetailTests.cs" />
+    <Compile Include="Tests\EmployeeTests.cs" />
+    <Compile Include="Tests\EmployeeTypeRouteTests.cs" />
+    <Compile Include="Tests\EmployeeTypeScrudViewRouteTests.cs" />
+    <Compile Include="Tests\EmployeeTypeScrudViewTests.cs" />
+    <Compile Include="Tests\EmployeeTypeTests.cs" />
+    <Compile Include="Tests\EmployeeViewRouteTests.cs" />
+    <Compile Include="Tests\EmployeeViewTests.cs" />
+    <Compile Include="Tests\EmploymentStatusCodeRouteTests.cs" />
+    <Compile Include="Tests\EmploymentStatusCodeTests.cs" />
+    <Compile Include="Tests\EmploymentStatusRouteTests.cs" />
+    <Compile Include="Tests\EmploymentStatusTests.cs" />
+    <Compile Include="Tests\ExitRouteTests.cs" />
+    <Compile Include="Tests\ExitScrudViewRouteTests.cs" />
+    <Compile Include="Tests\ExitScrudViewTests.cs" />
+    <Compile Include="Tests\ExitTests.cs" />
+    <Compile Include="Tests\ExitTypeRouteTests.cs" />
+    <Compile Include="Tests\ExitTypeTests.cs" />
+    <Compile Include="Tests\GetEmployeeByEmployeeIdRouteTests.cs" />
+    <Compile Include="Tests\GetEmployeeByEmployeeIdTests.cs" />
+    <Compile Include="Tests\GetEmployeeCodeByEmployeeIdRouteTests.cs" />
+    <Compile Include="Tests\GetEmployeeCodeByEmployeeIdTests.cs" />
+    <Compile Include="Tests\GetEmployeeNameByEmployeeIdRouteTests.cs" />
+    <Compile Include="Tests\GetEmployeeNameByEmployeeIdTests.cs" />
+    <Compile Include="Tests\JobTitleRouteTests.cs" />
+    <Compile Include="Tests\JobTitleTests.cs" />
+    <Compile Include="Tests\LeaveApplicationRouteTests.cs" />
+    <Compile Include="Tests\LeaveApplicationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\LeaveApplicationScrudViewTests.cs" />
+    <Compile Include="Tests\LeaveApplicationTests.cs" />
+    <Compile Include="Tests\LeaveApplicationVerificationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\LeaveApplicationVerificationScrudViewTests.cs" />
+    <Compile Include="Tests\LeaveBenefitRouteTests.cs" />
+    <Compile Include="Tests\LeaveBenefitTests.cs" />
+    <Compile Include="Tests\LeaveTypeRouteTests.cs" />
+    <Compile Include="Tests\LeaveTypeTests.cs" />
+    <Compile Include="Tests\OfficeHourRouteTests.cs" />
+    <Compile Include="Tests\OfficeHourScrudViewRouteTests.cs" />
+    <Compile Include="Tests\OfficeHourScrudViewTests.cs" />
+    <Compile Include="Tests\OfficeHourTests.cs" />
+    <Compile Include="Tests\PayGradeRouteTests.cs" />
+    <Compile Include="Tests\PayGradeTests.cs" />
+    <Compile Include="Tests\ResignationRouteTests.cs" />
+    <Compile Include="Tests\ResignationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\ResignationScrudViewTests.cs" />
+    <Compile Include="Tests\ResignationTests.cs" />
+    <Compile Include="Tests\ResignationVerificationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\ResignationVerificationScrudViewTests.cs" />
+    <Compile Include="Tests\ShiftRouteTests.cs" />
+    <Compile Include="Tests\ShiftTests.cs" />
+    <Compile Include="Tests\TerminationRouteTests.cs" />
+    <Compile Include="Tests\TerminationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\TerminationScrudViewTests.cs" />
+    <Compile Include="Tests\TerminationTests.cs" />
+    <Compile Include="Tests\TerminationVerificationScrudViewRouteTests.cs" />
+    <Compile Include="Tests\TerminationVerificationScrudViewTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRM.Data\MixERP.Net.Core.Modules.HRM.Data.csproj">
+      <Project>{baed8523-9388-42c4-881d-34720fe8e4ae}</Project>
+      <Name>MixERP.Net.Core.Modules.HRM.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRM.Entities\MixERP.Net.Entities.HRM.csproj">
+      <Project>{c21d8d23-ae76-4427-b5a6-36016f01e40f}</Project>
+      <Name>MixERP.Net.Entities.HRM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

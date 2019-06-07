@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MixERPReport>
+  <Title>{Resources.Titles.StockTransferRequest}</Title>
+  <TopSection>
+    <table class="table horizontal">
+      <tr>
+        <td>{Resources.Titles.TranId}</td>
+        <td>{DataSource[0].inventory_transfer_request_id}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.TransactionDate}</td>
+        <td>{DataSource[0].transaction_ts}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.ValueDate}</td>
+        <td>{DataSource[0].value_date}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.EnteredBy}</td>
+        <td> {DataSource[0].entered_by}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.TransactionStatus}</td>
+        <td> {DataSource[0].status}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.VerifiedBy}</td>
+        <td> {DataSource[0].verified_by}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.VerificationReason}</td>
+        <td> {DataSource[0].authorization_reason}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.Delivered}</td>
+        <td> {DataSource[0].Delivered}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.DeliveredBy}</td>
+        <td> {DataSource[0].Delivered_by}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.DeliveredOn}</td>
+        <td> {DataSource[0].Delivered_on}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.Received}</td>
+        <td> {DataSource[0].received}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.ReceivedBy}</td>
+        <td> {DataSource[0].received_by}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.ReceivedOn}</td>
+        <td> {DataSource[0].received_on}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.Office}</td>
+        <td>{DataSource[0].office_name}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.ReferenceNumber}</td>
+        <td>{DataSource[0].reference_number}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.StatementReference}</td>
+        <td>{DataSource[0].statement_reference}</td>
+      </tr>
+    </table>
+    <br />
+  </TopSection>
+  <Body>
+    <Content>
+      <h2>{Resources.Titles.TransferDetails}</h2>
+    </Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="1">
+        </GridViewDataSource>
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection>
+  </BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>
+        SELECT
+        transactions.inventory_transfer_requests.inventory_transfer_request_id,
+        transactions.inventory_transfer_requests.transaction_ts,
+        transactions.inventory_transfer_requests.value_date,
+        office.users.user_name AS entered_by,
+        core.verification_statuses.verification_status_name AS status,
+        verified_by_user.user_name AS verified_by,
+        transactions.inventory_transfer_requests.authorization_reason,
+        transactions.inventory_transfer_requests.received,
+        received_by_user.user_name AS received_by,
+        transactions.inventory_transfer_requests.received_on,
+        transactions.inventory_transfer_requests.delivered,
+        delivered_by_user.user_name AS delivered_by,
+        transactions.inventory_transfer_requests.delivered_on,
+        office.offices.office_name,
+        transactions.inventory_transfer_requests.reference_number,
+        transactions.inventory_transfer_requests.statement_reference,
+        office.stores.store_name
+        FROM transactions.inventory_transfer_requests
+        INNER JOIN office.offices
+        ON transactions.inventory_transfer_requests.office_id = office.offices.office_id
+        INNER JOIN office.users
+        ON transactions.inventory_transfer_requests.user_id = office.users.user_id
+        INNER JOIN office.stores
+        ON transactions.inventory_transfer_requests.store_id = office.stores.store_id
+        INNER JOIN core.verification_statuses
+        ON transactions.inventory_transfer_requests.authorization_status_id = core.verification_statuses.verification_status_id
+        LEFT JOIN office.users AS verified_by_user
+        ON transactions.inventory_transfer_requests.authorized_by_user_id = verified_by_user.user_id
+        LEFT JOIN office.users AS received_by_user
+        ON transactions.inventory_transfer_requests.received_by_user_id = received_by_user.user_id
+        LEFT JOIN office.users AS delivered_by_user
+        ON transactions.inventory_transfer_requests.delivered_by_user_id = delivered_by_user.user_id
+        WHERE transactions.inventory_transfer_requests.inventory_transfer_request_id=@id;
+      </Query>
+      <Parameters>
+        <Parameter Name="@id" Type="Number" />
+      </Parameters>
+    </DataSource>
+    <DataSource>
+      <Query>
+        SELECT
+        office.stores.store_code || ' (' || office.stores.store_name || ')' AS store,
+        core.items.item_code,
+        core.items.item_name,
+        transactions.inventory_transfer_request_details.quantity,
+        core.units.unit_name
+        FROM transactions.inventory_transfer_request_details
+        INNER JOIN transactions.inventory_transfer_requests
+        ON transactions.inventory_transfer_request_details.inventory_transfer_request_id = transactions.inventory_transfer_requests.inventory_transfer_request_id
+        INNER JOIN core.items
+        ON transactions.inventory_transfer_request_details.item_id = core.items.item_id
+        INNER JOIN core.units
+        ON transactions.inventory_transfer_request_details.unit_id = core.units.unit_id
+        INNER JOIN office.stores
+        ON transactions.inventory_transfer_requests.store_id = office.stores.store_id
+        WHERE transactions.inventory_transfer_requests.inventory_transfer_request_id = @id
+        ORDER BY transactions.inventory_transfer_requests.inventory_transfer_request_id;
+      </Query>
+      <Parameters>
+        <Parameter Name="@id" Type="Number" />
+      </Parameters>
+    </DataSource>
+  </DataSources>
+</MixERPReport>

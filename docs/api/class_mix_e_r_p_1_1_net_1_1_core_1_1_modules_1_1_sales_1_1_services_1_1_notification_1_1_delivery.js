@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_services_1_1_notification_1_1_delivery =
+[
+    [ "Send", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_services_1_1_notification_1_1_delivery.html#a938df63afd1ec215c5a90bef0ccd9286", null ]
+];

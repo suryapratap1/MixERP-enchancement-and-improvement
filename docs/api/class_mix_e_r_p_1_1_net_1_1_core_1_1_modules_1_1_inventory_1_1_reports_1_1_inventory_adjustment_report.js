@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_reports_1_1_inventory_adjustment_report =
+[
+    [ "OnControlLoad", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_reports_1_1_inventory_adjustment_report.html#a8c2bddb561ce2f7fe0fa9ff61a38cf5b", null ]
+];

@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_services_1_1_entry_1_1_transfer_request =
+[
+    [ "Save", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_services_1_1_entry_1_1_transfer_request.html#ad4f34d1d57cec5f3797c9ae1363b7da2", null ]
+];

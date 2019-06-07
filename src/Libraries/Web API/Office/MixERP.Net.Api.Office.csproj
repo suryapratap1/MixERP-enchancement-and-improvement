@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69B8CADF-7BCA-4A17-B466-33229DD9D757}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Api.Office</RootNamespace>
+    <AssemblyName>MixERP.Net.Api.Office</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.assert.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.core.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOfficeController.cs" />
+    <Compile Include="CanLoginController.cs" />
+    <Compile Include="CashierController.cs" />
+    <Compile Include="CashRepositoryController.cs" />
+    <Compile Include="CashRepositoryScrudViewController.cs" />
+    <Compile Include="CashRepositorySelectorViewController.cs" />
+    <Compile Include="ConfigurationController.cs" />
+    <Compile Include="CostCenterController.cs" />
+    <Compile Include="CostCenterScrudViewController.cs" />
+    <Compile Include="CounterController.cs" />
+    <Compile Include="CounterScrudViewController.cs" />
+    <Compile Include="CountItemInStockController.cs" />
+    <Compile Include="CreateUserController.cs" />
+    <Compile Include="DepartmentController.cs" />
+    <Compile Include="DepartmentScrudViewController.cs" />
+    <Compile Include="Fakes\AddOfficeRepository.cs" />
+    <Compile Include="Fakes\CanLoginRepository.cs" />
+    <Compile Include="Fakes\CashierRepository.cs" />
+    <Compile Include="Fakes\CashRepositoryRepository.cs" />
+    <Compile Include="Fakes\CashRepositoryScrudViewRepository.cs" />
+    <Compile Include="Fakes\CashRepositorySelectorViewRepository.cs" />
+    <Compile Include="Fakes\ConfigurationRepository.cs" />
+    <Compile Include="Fakes\CostCenterRepository.cs" />
+    <Compile Include="Fakes\CostCenterScrudViewRepository.cs" />
+    <Compile Include="Fakes\CounterRepository.cs" />
+    <Compile Include="Fakes\CounterScrudViewRepository.cs" />
+    <Compile Include="Fakes\CountItemInStockRepository.cs" />
+    <Compile Include="Fakes\CreateUserRepository.cs" />
+    <Compile Include="Fakes\DepartmentRepository.cs" />
+    <Compile Include="Fakes\DepartmentScrudViewRepository.cs" />
+    <Compile Include="Fakes\GetCashRepositoryIdByCashRepositoryCodeRepository.cs" />
+    <Compile Include="Fakes\GetCashRepositoryIdByCashRepositoryNameRepository.cs" />
+    <Compile Include="Fakes\GetCostCenterIdByCostCenterCodeRepository.cs" />
+    <Compile Include="Fakes\GetCostOfGoodMethodRepository.cs" />
+    <Compile Include="Fakes\GetDepartmentIdByDepartmentCodeRepository.cs" />
+    <Compile Include="Fakes\GetIncomeTaxRateRepository.cs" />
+    <Compile Include="Fakes\GetLoggedInCultureRepository.cs" />
+    <Compile Include="Fakes\GetLoggedInOfficeIdRepository.cs" />
+    <Compile Include="Fakes\GetLoginIdRepository.cs" />
+    <Compile Include="Fakes\GetOfficeCodeByIdRepository.cs" />
+    <Compile Include="Fakes\GetOfficeIdByCashRepositoryIdRepository.cs" />
+    <Compile Include="Fakes\GetOfficeIdByOfficeCodeRepository.cs" />
+    <Compile Include="Fakes\GetOfficeIdByStoreIdRepository.cs" />
+    <Compile Include="Fakes\GetOfficeIdByUserIdRepository.cs" />
+    <Compile Include="Fakes\GetOfficeIdsRepository.cs" />
+    <Compile Include="Fakes\GetOfficeNameByIdRepository.cs" />
+    <Compile Include="Fakes\GetOfficesRepository.cs" />
+    <Compile Include="Fakes\GetRoleCodeByUserNameRepository.cs" />
+    <Compile Include="Fakes\GetRoleIdByRoleCodeRepository.cs" />
+    <Compile Include="Fakes\GetRoleIdByRoleNameRepository.cs" />
+    <Compile Include="Fakes\GetRoleIdByUseIdRepository.cs" />
+    <Compile Include="Fakes\GetStoreIdByStoreCodeRepository.cs" />
+    <Compile Include="Fakes\GetStoreIdByStoreNameRepository.cs" />
+    <Compile Include="Fakes\GetStoreNameByStoreIdRepository.cs" />
+    <Compile Include="Fakes\GetStoresRepository.cs" />
+    <Compile Include="Fakes\GetStoreTypeIdByStoreTypeCodeRepository.cs" />
+    <Compile Include="Fakes\GetSysUserIdRepository.cs" />
+    <Compile Include="Fakes\GetUserIdByUserNameRepository.cs" />
+    <Compile Include="Fakes\GetUserNameByUserIdRepository.cs" />
+    <Compile Include="Fakes\HasChildOfficesRepository.cs" />
+    <Compile Include="Fakes\HolidayRepository.cs" />
+    <Compile Include="Fakes\IsAdminRepository.cs" />
+    <Compile Include="Fakes\IsParentOfficeRepository.cs" />
+    <Compile Include="Fakes\IsPeriodicInventoryRepository.cs" />
+    <Compile Include="Fakes\IsSysRepository.cs" />
+    <Compile Include="Fakes\IsSysUserRepository.cs" />
+    <Compile Include="Fakes\IsValidOfficeIdRepository.cs" />
+    <Compile Include="Fakes\OfficeRepository.cs" />
+    <Compile Include="Fakes\OfficeScrudViewRepository.cs" />
+    <Compile Include="Fakes\OfficeSelectorViewRepository.cs" />
+    <Compile Include="Fakes\OfficeViewRepository.cs" />
+    <Compile Include="Fakes\RoleRepository.cs" />
+    <Compile Include="Fakes\RoleScrudViewRepository.cs" />
+    <Compile Include="Fakes\RoleViewRepository.cs" />
+    <Compile Include="Fakes\SignInRepository.cs" />
+    <Compile Include="Fakes\SignInViewRepository.cs" />
+    <Compile Include="Fakes\StoreRepository.cs" />
+    <Compile Include="Fakes\StoreScrudViewRepository.cs" />
+    <Compile Include="Fakes\StoreSelectorViewRepository.cs" />
+    <Compile Include="Fakes\StoreTypeRepository.cs" />
+    <Compile Include="Fakes\StoreTypeScrudViewRepository.cs" />
+    <Compile Include="Fakes\StoreTypeSelectorViewRepository.cs" />
+    <Compile Include="Fakes\StoreViewRepository.cs" />
+    <Compile Include="Fakes\UserRepository.cs" />
+    <Compile Include="Fakes\UserSelectorViewRepository.cs" />
+    <Compile Include="Fakes\UserViewRepository.cs" />
+    <Compile Include="Fakes\ValidateLoginRepository.cs" />
+    <Compile Include="Fakes\WorkCenterRepository.cs" />
+    <Compile Include="Fakes\WorkCenterViewRepository.cs" />
+    <Compile Include="GetCashRepositoryIdByCashRepositoryCodeController.cs" />
+    <Compile Include="GetCashRepositoryIdByCashRepositoryNameController.cs" />
+    <Compile Include="GetCostCenterIdByCostCenterCodeController.cs" />
+    <Compile Include="GetCostOfGoodMethodController.cs" />
+    <Compile Include="GetDepartmentIdByDepartmentCodeController.cs" />
+    <Compile Include="GetIncomeTaxRateController.cs" />
+    <Compile Include="GetLoggedInCultureController.cs" />
+    <Compile Include="GetLoggedInOfficeIdController.cs" />
+    <Compile Include="GetLoginIdController.cs" />
+    <Compile Include="GetOfficeCodeByIdController.cs" />
+    <Compile Include="GetOfficeIdByCashRepositoryIdController.cs" />
+    <Compile Include="GetOfficeIdByOfficeCodeController.cs" />
+    <Compile Include="GetOfficeIdByStoreIdController.cs" />
+    <Compile Include="GetOfficeIdByUserIdController.cs" />
+    <Compile Include="GetOfficeIdsController.cs" />
+    <Compile Include="GetOfficeNameByIdController.cs" />
+    <Compile Include="GetOfficesController.cs" />
+    <Compile Include="GetRoleCodeByUserNameController.cs" />
+    <Compile Include="GetRoleIdByRoleCodeController.cs" />
+    <Compile Include="GetRoleIdByRoleNameController.cs" />
+    <Compile Include="GetRoleIdByUseIdController.cs" />
+    <Compile Include="GetStoreIdByStoreCodeController.cs" />
+    <Compile Include="GetStoreIdByStoreNameController.cs" />
+    <Compile Include="GetStoreNameByStoreIdController.cs" />
+    <Compile Include="GetStoresController.cs" />
+    <Compile Include="GetStoreTypeIdByStoreTypeCodeController.cs" />
+    <Compile Include="GetSysUserIdController.cs" />
+    <Compile Include="GetUserIdByUserNameController.cs" />
+    <Compile Include="GetUserNameByUserIdController.cs" />
+    <Compile Include="HasChildOfficesController.cs" />
+    <Compile Include="HolidayController.cs" />
+    <Compile Include="IsAdminController.cs" />
+    <Compile Include="IsParentOfficeController.cs" />
+    <Compile Include="IsPeriodicInventoryController.cs" />
+    <Compile Include="IsSysController.cs" />
+    <Compile Include="IsSysUserController.cs" />
+    <Compile Include="IsValidOfficeIdController.cs" />
+    <Compile Include="OfficeController.cs" />
+    <Compile Include="OfficeScrudViewController.cs" />
+    <Compile Include="OfficeSelectorViewController.cs" />
+    <Compile Include="OfficeViewController.cs" />
+    <Compile Include="OfficeWorkCenterController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleController.cs" />
+    <Compile Include="RoleScrudViewController.cs" />
+    <Compile Include="RoleViewController.cs" />
+    <Compile Include="SignInController.cs" />
+    <Compile Include="SignInViewController.cs" />
+    <Compile Include="StoreController.cs" />
+    <Compile Include="StoreScrudViewController.cs" />
+    <Compile Include="StoreSelectorViewController.cs" />
+    <Compile Include="StoreTypeController.cs" />
+    <Compile Include="StoreTypeScrudViewController.cs" />
+    <Compile Include="StoreTypeSelectorViewController.cs" />
+    <Compile Include="StoreViewController.cs" />
+    <Compile Include="Tests\AddOfficeRouteTests.cs" />
+    <Compile Include="Tests\AddOfficeTests.cs" />
+    <Compile Include="Tests\CanLoginRouteTests.cs" />
+    <Compile Include="Tests\CanLoginTests.cs" />
+    <Compile Include="Tests\CashierRouteTests.cs" />
+    <Compile Include="Tests\CashierTests.cs" />
+    <Compile Include="Tests\CashRepositoryRouteTests.cs" />
+    <Compile Include="Tests\CashRepositoryScrudViewRouteTests.cs" />
+    <Compile Include="Tests\CashRepositoryScrudViewTests.cs" />
+    <Compile Include="Tests\CashRepositorySelectorViewRouteTests.cs" />
+    <Compile Include="Tests\CashRepositorySelectorViewTests.cs" />
+    <Compile Include="Tests\CashRepositoryTests.cs" />
+    <Compile Include="Tests\ConfigurationRouteTests.cs" />
+    <Compile Include="Tests\ConfigurationTests.cs" />
+    <Compile Include="Tests\CostCenterRouteTests.cs" />
+    <Compile Include="Tests\CostCenterScrudViewRouteTests.cs" />
+    <Compile Include="Tests\CostCenterScrudViewTests.cs" />
+    <Compile Include="Tests\CostCenterTests.cs" />
+    <Compile Include="Tests\CounterRouteTests.cs" />
+    <Compile Include="Tests\CounterScrudViewRouteTests.cs" />
+    <Compile Include="Tests\CounterScrudViewTests.cs" />
+    <Compile Include="Tests\CounterTests.cs" />
+    <Compile Include="Tests\CountItemInStockRouteTests.cs" />
+    <Compile Include="Tests\CountItemInStockTests.cs" />
+    <Compile Include="Tests\CreateUserRouteTests.cs" />
+    <Compile Include="Tests\CreateUserTests.cs" />
+    <Compile Include="Tests\DepartmentRouteTests.cs" />
+    <Compile Include="Tests\DepartmentScrudViewRouteTests.cs" />
+    <Compile Include="Tests\DepartmentScrudViewTests.cs" />
+    <Compile Include="Tests\DepartmentTests.cs" />
+    <Compile Include="Tests\GetCashRepositoryIdByCashRepositoryCodeRouteTests.cs" />
+    <Compile Include="Tests\GetCashRepositoryIdByCashRepositoryCodeTests.cs" />
+    <Compile Include="Tests\GetCashRepositoryIdByCashRepositoryNameRouteTests.cs" />
+    <Compile Include="Tests\GetCashRepositoryIdByCashRepositoryNameTests.cs" />
+    <Compile Include="Tests\GetCostCenterIdByCostCenterCodeRouteTests.cs" />
+    <Compile Include="Tests\GetCostCenterIdByCostCenterCodeTests.cs" />
+    <Compile Include="Tests\GetCostOfGoodMethodRouteTests.cs" />
+    <Compile Include="Tests\GetCostOfGoodMethodTests.cs" />
+    <Compile Include="Tests\GetDepartmentIdByDepartmentCodeRouteTests.cs" />
+    <Compile Include="Tests\GetDepartmentIdByDepartmentCodeTests.cs" />
+    <Compile Include="Tests\GetIncomeTaxRateRouteTests.cs" />
+    <Compile Include="Tests\GetIncomeTaxRateTests.cs" />
+    <Compile Include="Tests\GetLoggedInCultureRouteTests.cs" />
+    <Compile Include="Tests\GetLoggedInCultureTests.cs" />
+    <Compile Include="Tests\GetLoggedInOfficeIdRouteTests.cs" />
+    <Compile Include="Tests\GetLoggedInOfficeIdTests.cs" />
+    <Compile Include="Tests\GetLoginIdRouteTests.cs" />
+    <Compile Include="Tests\GetLoginIdTests.cs" />
+    <Compile Include="Tests\GetOfficeCodeByIdRouteTests.cs" />
+    <Compile Include="Tests\GetOfficeCodeByIdTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByCashRepositoryIdRouteTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByCashRepositoryIdTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByOfficeCodeRouteTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByOfficeCodeTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByStoreIdRouteTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByStoreIdTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByUserIdRouteTests.cs" />
+    <Compile Include="Tests\GetOfficeIdByUserIdTests.cs" />
+    <Compile Include="Tests\GetOfficeIdsRouteTests.cs" />
+    <Compile Include="Tests\GetOfficeIdsTests.cs" />
+    <Compile Include="Tests\GetOfficeNameByIdRouteTests.cs" />
+    <Compile Include="Tests\GetOfficeNameByIdTests.cs" />
+    <Compile Include="Tests\GetOfficesRouteTests.cs" />
+    <Compile Include="Tests\GetOfficesTests.cs" />
+    <Compile Include="Tests\GetRoleCodeByUserNameRouteTests.cs" />
+    <Compile Include="Tests\GetRoleCodeByUserNameTests.cs" />
+    <Compile Include="Tests\GetRoleIdByRoleCodeRouteTests.cs" />
+    <Compile Include="Tests\GetRoleIdByRoleCodeTests.cs" />
+    <Compile Include="Tests\GetRoleIdByRoleNameRouteTests.cs" />
+    <Compile Include="Tests\GetRoleIdByRoleNameTests.cs" />
+    <Compile Include="Tests\GetRoleIdByUseIdRouteTests.cs" />
+    <Compile Include="Tests\GetRoleIdByUseIdTests.cs" />
+    <Compile Include="Tests\GetStoreIdByStoreCodeRouteTests.cs" />
+    <Compile Include="Tests\GetStoreIdByStoreCodeTests.cs" />
+    <Compile Include="Tests\GetStoreIdByStoreNameRouteTests.cs" />
+    <Compile Include="Tests\GetStoreIdByStoreNameTests.cs" />
+    <Compile Include="Tests\GetStoreNameByStoreIdRouteTests.cs" />
+    <Compile Include="Tests\GetStoreNameByStoreIdTests.cs" />
+    <Compile Include="Tests\GetStoresRouteTests.cs" />
+    <Compile Include="Tests\GetStoresTests.cs" />
+    <Compile Include="Tests\GetStoreTypeIdByStoreTypeCodeRouteTests.cs" />
+    <Compile Include="Tests\GetStoreTypeIdByStoreTypeCodeTests.cs" />
+    <Compile Include="Tests\GetSysUserIdRouteTests.cs" />
+    <Compile Include="Tests\GetSysUserIdTests.cs" />
+    <Compile Include="Tests\GetUserIdByUserNameRouteTests.cs" />
+    <Compile Include="Tests\GetUserIdByUserNameTests.cs" />
+    <Compile Include="Tests\GetUserNameByUserIdRouteTests.cs" />
+    <Compile Include="Tests\GetUserNameByUserIdTests.cs" />
+    <Compile Include="Tests\HasChildOfficesRouteTests.cs" />
+    <Compile Include="Tests\HasChildOfficesTests.cs" />
+    <Compile Include="Tests\HolidayRouteTests.cs" />
+    <Compile Include="Tests\HolidayTests.cs" />
+    <Compile Include="Tests\IsAdminRouteTests.cs" />
+    <Compile Include="Tests\IsAdminTests.cs" />
+    <Compile Include="Tests\IsParentOfficeRouteTests.cs" />
+    <Compile Include="Tests\IsParentOfficeTests.cs" />
+    <Compile Include="Tests\IsPeriodicInventoryRouteTests.cs" />
+    <Compile Include="Tests\IsPeriodicInventoryTests.cs" />
+    <Compile Include="Tests\IsSysRouteTests.cs" />
+    <Compile Include="Tests\IsSysTests.cs" />
+    <Compile Include="Tests\IsSysUserRouteTests.cs" />
+    <Compile Include="Tests\IsSysUserTests.cs" />
+    <Compile Include="Tests\IsValidOfficeIdRouteTests.cs" />
+    <Compile Include="Tests\IsValidOfficeIdTests.cs" />
+    <Compile Include="Tests\OfficeRouteTests.cs" />
+    <Compile Include="Tests\OfficeScrudViewRouteTests.cs" />
+    <Compile Include="Tests\OfficeScrudViewTests.cs" />
+    <Compile Include="Tests\OfficeSelectorViewRouteTests.cs" />
+    <Compile Include="Tests\OfficeSelectorViewTests.cs" />
+    <Compile Include="Tests\OfficeTests.cs" />
+    <Compile Include="Tests\OfficeViewRouteTests.cs" />
+    <Compile Include="Tests\OfficeViewTests.cs" />
+    <Compile Include="Tests\RoleRouteTests.cs" />
+    <Compile Include="Tests\RoleScrudViewRouteTests.cs" />
+    <Compile Include="Tests\RoleScrudViewTests.cs" />
+    <Compile Include="Tests\RoleTests.cs" />
+    <Compile Include="Tests\RoleViewRouteTests.cs" />
+    <Compile Include="Tests\RoleViewTests.cs" />
+    <Compile Include="Tests\SignInRouteTests.cs" />
+    <Compile Include="Tests\SignInTests.cs" />
+    <Compile Include="Tests\SignInViewRouteTests.cs" />
+    <Compile Include="Tests\SignInViewTests.cs" />
+    <Compile Include="Tests\StoreRouteTests.cs" />
+    <Compile Include="Tests\StoreScrudViewRouteTests.cs" />
+    <Compile Include="Tests\StoreScrudViewTests.cs" />
+    <Compile Include="Tests\StoreSelectorViewRouteTests.cs" />
+    <Compile Include="Tests\StoreSelectorViewTests.cs" />
+    <Compile Include="Tests\StoreTests.cs" />
+    <Compile Include="Tests\StoreTypeRouteTests.cs" />
+    <Compile Include="Tests\StoreTypeScrudViewRouteTests.cs" />
+    <Compile Include="Tests\StoreTypeScrudViewTests.cs" />
+    <Compile Include="Tests\StoreTypeSelectorViewRouteTests.cs" />
+    <Compile Include="Tests\StoreTypeSelectorViewTests.cs" />
+    <Compile Include="Tests\StoreTypeTests.cs" />
+    <Compile Include="Tests\StoreViewRouteTests.cs" />
+    <Compile Include="Tests\StoreViewTests.cs" />
+    <Compile Include="Tests\UserRouteTests.cs" />
+    <Compile Include="Tests\UserSelectorViewRouteTests.cs" />
+    <Compile Include="Tests\UserSelectorViewTests.cs" />
+    <Compile Include="Tests\UserTests.cs" />
+    <Compile Include="Tests\UserViewRouteTests.cs" />
+    <Compile Include="Tests\UserViewTests.cs" />
+    <Compile Include="Tests\ValidateLoginRouteTests.cs" />
+    <Compile Include="Tests\ValidateLoginTests.cs" />
+    <Compile Include="Tests\WorkCenterRouteTests.cs" />
+    <Compile Include="Tests\WorkCenterTests.cs" />
+    <Compile Include="Tests\WorkCenterViewRouteTests.cs" />
+    <Compile Include="Tests\WorkCenterViewTests.cs" />
+    <Compile Include="UserController.cs" />
+    <Compile Include="UserSelectorViewController.cs" />
+    <Compile Include="UserViewController.cs" />
+    <Compile Include="ValidateLoginController.cs" />
+    <Compile Include="WorkCenterViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\Office\MixERP.Net.Schemas.Office.Data.csproj">
+      <Project>{4436d581-5e64-448b-96ee-33c51aaaddad}</Project>
+      <Name>MixERP.Net.Schemas.Office.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entities\Office\MixERP.Net.Entities.Office.csproj">
+      <Project>{ece2ea15-08d3-46d6-8906-bec973c0568b}</Project>
+      <Name>MixERP.Net.Entities.Office</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixER.Net.StateServer\MixERP.Net.ApplicationState.csproj">
+      <Project>{61AB8B69-2097-4595-97B7-4A930A70163D}</Project>
+      <Name>MixERP.Net.ApplicationState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.net.Common\MixERP.Net.Common.csproj">
+      <Project>{D5A09C22-8F48-4FB2-A14D-C62C8C8FCEC0}</Project>
+      <Name>MixERP.Net.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.EntityParser\MixERP.Net.EntityParser.csproj">
+      <Project>{eac19d71-3969-4b34-ad7b-8b05d4672861}</Project>
+      <Name>MixERP.Net.EntityParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.Framework\MixERP.Net.Framework.csproj">
+      <Project>{1509332f-ae98-44d9-9072-5bbc59a65fc4}</Project>
+      <Name>MixERP.Net.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969D7960-52E2-40FC-91E5-1393B71E23B0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\MixERP.Net.Api.Framework.csproj">
+      <Project>{2ed31492-84c8-4c84-94ae-1818eb641a9a}</Project>
+      <Name>MixERP.Net.Api.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

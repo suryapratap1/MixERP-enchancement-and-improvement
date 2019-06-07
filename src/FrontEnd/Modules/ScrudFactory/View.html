@@ -1,0 +1,437 @@
+<script src="/Scripts/inflection-js/inflection.js"></script>
+<style>
+    .kanban.container {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+
+    .kanban.segments .ui.segment {
+        max-width: 300px !important;
+        min-height: 700px;
+        padding: 8px;
+    }
+
+    .kanban .card {
+        cursor: pointer;
+    }
+
+    .kanban.segments .ui.segment:nth-child(odd) {
+        background-color: #FAFAFA !important;
+    }
+
+    .kanban.segments .ui.segment:nth-child(even) {
+        background-color: #F9F9F9 !important;
+    }
+
+    .kanban.holder {
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .card:hover {
+        opacity: 0.75;
+    }
+
+    .unstyled.segment {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .kanban-placeholder {
+        border: 1px dotted #B5B45B;
+        background-color: #FAF9D9;
+        margin: 0 1em 1em 0;
+        height: 400px;
+    }
+</style>
+
+
+<div class="view factory" style="display: none;">
+    <div class="ui inverted active view dimmer">
+        <div class="content">
+            <div class="ui text loader">
+                <span data-localize="Titles.Loading"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="FlagPopUnder" class="ui initially hidden form popunder segment" style="width:400px;z-index:3; position: absolute;">
+        <div class="ui grey header">
+            <span data-localize="Titles.CreateAFlag"></span>
+        </div>
+        <div>
+            <span data-localize="Labels.FlagDescription"></span>
+        </div>
+        <p>
+            <span data-localize="Labels.SelectAFlag"></span>
+        </p>
+
+        <select id="FlagSelect" class="ui fluid search dropdown selection"></select>
+
+        <p class="ui buttons tpad8">
+            <a href="javascript:void(0);" id="UpdateButton" class="green small ui button">
+                <span data-localize="Titles.Update"></span>
+            </a>
+
+            <a href="javascript:void(0);" onclick="$('#FlagPopUnder').fadeOut(500);" class="red small ui button">
+                <span data-localize="Titles.Close"></span>
+            </a>
+        </p>
+    </div>
+
+    <div id="FilterPopUnder" class="ui initially hidden form popunder segment" style="width:400px;z-index:3; position: absolute;">
+        <div class="ui grey header">
+            <span data-localize="Titles.SelectAFilter"></span>
+        </div>
+        <select class="ui fluid filter" id="DefaultFilterSelect"></select>
+        <p class="ui action buttons tpad8">
+            <a href="javascript:void(0);" onclick="$('#FilterPopUnder').fadeOut(500);" class="green small ui button" data-target="filter">
+                <span data-localize="Titles.CreateNew"></span>
+            </a>
+            <a href="javascript:void(0);" onclick="$('#FilterPopUnder').fadeOut(500);" class="red small ui button">
+                <span data-localize="Titles.Close"></span>
+            </a>
+        </p>
+    </div>
+
+    <div id="VerificationPopUnder" class="ui initially hidden form popunder segment" style="width:400px;z-index:3; position: absolute;">
+        <div class="ui header">
+            <span data-localize="Titles.Verification"></span>
+        </div>
+        <div class="field">
+            <label for="ReasonTextArea">
+                <span data-localize="Titles.Reason"></span>
+            </label>
+            <textarea id="ReasonTextArea"></textarea>
+        </div>
+        <div class="ui buttons">
+            <a id="ApproveButton" class="ui green button" href="javascript:void(0);">
+                <span data-localize="Titles.Approve"></span>
+            </a>
+            <a id="RejectButton" class="ui orange button" href="javascript:void(0);">
+                <span data-localize="Titles.Reject"></span>
+            </a>
+
+            <a href="javascript:void(0);" class="ui red button" onclick="$('#VerificationPopUnder').fadeOut(500);">
+                <span data-localize="Titles.Close"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="ui stackable grid">
+        <div class="ui sixteen wide column">
+            <div class="title ui huge grey header"></div>
+            <div id="description" class="ui info description message" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/Scripts/underscore/underscore-min.js"></script>
+
+
+    <div id="KanbanForm" class="ui small modal">
+        <i class="close icon"></i>
+        <div class="ui grey header">
+            <span data-localize="Titles.AddAKanbanList"></span>
+        </div>
+        <div class="content">
+            <div class="ui form">
+                <div class="field">
+                    <label for="KanbanIdInputText">
+                        <span data-localize="Titles.KanbanId"></span>
+                    </label>
+                    <input type="text" readonly id="KanbanIdInputText" />
+                </div>
+                <div class="field">
+                    <label for="KanbanNameInputText">
+                        <span data-localize="Titles.KanbanName"></span>
+                    </label>
+                    <input type="text" id="KanbanNameInputText" />
+                </div>
+                <div class="field">
+                    <label for="KanbanDescriptionTextArea">
+                        <span data-localize="Titles.Description"></span>
+                    </label>
+                    <textarea id="KanbanDescriptionTextArea"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui basic buttons">
+                <div class="ui cancel button">
+                    <span data-localize="Titles.Cancel"></span>
+                </div>
+                <a href="javascript:void(0);" class="ui button" onclick="saveOrUpdateKanban();">
+                    <span data-localize="Titles.OK"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui stackable grid">
+        <div class="twelve wide column">
+            <div class="ui basic buttons">
+                <a id="AddNewButton" class="ui basic button" style="display: none;">
+                    <span data-localize="Titles.AddNew"></span>
+                </a>
+                <a id="FlagButton" class="ui basic button">
+                    <span data-localize="Titles.Flag"></span>
+                </a>
+                <a class="ui basic button" id="FilterButton">
+                    <span data-localize="Titles.Filter"></span>
+                </a>
+                <div class="ui icon top left pointing dropdown basic button" id="ExportDropDown">
+                    <span>
+                        <span data-localize="Titles.Export"></span>
+                    </span>
+                    <div class="menu">
+                        <div class="header">
+                            <span data-localize="Titles.ExportThisDocument"></span>
+                        </div>
+                        <a class="item" href="javascript:void(0);" onclick="createDoc();">
+                            <i class="file word outline blue icon"></i>
+                            <span data-localize="Titles.ExportToDoc"></span>
+                        </a>
+                        <a class="item" href="javascript:void(0);" onclick="createXls();">
+                            <i class="file excel outline green icon"></i>
+                            <span data-localize="Titles.ExportToExcel"></span>
+                        </a>
+                        <a class="item" href="javascript:void(0);" onclick="createPDF();">
+                            <i class="file pdf outline red icon"></i>
+                            <span data-localize="Titles.ExportToPDF"></span>
+                        </a>
+                    </div>
+                </div>
+                <a id="PrintButton" href="javascript:void(0);" onclick="print()" class="ui basic button">
+                    <span data-localize="Titles.Print"></span>
+                </a>
+            </div>
+        </div>
+        <div class="right aligned four wide column">
+            <div class="ui basic icon action mini buttons">
+                <a class="ui basic button" data-target="import" title="Import">
+                    <i class="upload layout mini icon"></i>
+                </a>
+                <a class="ui basic button" data-target="filter" title="Manage Filters">
+                    <i class="icons">
+                        <i class="filter layout icon"></i>
+                        <i class="corner add mini icon"></i>
+                    </i>
+                </a>
+                <a class="ui active green basic button" data-target="kanban" title="Kanban View">
+                    <i class="block layout mini icon"></i>
+                </a>
+                <a class="ui basic button" data-target="grid" title="Grid View">
+                    <i class="grid layout mini icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui stackable form segment" ID="Annotation" style="display: none;">
+        <div class="field">
+            <div class="ui green button" id="ShowButton">Show</div>
+        </div>
+    </div>
+
+
+    <div data-target="grid" style="display: none;">
+        <div id="json" class="vpad8" style="width: 100%; overflow: auto;">
+        </div>
+    </div>
+
+    <div data-target="kanban">
+        <div class="kanban container">
+            <div class="ui horizontal kanban segments" id="kanban" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="ui bottom hidden segment" data-target="filter">
+        <div class="ui huge header">
+            <span id="FilterName">
+            </span>
+        </div>
+        <div class="ui divider"></div>
+
+        <div class="ui stackable form" id="FilterForm">
+            <div class="five fields">
+                <div class="field">
+                    <label for="ColumnSelect">
+                        <span data-localize="Titles.SelectAColumn"></span>
+                    </label>
+                    <select class="ui search dropdown" id="ColumnSelect" required></select>
+                </div>
+                <div class="field">
+                    <label for="FilterConditionSelect">
+                        <span data-localize="Titles.FilterCondition"></span>
+                    </label>
+                    <select class="ui search dropdown" id="FilterConditionSelect" required></select>
+                </div>
+                <div class="field">
+                    <label for="ValueInputText">
+                        <span data-localize="Titles.Value"></span>
+                    </label>
+                    <input id="ValueInputText" required />
+                </div>
+                <div class="field">
+                    <label for="AndInputText">
+                        <span data-localize="Titles.And"></span>
+                    </label>
+                    <input id="AndInputText" readonly="readonly" />
+                </div>
+                <div class="field">
+                    <label>&nbsp;</label>
+                    <a href="javascript:void(0);" class="ui button" id="AddFilterButton">
+                        <span data-localize="Titles.Add"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <table class="ui striped table" id="FilterTable">
+            <thead>
+                <tr>
+                    <th style="width: 100px;">
+                        <span data-localize="Titles.Actions"></span>
+                    </th>
+                    <th>
+                        <span data-localize="Titles.ColumnName"></span>
+                    </th>
+                    <th>
+                        <span data-localize="Titles.Condition"></span>
+                    </th>
+                    <th>
+                        <span data-localize="Titles.Value"></span>
+                    </th>
+                    <th>
+                        <span data-localize="Titles.And"></span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="ui large header">
+            <span data-localize="Titles.SaveThisFilter"></span>
+        </div>
+        <div class="ui divider"></div>
+        <div class="ui form">
+            <div class="fields">
+                <div class="four wide field">
+                    <label>
+                        <span data-localize="Titles.FilterName"></span>
+                    </label>
+                    <input id="FilterNameInputText" />
+                </div>
+            </div>
+            <div class="ui basic buttons">
+                <div class="ui basic button" id="SaveFilterButton">
+                    <span data-localize="Titles.Save"></span>
+                </div>
+                <div class="ui basic button" id="ManageFiltersButton">
+                    <span data-localize="Titles.ManageFilters"></span>
+                </div>
+                <div class="ui basic button">
+                    <span data-localize="Titles.Cancel"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui filter small modal">
+            <i class="close icon"></i>
+            <div class="ui huge header">
+                <span data-localize="Titles.ManageFilters"></span>
+            </div>
+            <div class="content">
+                <div class="ui form" style="max-width: 400px;">
+                    <div class="field">
+                        <label><span data-localize="Titles.SelectAFilter"></span></label>
+                        <select class="ui search dropdown filter" id="FilterSelect"></select>
+                    </div>
+                    <div class="ui basic buttons">
+                        <a class="ui close button" onclick="loadFilter();">
+                            <span data-localize="Titles.Edit"></span>
+                        </a>
+                        <a class="ui close button" onclick="deleteSavedFilter();">
+                            <span data-localize="Titles.Delete"></span>
+                        </a>
+                        <a class="ui close button">
+                            <span data-localize="Titles.Close"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="actions">
+                <div class="ui basic buttons">
+                    <a class="ui basic close button">
+                        <span data-localize="Titles.RemoveAsDefault"></span>
+                    </a>
+                    <a class="ui basic button" id="MakeUserDefaultFilterButton">
+                        <span data-localize="Titles.MakeAsDefault"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui hidden segment" data-target="import">
+        <div class="ui huge header">
+            <span data-localize="Titles.DataImport"></span>
+        </div>
+
+        <div class="ui basic buttons">
+            <a class="ui basic button" id="DownloadTemplateButton">
+                <span data-localize="Titles.ExportData"></span>
+            </a>
+            <div class="ui basic button">
+                <label for="file">
+                    <span data-localize="Titles.ImportData"></span>
+                </label>
+                <input type="file" id="file" style="display:none;">
+            </div>
+        </div>
+
+        <div class="big error"></div>
+
+        <div id="ProgressBar" class="vpad16" style="display:none;">
+            <div data-percent="0" class="ui indicating progress active">
+                <div style="transition-duration: 300ms; width: 0%;" class="bar"></div>
+                <div class="label"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="ui load stackable grid unstyled segment" id="Pager">
+        <div class="left aligned six wide column">
+            <div class="ui breadcrumb">
+                <a class="section current page anchor"></a>
+                <div class="divider">/ </div>
+                <a class="section total pages anchor"></a>
+            </div>
+        </div>
+        <div class="right aligned ten wide column">
+            <a class="ui left attached labeled icon button" onclick="showPreviousPage();">
+                <i class="left arrow icon"></i>
+                <span data-localize="Titles.Previous"></span>
+            </a>
+            <a class="ui right attached right labeled icon button" onclick="showNextPage();">
+                <span data-localize="Titles.Next"></span>
+                <i class="right arrow icon"></i>
+            </a>
+        </div>
+    </div>
+    <br />
+</div>
+
+<input type="hidden" id="MarkupHidden" />
+<a id="DownloadAnchor" download />
+
+<script src="/bundles/scrudfactory-view.js"></script>
+<script src="/Scripts/mixerp/utitlities/localizable.js"></script>

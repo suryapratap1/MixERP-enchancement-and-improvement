@@ -1,0 +1,27 @@
+var class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller =
+[
+    [ "RoutineController", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a0e46663c8253d4a397ee6fcd96f81e9f", null ],
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a06752622616d8d00f60685a654eb1f68", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a27561521ac568dc01b2eae3542510db4", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a3db39fafeae8f5f3815ceaf0fcea63f4", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#ac48b251ed8477b26135a6fd827632064", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#acfee780b97700937d1f11957109bfccd", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a32a76d8b4fba37fbecb891228d088b1f", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#ae0e8d67bb93ae3f1fcb669bfc82aa2ce", null ],
+    [ "Edit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#aeb48ba54f11c164b83601fa72fe938f9", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a6e49280698fcf31c4d2971a58f2f7bc6", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a78df6ef7298aef7ef71ee91e6d3aa2db", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a42bad567cdf3a75b85f72af3c8bbcb3e", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a7b58c498ecf28bbf28bac1aa144e5640", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a07bf74e825c33302de377fca3cdf1c19", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a1b7c14b974efb73e6a219cc14489cdcd", null ],
+    [ "GetEntityView", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a7ef37437f27884bc5e5a82c7bd907446", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#aed388ab3e62f3ac7d8ad20442bf66ea5", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#af12d2570b74501f8e2783a7df7d7a0e3", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a5c642a9cde924ab8c718cc9929fd2dd9", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#ab0e31b226ccf0ea1fec061a64d9579f4", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a6ca3787460e24b9c111ce55e86bc4d7a", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#ab094d6bf93bba9ecfb9cc72bc40c55a7", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a8a68ed33c07cf125df8cc5cf71e5533f", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_routine_controller.html#a5c93531dd681e52df4bc8db5322c1656", null ]
+];

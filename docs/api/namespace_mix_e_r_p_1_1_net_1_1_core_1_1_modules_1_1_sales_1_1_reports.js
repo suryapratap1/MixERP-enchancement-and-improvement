@@ -1,0 +1,16 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports =
+[
+    [ "CustomerInvoiceReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_customer_invoice_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_customer_invoice_report" ],
+    [ "CustomerReceiptReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_customer_receipt_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_customer_receipt_report" ],
+    [ "DeliveryNoteReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_delivery_note_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_delivery_note_report" ],
+    [ "DeliveryReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_delivery_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_delivery_report" ],
+    [ "DirectSalesInvoiceReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_direct_sales_invoice_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_direct_sales_invoice_report" ],
+    [ "ReceiptReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_receipt_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_receipt_report" ],
+    [ "SalesByOffice", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_by_office.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_by_office" ],
+    [ "SalesByOfficeFrame", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_by_office_frame.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_by_office_frame" ],
+    [ "SalesOrderReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_order_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_order_report" ],
+    [ "SalesQuotationReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_quotation_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_quotation_report" ],
+    [ "SalesReturnReport", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_return_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_sales_return_report" ],
+    [ "TopSellingItems", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_top_selling_items.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_top_selling_items" ],
+    [ "TopSellingItemsFrame", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_top_selling_items_frame.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_top_selling_items_frame" ]
+];

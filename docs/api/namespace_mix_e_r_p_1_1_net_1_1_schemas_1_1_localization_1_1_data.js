@@ -1,0 +1,14 @@
+var namespace_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data =
+[
+    [ "AddLocalizedResourceProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_add_localized_resource_procedure.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_add_localized_resource_procedure" ],
+    [ "AddResourceProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_add_resource_procedure.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_add_resource_procedure" ],
+    [ "CreateCultureProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_create_culture_procedure.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_create_culture_procedure" ],
+    [ "Culture", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_culture.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_culture" ],
+    [ "GetLocalizationTableProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_get_localization_table_procedure.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_get_localization_table_procedure" ],
+    [ "GetMenuTableProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_get_menu_table_procedure.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_get_menu_table_procedure" ],
+    [ "GetOutputForProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_get_output_for_procedure.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_get_output_for_procedure" ],
+    [ "LocalizedResource", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_localized_resource.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_localized_resource" ],
+    [ "LocalizedResourceView", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_localized_resource_view.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_localized_resource_view" ],
+    [ "Resource", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource" ],
+    [ "ResourceView", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource_view.html", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource_view" ]
+];

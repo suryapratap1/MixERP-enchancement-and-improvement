@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DirectPurchaseInvoiceReport.ascx.cs" Inherits="MixERP.Net.Core.Modules.Purchase.Reports.DirectPurchaseInvoiceReport"
+    MasterPageId="MixERPReportMaster.Master" RemoveTheme="true" IsLandingPage="true" %>

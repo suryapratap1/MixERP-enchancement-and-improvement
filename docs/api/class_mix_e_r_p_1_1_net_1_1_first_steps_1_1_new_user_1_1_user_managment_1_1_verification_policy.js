@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_verification_policy =
+[
+    [ "VerificationPolicy", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_verification_policy.html#a7ce2819caa71604ce28c6e3f4a54b51e", null ]
+];

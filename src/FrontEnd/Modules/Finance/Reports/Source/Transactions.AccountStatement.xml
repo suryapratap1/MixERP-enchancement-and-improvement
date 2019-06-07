@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MixERPReport>
+  <Title>{Resources.Titles.AccountStatement}</Title>
+  <TopSection>
+    <table class="table horizontal">
+      <tr>
+        <td>{Resources.Titles.AccountNumber}</td>
+        <td>
+          {DataSource[0].account_number} <br />
+        </td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.AccountName}</td>
+        <td>
+          {DataSource[0].account_name} <br />
+        </td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.OfficeCode}</td>
+        <td>{DataSource[0].office_code}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.BaseCurrency}</td>
+        <td>{DataSource[0].currency_code}</td>
+      </tr>
+    </table>
+    <br />
+  </TopSection>
+  <Body>
+    <Content>
+      <h2>{DataSource[0].account_number} ({DataSource[0].account_name})</h2>
+    </Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="1" Style="white-space:nowrap;">
+        </GridViewDataSource>
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection>
+  </BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>
+        SELECT
+        account_number,
+        office.get_office_code_by_id(@OfficeId) as office_code,
+        account_name,
+        currency_code
+        FROM core.accounts
+        WHERE account_number= @AccountNumber;
+      </Query>
+      <Parameters>
+        <Parameter Name="@OfficeId" Type="Number" />
+        <Parameter Name="@AccountNumber" Type="Text" />
+      </Parameters>
+    </DataSource>
+    <DataSource>
+      <Query>
+        SELECT
+        tran_code,
+        book_date,
+        value_date,
+        debit,
+        credit,
+        balance,
+        reference_number,
+        statement_reference,
+        office,
+        book,
+        account_number,
+        account
+        FROM transactions.get_account_statement
+        (@From::date, @To::date, @UserId::integer, core.get_account_id_by_account_number(@AccountNumber)::bigint, @OfficeId::integer)
+        ORDER BY id;
+      </Query>
+      <Parameters>
+        <Parameter Name="@From" Type="Date" />
+        <Parameter Name="@To" Type="Date" />
+        <Parameter Name="@UserId" Type="Number" />
+        <Parameter Name="@AccountNumber" Type="Text" />
+        <Parameter Name="@OfficeId" Type="Number" />
+      </Parameters>
+      <RunningTotalTextColumnIndex>2</RunningTotalTextColumnIndex>
+      <RunningTotalFieldIndices>3, 4</RunningTotalFieldIndices>
+    </DataSource>
+  </DataSources>
+</MixERPReport>

@@ -1,0 +1,6 @@
+var namespace_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment =
+[
+    [ "MenuAccessPolicy", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_menu_access_policy.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_menu_access_policy" ],
+    [ "User", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_user.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_user" ],
+    [ "VerificationPolicy", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_verification_policy.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_verification_policy" ]
+];

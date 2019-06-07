@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a0e2f1196d28618326e55705ccedbef39", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a8e7f8d05a70ec9e732d30579cc176613", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#abe88e2ea2873dae1bf9842d9ed078782", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a05dd0827fceb1f1f45fbf3c0a63429e8", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a7c0b046f722d28d3ef9e9787a3f2efc5", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a83321cd50f9a81581c7295d6749063b4", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#ab638045b43608428471d8fda229d6b32", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a5f7403de1dc868c292f6c0dd808cda66", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a74d20c6f4eb09e0bfa37aed10261e76e", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#ab79d9a579e5e7e0fda2255066f0910de", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a6a98f3a8265d84ca39058a31a07730b2", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a0fa36ef0b6a8d1c59dcf7226494748eb", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a7dd54ec6e26740de9e57abac2b11a89e", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#ae70f4f57eec74e1fffb940bfe93635b8", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#ae3392c07203baa8e7edeceefad3c0237", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a97144c0350eaf3f509c77e9b402b170d", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a613e087caeb1fd89bc762f9e4fd4b8fe", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#afea9518fb9df7ce2a8d7e97080d5f290", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a1ea0fa58e23727e7d0e66383d6ef42a6", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#a947a396d46008dad89a0fb1b2596a785", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#ad5035970230334f293645ca03dcc6dbf", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_config_1_1_data_1_1_scrud_factory.html#afa45ce5896f81268a8edc175763d5705", null ]
+];

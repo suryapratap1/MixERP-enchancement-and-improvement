@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C59EF4CE-7CD4-46E1-9182-5A62DEEFF86F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Schemas.Transactions.Data</RootNamespace>
+    <AssemblyName>MixERP.Net.Schemas.Transactions.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Npgsql.2.2.3\lib\net45\Mono.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Npgsql.2.2.3\lib\net45\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Serilog.1.5.7\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.FullNetFx, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Serilog.1.5.7\lib\net45\Serilog.FullNetFx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArePurchaseOrdersAlreadyMergedProcedure.cs" />
+    <Compile Include="AreSalesOrdersAlreadyMergedProcedure.cs" />
+    <Compile Include="AreSalesQuotationsAlreadyMergedProcedure.cs" />
+    <Compile Include="AutoVerifyProcedure.cs" />
+    <Compile Include="ContainsIncompatibleTaxesProcedure.cs" />
+    <Compile Include="CreateRecurringInvoicesProcedure.cs" />
+    <Compile Include="CreateRoutineProcedure.cs" />
+    <Compile Include="CustomerReceipt.cs" />
+    <Compile Include="DayOperation.cs" />
+    <Compile Include="DayOperationRoutine.cs" />
+    <Compile Include="GetAccountStatementProcedure.cs" />
+    <Compile Include="GetAveragePartyTransactionProcedure.cs" />
+    <Compile Include="GetBalanceSheetProcedure.cs" />
+    <Compile Include="GetCashFlowStatementProcedure.cs" />
+    <Compile Include="GetCashRepositoryBalanceProcedure.cs" />
+    <Compile Include="GetClosingStockProcedure.cs" />
+    <Compile Include="GetCostOfGoodsSoldProcedure.cs" />
+    <Compile Include="GetDefaultCurrencyCodeByOfficeIdProcedure.cs" />
+    <Compile Include="GetDefaultCurrencyCodeProcedure.cs" />
+    <Compile Include="GetDueDateProcedure.cs" />
+    <Compile Include="GetEoyProfitSummaryProcedure.cs" />
+    <Compile Include="GetExchangeRateProcedure.cs" />
+    <Compile Include="GetIncomeExpenditureStatementProcedure.cs" />
+    <Compile Include="GetInventoryTransferRequestViewProcedure.cs" />
+    <Compile Include="GetInvoiceAmountProcedure.cs" />
+    <Compile Include="GetJournalViewProcedure.cs" />
+    <Compile Include="GetLastReceiptDateProcedure.cs" />
+    <Compile Include="GetMavcogsProcedure.cs" />
+    <Compile Include="GetMergeModelProcedure.cs" />
+    <Compile Include="GetNetProfitProcedure.cs" />
+    <Compile Include="GetNewTransactionCounterProcedure.cs" />
+    <Compile Include="GetNonGlProductViewProcedure.cs" />
+    <Compile Include="GetPartyTransactionSummaryProcedure.cs" />
+    <Compile Include="GetPlAppropriationDataProcedure.cs" />
+    <Compile Include="GetProductViewProcedure.cs" />
+    <Compile Include="GetProfitAndLossStatementProcedure.cs" />
+    <Compile Include="GetPurchaseProcedure.cs" />
+    <Compile Include="GetReceiptViewProcedure.cs" />
+    <Compile Include="GetReorderViewFunctionProcedure.cs" />
+    <Compile Include="GetRetainedEarningsProcedure.cs" />
+    <Compile Include="GetRetainedEarningsStatementProcedure.cs" />
+    <Compile Include="GetSalesByOfficesProcedure.cs" />
+    <Compile Include="GetSalespersonReportProcedure.cs" />
+    <Compile Include="GetSalesTaxIdProcedure.cs" />
+    <Compile Include="GetSalesTaxProcedure.cs" />
+    <Compile Include="GetStockAccountStatementProcedure.cs" />
+    <Compile Include="GetStockMasterIdByTransactionMasterIdProcedure.cs" />
+    <Compile Include="GetTopSellingProductsByOfficeProcedure.cs" />
+    <Compile Include="GetTopSellingProductsOfAllTimeProcedure.cs" />
+    <Compile Include="GetTotalDueProcedure.cs" />
+    <Compile Include="GetTotalSalesByOfficeProcedure.cs" />
+    <Compile Include="GetTransactionCodeProcedure.cs" />
+    <Compile Include="GetTransactionMasterIdByStockMasterIdProcedure.cs" />
+    <Compile Include="GetTrialBalanceProcedure.cs" />
+    <Compile Include="GetValueDateProcedure.cs" />
+    <Compile Include="GetVerificationStatusProcedure.cs" />
+    <Compile Include="GetWriteOffCostOfGoodsSoldProcedure.cs" />
+    <Compile Include="HasNexusProcedure.cs" />
+    <Compile Include="IArePurchaseOrdersAlreadyMergedRepository.cs" />
+    <Compile Include="IAreSalesOrdersAlreadyMergedRepository.cs" />
+    <Compile Include="IAreSalesQuotationsAlreadyMergedRepository.cs" />
+    <Compile Include="IAutoVerifyRepository.cs" />
+    <Compile Include="IContainsIncompatibleTaxesRepository.cs" />
+    <Compile Include="ICreateRecurringInvoicesRepository.cs" />
+    <Compile Include="ICreateRoutineRepository.cs" />
+    <Compile Include="ICustomerReceiptRepository.cs" />
+    <Compile Include="IDayOperationRepository.cs" />
+    <Compile Include="IDayOperationRoutineRepository.cs" />
+    <Compile Include="IGetAccountStatementRepository.cs" />
+    <Compile Include="IGetAveragePartyTransactionRepository.cs" />
+    <Compile Include="IGetBalanceSheetRepository.cs" />
+    <Compile Include="IGetCashFlowStatementRepository.cs" />
+    <Compile Include="IGetCashRepositoryBalanceRepository.cs" />
+    <Compile Include="IGetClosingStockRepository.cs" />
+    <Compile Include="IGetCostOfGoodsSoldRepository.cs" />
+    <Compile Include="IGetDefaultCurrencyCodeByOfficeIdRepository.cs" />
+    <Compile Include="IGetDefaultCurrencyCodeRepository.cs" />
+    <Compile Include="IGetDueDateRepository.cs" />
+    <Compile Include="IGetEoyProfitSummaryRepository.cs" />
+    <Compile Include="IGetExchangeRateRepository.cs" />
+    <Compile Include="IGetIncomeExpenditureStatementRepository.cs" />
+    <Compile Include="IGetInventoryTransferRequestViewRepository.cs" />
+    <Compile Include="IGetInvoiceAmountRepository.cs" />
+    <Compile Include="IGetJournalViewRepository.cs" />
+    <Compile Include="IGetLastReceiptDateRepository.cs" />
+    <Compile Include="IGetMavcogsRepository.cs" />
+    <Compile Include="IGetMergeModelRepository.cs" />
+    <Compile Include="IGetNetProfitRepository.cs" />
+    <Compile Include="IGetNewTransactionCounterRepository.cs" />
+    <Compile Include="IGetNonGlProductViewRepository.cs" />
+    <Compile Include="IGetPartyTransactionSummaryRepository.cs" />
+    <Compile Include="IGetPlAppropriationDataRepository.cs" />
+    <Compile Include="IGetProductViewRepository.cs" />
+    <Compile Include="IGetProfitAndLossStatementRepository.cs" />
+    <Compile Include="IGetPurchaseRepository.cs" />
+    <Compile Include="IGetReceiptViewRepository.cs" />
+    <Compile Include="IGetReorderViewFunctionRepository.cs" />
+    <Compile Include="IGetRetainedEarningsRepository.cs" />
+    <Compile Include="IGetRetainedEarningsStatementRepository.cs" />
+    <Compile Include="IGetSalesByOfficesRepository.cs" />
+    <Compile Include="IGetSalespersonReportRepository.cs" />
+    <Compile Include="IGetSalesTaxIdRepository.cs" />
+    <Compile Include="IGetSalesTaxRepository.cs" />
+    <Compile Include="IGetStockAccountStatementRepository.cs" />
+    <Compile Include="IGetStockMasterIdByTransactionMasterIdRepository.cs" />
+    <Compile Include="IGetTopSellingProductsByOfficeRepository.cs" />
+    <Compile Include="IGetTopSellingProductsOfAllTimeRepository.cs" />
+    <Compile Include="IGetTotalDueRepository.cs" />
+    <Compile Include="IGetTotalSalesByOfficeRepository.cs" />
+    <Compile Include="IGetTransactionCodeRepository.cs" />
+    <Compile Include="IGetTransactionMasterIdByStockMasterIdRepository.cs" />
+    <Compile Include="IGetTrialBalanceRepository.cs" />
+    <Compile Include="IGetValueDateRepository.cs" />
+    <Compile Include="IGetVerificationStatusRepository.cs" />
+    <Compile Include="IGetWriteOffCostOfGoodsSoldRepository.cs" />
+    <Compile Include="IHasNexusRepository.cs" />
+    <Compile Include="IInitializeEodOperationRepository.cs" />
+    <Compile Include="IInventoryTransferDeliveryDetailRepository.cs" />
+    <Compile Include="IInventoryTransferDeliveryRepository.cs" />
+    <Compile Include="IInventoryTransferRequestDetailRepository.cs" />
+    <Compile Include="IInventoryTransferRequestRepository.cs" />
+    <Compile Include="IIsEodInitializedRepository.cs" />
+    <Compile Include="IIsNormallyDebitRepository.cs" />
+    <Compile Include="IIsPurchaseRepository.cs" />
+    <Compile Include="IIsValidPartyByStockMasterIdRepository.cs" />
+    <Compile Include="IIsValidPartyByTransactionMasterIdRepository.cs" />
+    <Compile Include="IIsValidStockTransactionByStockMasterIdRepository.cs" />
+    <Compile Include="IIsValidStockTransactionByTransactionMasterIdRepository.cs" />
+    <Compile Include="ILateFeeRepository.cs" />
+    <Compile Include="IListClosingStockRepository.cs" />
+    <Compile Include="InitializeEodOperationProcedure.cs" />
+    <Compile Include="INonGlStockDetailRepository.cs" />
+    <Compile Include="INonGlStockMasterRelationRepository.cs" />
+    <Compile Include="INonGlStockMasterRepository.cs" />
+    <Compile Include="INonGlStockTaxDetailRepository.cs" />
+    <Compile Include="InventoryTransferDelivery.cs" />
+    <Compile Include="InventoryTransferDeliveryDetail.cs" />
+    <Compile Include="InventoryTransferRequest.cs" />
+    <Compile Include="InventoryTransferRequestDetail.cs" />
+    <Compile Include="IOpeningInventoryExistsRepository.cs" />
+    <Compile Include="IPartyItemChartViewRepository.cs" />
+    <Compile Include="IPartyPurchaseChartViewRepository.cs" />
+    <Compile Include="IPartySalesChartViewRepository.cs" />
+    <Compile Include="IPerformEodOperationRepository.cs" />
+    <Compile Include="IPostBonusRepository.cs" />
+    <Compile Include="IPostErFluctuationRepository.cs" />
+    <Compile Include="IPostInventoryTransferDeliveryRepository.cs" />
+    <Compile Include="IPostInventoryTransferRequestRepository.cs" />
+    <Compile Include="IPostLateFeeRepository.cs" />
+    <Compile Include="IPostNonGlTransactionRepository.cs" />
+    <Compile Include="IPostOpeningInventoryRepository.cs" />
+    <Compile Include="IPostPurchaseRepository.cs" />
+    <Compile Include="IPostPurchaseReturnRepository.cs" />
+    <Compile Include="IPostPurhcaseReorderRepository.cs" />
+    <Compile Include="IPostReceiptRepository.cs" />
+    <Compile Include="IPostRecurringInvoicesRepository.cs" />
+    <Compile Include="IPostSalesRepository.cs" />
+    <Compile Include="IPostSalesReturnRepository.cs" />
+    <Compile Include="IPostStockAdjustmentRepository.cs" />
+    <Compile Include="IPostStockJournalRepository.cs" />
+    <Compile Include="IPostStockTransferAcknowledgementRepository.cs" />
+    <Compile Include="IReceiptViewRepository.cs" />
+    <Compile Include="IRefreshMaterializedViewsRepository.cs" />
+    <Compile Include="IRoutineRepository.cs" />
+    <Compile Include="ISalesByCountryViewRepository.cs" />
+    <Compile Include="ISalesDeliveryViewRepository.cs" />
+    <Compile Include="ISalesOrderViewRepository.cs" />
+    <Compile Include="ISalesQuotationViewRepository.cs" />
+    <Compile Include="IsEodInitializedProcedure.cs" />
+    <Compile Include="ISettlePartyDueRepository.cs" />
+    <Compile Include="IsNormallyDebitProcedure.cs" />
+    <Compile Include="IsPurchaseProcedure.cs" />
+    <Compile Include="IStockDetailRepository.cs" />
+    <Compile Include="IStockMasterNonGlRelationRepository.cs" />
+    <Compile Include="IStockMasterRepository.cs" />
+    <Compile Include="IStockReturnRepository.cs" />
+    <Compile Include="IStockTaxDetailRepository.cs" />
+    <Compile Include="IStockTransactionViewRepository.cs" />
+    <Compile Include="IsValidPartyByStockMasterIdProcedure.cs" />
+    <Compile Include="IsValidPartyByTransactionMasterIdProcedure.cs" />
+    <Compile Include="IsValidStockTransactionByStockMasterIdProcedure.cs" />
+    <Compile Include="IsValidStockTransactionByTransactionMasterIdProcedure.cs" />
+    <Compile Include="ITransactionDetailRepository.cs" />
+    <Compile Include="ITransactionMasterRepository.cs" />
+    <Compile Include="ITransactionViewRepository.cs" />
+    <Compile Include="IValidateItemsForReturnRepository.cs" />
+    <Compile Include="IVerifiedStockDetailsViewRepository.cs" />
+    <Compile Include="IVerifiedTransactionViewRepository.cs" />
+    <Compile Include="IVerifyTransactionRepository.cs" />
+    <Compile Include="LateFee.cs" />
+    <Compile Include="ListClosingStockProcedure.cs" />
+    <Compile Include="NonGlStockDetail.cs" />
+    <Compile Include="NonGlStockMaster.cs" />
+    <Compile Include="NonGlStockMasterRelation.cs" />
+    <Compile Include="NonGlStockTaxDetail.cs" />
+    <Compile Include="OpeningInventoryExistsProcedure.cs" />
+    <Compile Include="PartyItemChartView.cs" />
+    <Compile Include="PartyPurchaseChartView.cs" />
+    <Compile Include="PartySalesChartView.cs" />
+    <Compile Include="PerformEodOperationProcedure.cs" />
+    <Compile Include="PostBonusProcedure.cs" />
+    <Compile Include="PostErFluctuationProcedure.cs" />
+    <Compile Include="PostInventoryTransferDeliveryProcedure.cs" />
+    <Compile Include="PostInventoryTransferRequestProcedure.cs" />
+    <Compile Include="PostLateFeeProcedure.cs" />
+    <Compile Include="PostNonGlTransactionProcedure.cs" />
+    <Compile Include="PostOpeningInventoryProcedure.cs" />
+    <Compile Include="PostPurchaseProcedure.cs" />
+    <Compile Include="PostPurchaseReturnProcedure.cs" />
+    <Compile Include="PostPurhcaseReorderProcedure.cs" />
+    <Compile Include="PostReceiptProcedure.cs" />
+    <Compile Include="PostRecurringInvoicesProcedure.cs" />
+    <Compile Include="PostSalesProcedure.cs" />
+    <Compile Include="PostSalesReturnProcedure.cs" />
+    <Compile Include="PostStockAdjustmentProcedure.cs" />
+    <Compile Include="PostStockJournalProcedure.cs" />
+    <Compile Include="PostStockTransferAcknowledgementProcedure.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptView.cs" />
+    <Compile Include="RefreshMaterializedViewsProcedure.cs" />
+    <Compile Include="Routine.cs" />
+    <Compile Include="SalesByCountryView.cs" />
+    <Compile Include="SalesDeliveryView.cs" />
+    <Compile Include="SalesOrderView.cs" />
+    <Compile Include="SalesQuotationView.cs" />
+    <Compile Include="SettlePartyDueProcedure.cs" />
+    <Compile Include="StockDetail.cs" />
+    <Compile Include="StockMaster.cs" />
+    <Compile Include="StockMasterNonGlRelation.cs" />
+    <Compile Include="StockReturn.cs" />
+    <Compile Include="StockTaxDetail.cs" />
+    <Compile Include="StockTransactionView.cs" />
+    <Compile Include="TransactionDetail.cs" />
+    <Compile Include="TransactionMaster.cs" />
+    <Compile Include="TransactionView.cs" />
+    <Compile Include="ValidateItemsForReturnProcedure.cs" />
+    <Compile Include="VerifiedStockDetailsView.cs" />
+    <Compile Include="VerifiedTransactionView.cs" />
+    <Compile Include="VerifyTransactionProcedure.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Entities\Core\MixERP.Net.Entities.Core.csproj">
+      <Project>{0f0490a5-8065-4b0a-9844-905e32a05dc4}</Project>
+      <Name>MixERP.Net.Entities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entities\Transactions\MixERP.Net.Entities.Transactions.csproj">
+      <Project>{665e96ee-d5d0-426e-a8cd-22e3a9981349}</Project>
+      <Name>MixERP.Net.Entities.Transactions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.DbFactory\MixERP.Net.DbFactory.csproj">
+      <Project>{8FD9661C-2473-4581-8722-18B08D4DB252}</Project>
+      <Name>MixERP.Net.DbFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.EntityParser\MixERP.Net.EntityParser.csproj">
+      <Project>{eac19d71-3969-4b34-ad7b-8b05d4672861}</Project>
+      <Name>MixERP.Net.EntityParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.Framework\MixERP.Net.Framework.csproj">
+      <Project>{1509332F-AE98-44D9-9072-5BBC59A65FC4}</Project>
+      <Name>MixERP.Net.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969D7960-52E2-40FC-91E5-1393B71E23B0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACE1017D-71BC-4417-A906-72C4B9C55823}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.FrontEnd</RootNamespace>
+    <AssemblyName>MixERP.Net.FrontEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <CodeAnalysisRuleSet>..\MixERP.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PublishDatabases>false</PublishDatabases>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <NoWarn>
+    </NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MixERP.Net.Entities, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Modules\Sales\Bin\MixERP.Net.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.3.3.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Quartz.2.3.3\lib\net40\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>..\packages\Serilog.1.5.7\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.FullNetFx, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Serilog.1.5.7\lib\net45\Serilog.FullNetFx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\BundleConfig.cs" />
+    <Compile Include="Application\FirstSteps.cs" />
+    <Compile Include="Application\LogManager.cs" />
+    <Compile Include="Application\MixERPAssemblyResolver.cs" />
+    <Compile Include="Application\Routes.cs" />
+    <Compile Include="Application\UpdateManager.cs" />
+    <Compile Include="Application\WebApiConfig.cs" />
+    <Compile Include="Application\WebJobManager.cs" />
+    <Compile Include="BackendMaster.Master.cs">
+      <DependentUpon>BackendMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackendMaster.Master.designer.cs">
+      <DependentUpon>BackendMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ApplicationError.cs" />
+    <Compile Include="Base\MixERPMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\MixERPUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\MixERPWebpage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\MixERPWebReportPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\MixERPWebService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\TransactionCheckListControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Checklist.cs" />
+    <Compile Include="Controls\WebReport.cs" />
+    <Compile Include="CustomInclude.cs" />
+    <Compile Include="Dashboard\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\LogoHandler.ashx.cs">
+      <DependentUpon>LogoHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Hubs\UpdateHub.cs" />
+    <Compile Include="Hubs\BaseHub.cs" />
+    <Compile Include="Hubs\Startup.cs" />
+    <Compile Include="Installation\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Installation\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MixERPBlankMaster.Master.cs">
+      <DependentUpon>MixERPBlankMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MixERPBlankMaster.Master.designer.cs">
+      <DependentUpon>MixERPBlankMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MixERPReportMaster.Master.cs">
+      <DependentUpon>MixERPReportMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MixERPReportMaster.Master.designer.cs">
+      <DependentUpon>MixERPReportMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\InstallConfig.cs" />
+    <Compile Include="Models\Navigation.cs" />
+    <Compile Include="Models\NavigationMenu.cs" />
+    <Compile Include="Models\RegionalData.cs" />
+    <Compile Include="Modules\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FirstSteps.aspx.cs">
+      <DependentUpon>FirstSteps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\FirstSteps.aspx.designer.cs">
+      <DependentUpon>FirstSteps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetManager.aspx.cs">
+      <DependentUpon>WidgetManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetManager.aspx.designer.cs">
+      <DependentUpon>WidgetManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostSignIn.aspx.cs">
+      <DependentUpon>PostSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostSignIn.aspx.designer.cs">
+      <DependentUpon>PostSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MixERPMaster.Master.cs">
+      <DependentUpon>MixERPMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MixERPMaster.Master.designer.cs">
+      <DependentUpon>MixERPMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ApproveQuotation.aspx.cs">
+      <DependentUpon>ApproveQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ApproveQuotation.aspx.designer.cs">
+      <DependentUpon>ApproveQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Assets\Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Assets\Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportMaster.aspx.cs">
+      <DependentUpon>ReportMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportMaster.aspx.designer.cs">
+      <DependentUpon>ReportMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\linq.js\sample\LinqJS.cs" />
+    <Compile Include="Services\Checklists.asmx.cs">
+      <DependentUpon>Checklists.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\CreateDocument.asmx.cs">
+      <DependentUpon>CreateDocument.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Install.asmx.cs">
+      <DependentUpon>Install.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Menu.asmx.cs">
+      <DependentUpon>Menu.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Office.asmx.cs">
+      <DependentUpon>Office.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\User.asmx.cs">
+      <DependentUpon>User.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\WidgetManager.asmx.cs">
+      <DependentUpon>WidgetManager.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Site\Account\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Account\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\AccessIsDenied.aspx.cs">
+      <DependentUpon>AccessIsDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\AccessIsDenied.aspx.designer.cs">
+      <DependentUpon>AccessIsDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Exceptions\RestrictedTransactionMode.aspx.cs">
+      <DependentUpon>RestrictedTransactionMode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Exceptions\RestrictedTransactionMode.aspx.designer.cs">
+      <DependentUpon>RestrictedTransactionMode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\RuntimeError.aspx.cs">
+      <DependentUpon>RuntimeError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\RuntimeError.aspx.designer.cs">
+      <DependentUpon>RuntimeError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Account\SignOut.aspx.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Account\SignOut.aspx.designer.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\MixERP\mixerp.css">
+      <DependentUpon>mixerp.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\MixERP\mixerp.min.css">
+      <DependentUpon>mixerp.css</DependentUpon>
+    </Content>
+    <Content Include="Backups\index.html" />
+    <Content Include="db\1.x\1.1\index.html" />
+    <Content Include="db\1.x\1.1\mixerp-blank.sql" />
+    <Content Include="db\1.x\1.1\mixerp-sample.sql" />
+    <Content Include="db\1.x\1.1\mixerp.sql" />
+    <Content Include="db\1.x\1.2\index.html" />
+    <Content Include="db\1.x\1.2\mixerp-incremental-blank-db.sql" />
+    <Content Include="db\1.x\1.2\mixerp-incremental-sample.sql" />
+    <Content Include="db\1.x\1.2\mixerp-patch-for-v1.sql" />
+    <Content Include="db\1.x\1.3\index.html" />
+    <Content Include="db\1.x\1.4\index.html" />
+    <Content Include="db\1.x\1.4\mixerp-incremental-blank-db.sql" />
+    <Content Include="db\1.x\1.4\mixerp-incremental-sample.sql" />
+    <Content Include="db\1.x\1.4\mixerp-patch-for-rc.sql" />
+    <Content Include="db\blank-db.sql" />
+    <Content Include="db\index.html" />
+    <Content Include="db\patch.sql" />
+    <Content Include="db\sample-db.sql" />
+    <Content Include="db\web.config" />
+    <Content Include="Installation\Default.aspx" />
+    <Content Include="Installation\regional\en-US\Retail Industry.sql" />
+    <Content Include="License.txt" />
+    <Content Include="Modules\Default.aspx" />
+    <Content Include="Modules\FirstSteps.aspx" />
+    <Content Include="Modules\Update.aspx" />
+    <Content Include="Modules\web.config" />
+    <Content Include="MixERP.Installation.config" />
+    <Content Include="Modules\WidgetManager.aspx" />
+    <Content Include="plugins\wkhtmltopdf\wkhtmltoimage.exe" />
+    <Content Include="plugins\wkhtmltopdf\wkhtmltopdf.exe" />
+    <Content Include="plugins\wkhtmltopdf\wkhtmltox.dll" />
+    <Content Include="PostSignIn.aspx" />
+    <Content Include="Public\ApproveQuotation.aspx" />
+    <Content Include="Reports\Export.html" />
+    <Content Include="Resource\Configs\index.html" />
+    <Content Include="Resource\Configs\Updater.config" />
+    <Content Include="Resource\CustomReports\index.html" />
+    <Content Include="Resource\Documents\index.html" />
+    <Content Include="Resource\index.html" />
+    <Content Include="Resource\Static\Attachments\index.html" />
+    <Content Include="Resource\Static\Attachments\sample\21-38-48-104_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\beautiful-19075_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\beautiful-653317_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\beauty-20150_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\beauty-739667_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\brunette-15963_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\businessman-805770_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\chinese-572945_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\cowboy-67630_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\eyes-622355_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\fairy-tales-636649_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\friend-762590_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girl-102829_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girl-518321_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girl-518331_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girl-602177_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girl-637568_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girl-803179_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girl-846991_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\girls-602168_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\guy-549173_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\indian-627831_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\james-stewart-392932_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\male-777913_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\man-140547_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\man-324103_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\man-407084_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\man-504453_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\man-56087_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\man-783701_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\man-838636_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\meet-696077_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\model-299694_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\old-man-692807_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\people-850949_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\people-875597_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\person-783780_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\person-822552_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\person-827608_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\person-829966_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\person-854095_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\portrait-597173_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\portrait-642528_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\portrait-750781_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\professor-836151_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\teenager-398355_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\woman-422706_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\woman-487067_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\woman-858003_640.jpg" />
+    <Content Include="Resource\Static\Attachments\sample\woman-868522_640.jpg" />
+    <Content Include="Resource\Static\Emails\index.html" />
+    <Content Include="Resource\Static\index.html" />
+    <Content Include="Resource\Temp\Images\index.html" />
+    <Content Include="Resource\Temp\index.html" />
+    <Content Include="Scripts\ajax-file-upload.js" />
+    <Content Include="Scripts\angular\angular.min.js" />
+    <Content Include="Scripts\chartjs\Chart.min.js" />
+    <Content Include="Scripts\chartjs\legend.js" />
+    <Content Include="Scripts\colorbox\bower.json" />
+    <Content Include="Scripts\colorbox\colorbox.ai" />
+    <Content Include="Scripts\colorbox\colorbox.css" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ar.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-bg.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-bn.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ca.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-cs.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-da.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-de.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-es.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-et.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-fa.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-fi.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-fr.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-gl.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-gr.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-he.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-hr.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-hu.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-id.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-it.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ja.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-kr.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-lt.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-lv.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-my.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-nl.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-no.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-pl.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-pt-BR.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ro.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ru.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-si.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-sk.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-sr.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-sv.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-tr.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-uk.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-zh-CN.js" />
+    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-zh-TW.js" />
+    <Content Include="Scripts\colorbox\images\controls.png" />
+    <Content Include="Scripts\colorbox\images\loading.gif" />
+    <Content Include="Scripts\colorbox\jquery.colorbox-min.js" />
+    <Content Include="Scripts\colorbox\jquery.colorbox.js" />
+    <Content Include="Scripts\colorbox\README.md" />
+    <Content Include="Scripts\colorpicker\.gitignore" />
+    <Content Include="Scripts\colorpicker\bower.json" />
+    <Content Include="Scripts\colorpicker\i18n\jquery.ui.colorpicker-de.js" />
+    <Content Include="Scripts\colorpicker\i18n\jquery.ui.colorpicker-en.js" />
+    <Content Include="Scripts\colorpicker\i18n\jquery.ui.colorpicker-fr.js" />
+    <Content Include="Scripts\colorpicker\i18n\jquery.ui.colorpicker-nl.js" />
+    <Content Include="Scripts\colorpicker\i18n\jquery.ui.colorpicker-pt-br.js" />
+    <Content Include="Scripts\colorpicker\i18n\jquery.ui.colorpicker-ru.js" />
+    <Content Include="Scripts\colorpicker\images\128\bar-alpha.png" />
+    <Content Include="Scripts\colorpicker\images\128\bar.png" />
+    <Content Include="Scripts\colorpicker\images\128\map.png" />
+    <Content Include="Scripts\colorpicker\images\bar-alpha.png" />
+    <Content Include="Scripts\colorpicker\images\bar-opacity.png" />
+    <Content Include="Scripts\colorpicker\images\bar-pointer.png" />
+    <Content Include="Scripts\colorpicker\images\bar.png" />
+    <Content Include="Scripts\colorpicker\images\map-opacity.png" />
+    <Content Include="Scripts\colorpicker\images\map-pointer.png" />
+    <Content Include="Scripts\colorpicker\images\map.png" />
+    <Content Include="Scripts\colorpicker\images\preview-opacity.png" />
+    <Content Include="Scripts\colorpicker\images\ui-colorpicker.png" />
+    <Content Include="Scripts\colorpicker\jqcolorpicker.jquery.json" />
+    <Content Include="Scripts\colorpicker\jquery.colorpicker.css" />
+    <Content Include="Scripts\colorpicker\jquery.colorpicker.js" />
+    <Content Include="Scripts\colorpicker\parsers\jquery.ui.colorpicker-cmyk-parser.js" />
+    <Content Include="Scripts\colorpicker\parsers\jquery.ui.colorpicker-cmyk-percentage-parser.js" />
+    <Content Include="Scripts\colorpicker\parts\jquery.ui.colorpicker-memory.js" />
+    <Content Include="Scripts\colorpicker\parts\jquery.ui.colorpicker-rgbslider.js" />
+    <Content Include="Scripts\colorpicker\README.md" />
+    <Content Include="Scripts\colorpicker\swatches\jquery.ui.colorpicker-crayola.js" />
+    <Content Include="Scripts\colorpicker\swatches\jquery.ui.colorpicker-pantone.js" />
+    <Content Include="Scripts\colorpicker\swatches\jquery.ui.colorpicker-ral-classic.js" />
+    <Content Include="Scripts\colorpicker\TODO" />
+    <Content Include="Scripts\d3\d3.js" />
+    <Content Include="Scripts\d3\d3.min.js" />
+    <Content Include="Scripts\d3\LICENSE" />
+    <Content Include="Scripts\Datamaps\datamaps.all.min.js" />
+    <Content Include="Scripts\Datamaps\topojson.js" />
+    <Content Include="Scripts\date.js" />
+    <Content Include="Scripts\inflection-js\inflection.js" />
+    <Content Include="Scripts\inflection-js\test\inflection_test.html" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-timepicker\.gitignore" />
+    <Content Include="Scripts\jquery-timepicker\bower.json" />
+    <Content Include="Scripts\jquery-timepicker\GruntFile.js" />
+    <Content Include="Scripts\jquery-timepicker\index.html" />
+    <Content Include="Scripts\jquery-timepicker\jquery.timepicker.css" />
+    <Content Include="Scripts\jquery-timepicker\jquery.timepicker.js" />
+    <Content Include="Scripts\jquery-timepicker\jquery.timepicker.min.js" />
+    <Content Include="Scripts\jquery-timepicker\jt.timepicker.jquery.json" />
+    <Content Include="Scripts\jquery-timepicker\lib\bootstrap-datepicker.css" />
+    <Content Include="Scripts\jquery-timepicker\lib\bootstrap-datepicker.js" />
+    <Content Include="Scripts\jquery-timepicker\lib\glyphicons-halflings.png" />
+    <Content Include="Scripts\jquery-timepicker\lib\screenshot.png" />
+    <Content Include="Scripts\jquery-timepicker\lib\site.css" />
+    <Content Include="Scripts\jquery-timepicker\lib\site.js" />
+    <Content Include="Scripts\jquery-timepicker\package.json" />
+    <Content Include="Scripts\jquery-timepicker\README.md" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_glass_100_edb7f2_1x400.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_glass_50_67238B_1x400.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_glass_80_fcecfd_1x400.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_highlight-hard_100_fceefd_1x100.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_highlight-soft_100_efdef7_1x100.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-icons_67238B_256x240.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-icons_8b2abe_256x240.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui\css\custom-theme\jquery-ui.min.css">
+      <DependentUpon>jquery-ui.css</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-af.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ar-DZ.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ar.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-az.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-be.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-bg.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-bs.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ca.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-cs.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-cy-GB.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-da.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-de.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-el.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-en-AU.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-en-GB.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-en-NZ.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-en-US.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-en.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-eo.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-es.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-et.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-eu.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-fa.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-fi.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-fo.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-fr-CA.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-fr-CH.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-fr.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-gl.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-he.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-hi.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-hr.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-hu.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-hy.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-id.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-is.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-it-CH.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-it.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ja.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ka.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-kk.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-km.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ko.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ky.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-lb.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-lt.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-lv.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-mk.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ml.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ms.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-nb.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-nl-BE.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-nl.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-nn.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-no.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-pl.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-pt-BR.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-pt.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-rm.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ro.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ru.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-sk.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-sl.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-sq.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-sr-SR.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-sr.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-sv.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-ta.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-th.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-tj.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-tr.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-uk.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-vi.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-zh-CN.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-zh-HK.js" />
+    <Content Include="Scripts\jquery-ui\i18n\datepicker-zh-TW.js" />
+    <Content Include="Scripts\jquery.address.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.min.js" />
+    <Content Include="Scripts\jquery.signalR.js" />
+    <Content Include="Scripts\jquery.signalR.min.js" />
+    <Content Include="Scripts\jqueryNumber\jquery.number.js" />
+    <Content Include="Scripts\jssha1.5\LICENSE" />
+    <Content Include="Scripts\jssha1.5\src\sha.js" />
+    <Content Include="Scripts\jssha1.5\src\sha1.js" />
+    <Content Include="Scripts\jssha1.5\src\sha256.js" />
+    <Content Include="Scripts\jssha1.5\src\sha512.js" />
+    <Content Include="Scripts\jssha1.5\src\sha_dev.js" />
+    <Content Include="Scripts\linq.js\bindings\linq.jquery.js" />
+    <Content Include="Scripts\linq.js\bindings\linq.rx.js" />
+    <Content Include="Scripts\linq.js\jquery.linq.js" />
+    <Content Include="Scripts\linq.js\jquery.linq.min.js" />
+    <Content Include="Scripts\linq.js\linq.js" />
+    <Content Include="Scripts\linq.js\linq.min.js" />
+    <Content Include="Scripts\linq.js\ReadMe.txt" />
+    <Content Include="Scripts\linq.js\reference.htm" />
+    <Content Include="Scripts\linq.js\sample\script.wsf" />
+    <Content Include="Scripts\linq.js\sample\tutorial.htm" />
+    <Content Include="Scripts\linq.js\snippets\Action0.snippet" />
+    <Content Include="Scripts\linq.js\snippets\Action1.snippet" />
+    <Content Include="Scripts\linq.js\snippets\Action2.snippet" />
+    <Content Include="Scripts\linq.js\snippets\EnumerableFrom.snippet" />
+    <Content Include="Scripts\linq.js\snippets\EnumerableRange.snippet" />
+    <Content Include="Scripts\linq.js\snippets\Func0.snippet" />
+    <Content Include="Scripts\linq.js\snippets\Func1.snippet" />
+    <Content Include="Scripts\linq.js\snippets\Func2.snippet" />
+    <Content Include="Scripts\linq.js\snippets\jQueryEnumerableFrom.snippet" />
+    <Content Include="Scripts\linq.js\snippets\jQueryEnumerableRange.snippet" />
+    <Content Include="Scripts\linq.js\test\action.js" />
+    <Content Include="Scripts\linq.js\test\aggregate.js" />
+    <Content Include="Scripts\linq.js\test\arrayEnumerable.js" />
+    <Content Include="Scripts\linq.js\test\convert.js" />
+    <Content Include="Scripts\linq.js\test\dictionary.js" />
+    <Content Include="Scripts\linq.js\test\enumerable.js" />
+    <Content Include="Scripts\linq.js\test\errorHandling.js" />
+    <Content Include="Scripts\linq.js\test\functional.js" />
+    <Content Include="Scripts\linq.js\test\grouping.js" />
+    <Content Include="Scripts\linq.js\test\join.js" />
+    <Content Include="Scripts\linq.js\test\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\linq.js\test\ordering.js" />
+    <Content Include="Scripts\linq.js\test\paging.js" />
+    <Content Include="Scripts\linq.js\test\projection.js" />
+    <Content Include="Scripts\linq.js\test\qunit.css" />
+    <Content Include="Scripts\linq.js\test\qunit.js" />
+    <Content Include="Scripts\linq.js\test\set.js" />
+    <Content Include="Scripts\linq.js\test\testrunner.htm" />
+    <Content Include="Scripts\linq.js\test\testrunner.jquery.htm" />
+    <Content Include="Scripts\linq.js\test\testrunner.jquery.min.htm" />
+    <Content Include="Scripts\linq.js\test\testrunner.min.htm" />
+    <Content Include="Scripts\mixerp.js" />
+    <Content Include="Scripts\mixerp\core\array.js" />
+    <Content Include="Scripts\mixerp\core\browser.js" />
+    <Content Include="Scripts\mixerp\core\dom\frame.js" />
+    <Content Include="Scripts\mixerp\core\dom\uploader.js" />
+    <Content Include="Scripts\mixerp\core\enums.js" />
+    <Content Include="Scripts\mixerp\master-page\notification.js" />
+    <Content Include="Scripts\mixerp\master-page\menu.js" />
+    <Content Include="Scripts\mixerp\utitlities\validator.js" />
+    <Content Include="Scripts\mixerp\utitlities\localizable.js" />
+    <Content Include="Scripts\mixerp\utitlities\countries.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\event-on-doc-keydown.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-actions.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-navigation.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-layout-field-group.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-load-default-values.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-load-dropdowns.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\trigger-events.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\ajax-request-initialize.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-edit.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-create.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\url.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-layout.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\event-on-ajax-stop.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\event-on-doc-ready.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\visibility.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-custom-fields.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-validate.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-reset.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-cancel.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\shared\view.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\initialization.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\form-save.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\form\title.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\shared\scrud-class.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\shared\field-factory.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\buttons.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\flag.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\gridview-actions-edit-ajax.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\gridview-actions-edit.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\gridview-actions-get-key.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\view-shared.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\kanban-segment.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\events-on-doc-ready.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\import-export.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\export.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\buttons-action.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\events-on-viewready.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\verification-ajax.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\view-success.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\gridview-ajax.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\meta-definition.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\gridview-actions.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\buttons-custom.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\verification.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\view-components.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\kanban-cards-ajax.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\kanban-sortable.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\kanban-cards.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\kanban-segment-ajax.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\kanban-ratable.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\filters-ajax.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\query-string.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\gridview-actions-delete.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\import.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\procedure-annotation.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\ajax-load-page-count.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\select.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\paging.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\gridview.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\shared\conversion.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\shared\localization.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\check.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\filters.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\add-button.js" />
+    <Content Include="Scripts\Modules\ScrudFactory\view\initialization.js" />
+    <Content Include="Scripts\momentjs\moment-with-locales.js" />
+    <Content Include="Scripts\notify-combined.min.js" />
+    <Content Include="Scripts\Pages\Installation.aspx.js" />
+    <Content Include="Scripts\Pages\Modules\FirstSteps.aspx.js" />
+    <Content Include="Scripts\Pages\Modules\WidgetManager.aspx.js" />
+    <Content Include="Scripts\Pages\SignIn.aspx.js" />
+    <Content Include="Scripts\Pages\Site\Account\ChangePassword.aspx.js" />
+    <Content Include="Scripts\papaparse\LICENSE" />
+    <Content Include="Scripts\papaparse\papaparse.min.js" />
+    <Content Include="Scripts\qunit\qunit-1.17.1.css" />
+    <Content Include="Scripts\qunit\qunit-1.17.1.js" />
+    <Content Include="Scripts\semantic-ui\components\accordion.css" />
+    <Content Include="Scripts\semantic-ui\components\accordion.js" />
+    <Content Include="Scripts\semantic-ui\components\accordion.min.css" />
+    <Content Include="Scripts\semantic-ui\components\accordion.min.js" />
+    <Content Include="Scripts\semantic-ui\components\accordion.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\accordion.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\ad.css" />
+    <Content Include="Scripts\semantic-ui\components\ad.min.css" />
+    <Content Include="Scripts\semantic-ui\components\ad.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\ad.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\api.js" />
+    <Content Include="Scripts\semantic-ui\components\api.min.js" />
+    <Content Include="Scripts\semantic-ui\components\breadcrumb.css" />
+    <Content Include="Scripts\semantic-ui\components\breadcrumb.min.css" />
+    <Content Include="Scripts\semantic-ui\components\breadcrumb.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\breadcrumb.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\button.css" />
+    <Content Include="Scripts\semantic-ui\components\button.min.css" />
+    <Content Include="Scripts\semantic-ui\components\button.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\button.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\card.css" />
+    <Content Include="Scripts\semantic-ui\components\card.min.css" />
+    <Content Include="Scripts\semantic-ui\components\card.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\card.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\checkbox.css" />
+    <Content Include="Scripts\semantic-ui\components\checkbox.js" />
+    <Content Include="Scripts\semantic-ui\components\checkbox.min.css" />
+    <Content Include="Scripts\semantic-ui\components\checkbox.min.js" />
+    <Content Include="Scripts\semantic-ui\components\checkbox.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\checkbox.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\comment.css" />
+    <Content Include="Scripts\semantic-ui\components\comment.min.css" />
+    <Content Include="Scripts\semantic-ui\components\comment.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\comment.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\container.css" />
+    <Content Include="Scripts\semantic-ui\components\container.min.css" />
+    <Content Include="Scripts\semantic-ui\components\container.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\container.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\dimmer.css" />
+    <Content Include="Scripts\semantic-ui\components\dimmer.js" />
+    <Content Include="Scripts\semantic-ui\components\dimmer.min.css" />
+    <Content Include="Scripts\semantic-ui\components\dimmer.min.js" />
+    <Content Include="Scripts\semantic-ui\components\dimmer.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\dimmer.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\divider.css" />
+    <Content Include="Scripts\semantic-ui\components\divider.min.css" />
+    <Content Include="Scripts\semantic-ui\components\divider.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\divider.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\dropdown.css" />
+    <Content Include="Scripts\semantic-ui\components\dropdown.js" />
+    <Content Include="Scripts\semantic-ui\components\dropdown.min.css" />
+    <Content Include="Scripts\semantic-ui\components\dropdown.min.js" />
+    <Content Include="Scripts\semantic-ui\components\dropdown.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\dropdown.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\embed.css" />
+    <Content Include="Scripts\semantic-ui\components\embed.js" />
+    <Content Include="Scripts\semantic-ui\components\embed.min.css" />
+    <Content Include="Scripts\semantic-ui\components\embed.min.js" />
+    <Content Include="Scripts\semantic-ui\components\embed.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\embed.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\feed.css" />
+    <Content Include="Scripts\semantic-ui\components\feed.min.css" />
+    <Content Include="Scripts\semantic-ui\components\feed.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\feed.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\flag.css" />
+    <Content Include="Scripts\semantic-ui\components\flag.min.css" />
+    <Content Include="Scripts\semantic-ui\components\flag.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\flag.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\form.css" />
+    <Content Include="Scripts\semantic-ui\components\form.js" />
+    <Content Include="Scripts\semantic-ui\components\form.min.css" />
+    <Content Include="Scripts\semantic-ui\components\form.min.js" />
+    <Content Include="Scripts\semantic-ui\components\form.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\form.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\grid.css" />
+    <Content Include="Scripts\semantic-ui\components\grid.min.css" />
+    <Content Include="Scripts\semantic-ui\components\grid.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\grid.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\header.css" />
+    <Content Include="Scripts\semantic-ui\components\header.min.css" />
+    <Content Include="Scripts\semantic-ui\components\header.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\header.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\icon.css" />
+    <Content Include="Scripts\semantic-ui\components\icon.min.css" />
+    <Content Include="Scripts\semantic-ui\components\icon.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\icon.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\image.css" />
+    <Content Include="Scripts\semantic-ui\components\image.min.css" />
+    <Content Include="Scripts\semantic-ui\components\image.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\image.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\input.css" />
+    <Content Include="Scripts\semantic-ui\components\input.min.css" />
+    <Content Include="Scripts\semantic-ui\components\input.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\input.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\item.css" />
+    <Content Include="Scripts\semantic-ui\components\item.min.css" />
+    <Content Include="Scripts\semantic-ui\components\item.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\item.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\label.css" />
+    <Content Include="Scripts\semantic-ui\components\label.min.css" />
+    <Content Include="Scripts\semantic-ui\components\label.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\label.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\list.css" />
+    <Content Include="Scripts\semantic-ui\components\list.min.css" />
+    <Content Include="Scripts\semantic-ui\components\list.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\list.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\loader.css" />
+    <Content Include="Scripts\semantic-ui\components\loader.min.css" />
+    <Content Include="Scripts\semantic-ui\components\loader.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\loader.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\menu.css" />
+    <Content Include="Scripts\semantic-ui\components\menu.min.css" />
+    <Content Include="Scripts\semantic-ui\components\menu.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\menu.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\message.css" />
+    <Content Include="Scripts\semantic-ui\components\message.min.css" />
+    <Content Include="Scripts\semantic-ui\components\message.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\message.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\modal.css" />
+    <Content Include="Scripts\semantic-ui\components\modal.js" />
+    <Content Include="Scripts\semantic-ui\components\modal.min.css" />
+    <Content Include="Scripts\semantic-ui\components\modal.min.js" />
+    <Content Include="Scripts\semantic-ui\components\modal.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\modal.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\nag.css" />
+    <Content Include="Scripts\semantic-ui\components\nag.js" />
+    <Content Include="Scripts\semantic-ui\components\nag.min.css" />
+    <Content Include="Scripts\semantic-ui\components\nag.min.js" />
+    <Content Include="Scripts\semantic-ui\components\nag.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\nag.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\popup.css" />
+    <Content Include="Scripts\semantic-ui\components\popup.js" />
+    <Content Include="Scripts\semantic-ui\components\popup.min.css" />
+    <Content Include="Scripts\semantic-ui\components\popup.min.js" />
+    <Content Include="Scripts\semantic-ui\components\popup.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\popup.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\progress.css" />
+    <Content Include="Scripts\semantic-ui\components\progress.js" />
+    <Content Include="Scripts\semantic-ui\components\progress.min.css" />
+    <Content Include="Scripts\semantic-ui\components\progress.min.js" />
+    <Content Include="Scripts\semantic-ui\components\progress.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\progress.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\rail.css" />
+    <Content Include="Scripts\semantic-ui\components\rail.min.css" />
+    <Content Include="Scripts\semantic-ui\components\rail.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\rail.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\rating.css" />
+    <Content Include="Scripts\semantic-ui\components\rating.js" />
+    <Content Include="Scripts\semantic-ui\components\rating.min.css" />
+    <Content Include="Scripts\semantic-ui\components\rating.min.js" />
+    <Content Include="Scripts\semantic-ui\components\rating.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\rating.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\reset.css" />
+    <Content Include="Scripts\semantic-ui\components\reset.min.css" />
+    <Content Include="Scripts\semantic-ui\components\reset.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\reset.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\reveal.css" />
+    <Content Include="Scripts\semantic-ui\components\reveal.min.css" />
+    <Content Include="Scripts\semantic-ui\components\reveal.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\reveal.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\search.css" />
+    <Content Include="Scripts\semantic-ui\components\search.js" />
+    <Content Include="Scripts\semantic-ui\components\search.min.css" />
+    <Content Include="Scripts\semantic-ui\components\search.min.js" />
+    <Content Include="Scripts\semantic-ui\components\search.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\search.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\segment.css" />
+    <Content Include="Scripts\semantic-ui\components\segment.min.css" />
+    <Content Include="Scripts\semantic-ui\components\segment.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\segment.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\shape.css" />
+    <Content Include="Scripts\semantic-ui\components\shape.js" />
+    <Content Include="Scripts\semantic-ui\components\shape.min.css" />
+    <Content Include="Scripts\semantic-ui\components\shape.min.js" />
+    <Content Include="Scripts\semantic-ui\components\shape.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\shape.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\sidebar.css" />
+    <Content Include="Scripts\semantic-ui\components\sidebar.js" />
+    <Content Include="Scripts\semantic-ui\components\sidebar.min.css" />
+    <Content Include="Scripts\semantic-ui\components\sidebar.min.js" />
+    <Content Include="Scripts\semantic-ui\components\sidebar.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\sidebar.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\site.css" />
+    <Content Include="Scripts\semantic-ui\components\site.js" />
+    <Content Include="Scripts\semantic-ui\components\site.min.css" />
+    <Content Include="Scripts\semantic-ui\components\site.min.js" />
+    <Content Include="Scripts\semantic-ui\components\site.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\site.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\state.js" />
+    <Content Include="Scripts\semantic-ui\components\state.min.js" />
+    <Content Include="Scripts\semantic-ui\components\statistic.css" />
+    <Content Include="Scripts\semantic-ui\components\statistic.min.css" />
+    <Content Include="Scripts\semantic-ui\components\statistic.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\statistic.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\step.css" />
+    <Content Include="Scripts\semantic-ui\components\step.min.css" />
+    <Content Include="Scripts\semantic-ui\components\step.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\step.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\sticky.css" />
+    <Content Include="Scripts\semantic-ui\components\sticky.js" />
+    <Content Include="Scripts\semantic-ui\components\sticky.min.css" />
+    <Content Include="Scripts\semantic-ui\components\sticky.min.js" />
+    <Content Include="Scripts\semantic-ui\components\sticky.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\sticky.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\tab.css" />
+    <Content Include="Scripts\semantic-ui\components\tab.js" />
+    <Content Include="Scripts\semantic-ui\components\tab.min.css" />
+    <Content Include="Scripts\semantic-ui\components\tab.min.js" />
+    <Content Include="Scripts\semantic-ui\components\tab.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\tab.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\table.css" />
+    <Content Include="Scripts\semantic-ui\components\table.min.css" />
+    <Content Include="Scripts\semantic-ui\components\table.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\table.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\transition.css" />
+    <Content Include="Scripts\semantic-ui\components\transition.js" />
+    <Content Include="Scripts\semantic-ui\components\transition.min.css" />
+    <Content Include="Scripts\semantic-ui\components\transition.min.js" />
+    <Content Include="Scripts\semantic-ui\components\transition.rtl.css" />
+    <Content Include="Scripts\semantic-ui\components\transition.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\components\visibility.js" />
+    <Content Include="Scripts\semantic-ui\components\visibility.min.js" />
+    <Content Include="Scripts\semantic-ui\semantic.css" />
+    <Content Include="Scripts\semantic-ui\semantic.js" />
+    <Content Include="Scripts\semantic-ui\semantic.min.css" />
+    <Content Include="Scripts\semantic-ui\semantic.min.js" />
+    <Content Include="Scripts\semantic-ui\semantic.rtl.css" />
+    <Content Include="Scripts\semantic-ui\semantic.rtl.min.css" />
+    <Content Include="Scripts\semantic-ui\themes\basic\assets\fonts\icons.eot" />
+    <Content Include="Scripts\semantic-ui\themes\basic\assets\fonts\icons.svg" />
+    <Content Include="Scripts\semantic-ui\themes\basic\assets\fonts\icons.ttf" />
+    <Content Include="Scripts\semantic-ui\themes\basic\assets\fonts\icons.woff" />
+    <Content Include="Scripts\semantic-ui\themes\default\assets\fonts\icons.eot" />
+    <Content Include="Scripts\semantic-ui\themes\default\assets\fonts\icons.svg" />
+    <Content Include="Scripts\semantic-ui\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="Scripts\semantic-ui\themes\default\assets\fonts\icons.woff" />
+    <Content Include="Scripts\semantic-ui\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="Scripts\semantic-ui\themes\default\assets\images\flags.png" />
+    <Content Include="Scripts\semantic-ui\themes\github\assets\fonts\octicons.svg" />
+    <Content Include="Scripts\shortcut.js" />
+    <Content Include="Scripts\sprintf\LICENSE" />
+    <Content Include="Scripts\sprintf\sprintf.min.js" />
+    <Content Include="Scripts\sprintf\sprintf.min.map" />
+    <Content Include="Scripts\underscore\.eslintrc" />
+    <Content Include="Scripts\underscore\.gitignore" />
+    <Content Include="Scripts\underscore\.travis.yml" />
+    <Content Include="Scripts\underscore\bower.json" />
+    <Content Include="Scripts\underscore\CNAME" />
+    <Content Include="Scripts\underscore\component.json" />
+    <Content Include="Scripts\underscore\CONTRIBUTING.md" />
+    <Content Include="Scripts\underscore\docs\docco.css" />
+    <Content Include="Scripts\underscore\docs\favicon.ico" />
+    <Content Include="Scripts\underscore\docs\images\background.png" />
+    <Content Include="Scripts\underscore\docs\images\underscore.png" />
+    <Content Include="Scripts\underscore\docs\public\fonts\aller-bold.eot" />
+    <Content Include="Scripts\underscore\docs\public\fonts\aller-bold.ttf" />
+    <Content Include="Scripts\underscore\docs\public\fonts\aller-bold.woff" />
+    <Content Include="Scripts\underscore\docs\public\fonts\aller-light.eot" />
+    <Content Include="Scripts\underscore\docs\public\fonts\aller-light.ttf" />
+    <Content Include="Scripts\underscore\docs\public\fonts\aller-light.woff" />
+    <Content Include="Scripts\underscore\docs\public\fonts\roboto-black.eot" />
+    <Content Include="Scripts\underscore\docs\public\fonts\roboto-black.ttf" />
+    <Content Include="Scripts\underscore\docs\public\fonts\roboto-black.woff" />
+    <Content Include="Scripts\underscore\docs\public\stylesheets\normalize.css" />
+    <Content Include="Scripts\underscore\docs\underscore.html" />
+    <Content Include="Scripts\underscore\favicon.ico" />
+    <Content Include="Scripts\underscore\index.html" />
+    <Content Include="Scripts\underscore\karma.conf-sauce.js" />
+    <Content Include="Scripts\underscore\karma.conf.js" />
+    <Content Include="Scripts\underscore\LICENSE" />
+    <Content Include="Scripts\underscore\package.json" />
+    <Content Include="Scripts\underscore\README.md" />
+    <Content Include="Scripts\underscore\test\.eslintrc" />
+    <Content Include="Scripts\underscore\test\arrays.js" />
+    <Content Include="Scripts\underscore\test\chaining.js" />
+    <Content Include="Scripts\underscore\test\collections.js" />
+    <Content Include="Scripts\underscore\test\cross-document.js" />
+    <Content Include="Scripts\underscore\test\functions.js" />
+    <Content Include="Scripts\underscore\test\index.html" />
+    <Content Include="Scripts\underscore\test\objects.js" />
+    <Content Include="Scripts\underscore\test\utility.js" />
+    <Content Include="Scripts\underscore\test\vendor\qunit-extras.js" />
+    <Content Include="Scripts\underscore\test\vendor\qunit.css" />
+    <Content Include="Scripts\underscore\test\vendor\qunit.js" />
+    <Content Include="Scripts\underscore\underscore-min.js" />
+    <Content Include="Scripts\underscore\underscore-min.map" />
+    <Content Include="Scripts\underscore\underscore.js" />
+    <Content Include="Scripts\vakata-jstree\dist\jstree.js" />
+    <Content Include="Scripts\vakata-jstree\dist\jstree.min.js" />
+    <Content Include="Scripts\vakata-jstree\dist\jstree.min.js.map">
+      <DependentUpon>jstree.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\vakata-jstree\dist\themes\default-dark\32px.png" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default-dark\40px.png" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default-dark\style.css" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default-dark\style.min.css" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default-dark\throbber.gif" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default\32px.png" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default\40px.png" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default\style.css" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default\style.min.css" />
+    <Content Include="Scripts\vakata-jstree\dist\themes\default\throbber.gif" />
+    <Content Include="Scripts\vakata-jstree\LICENSE-MIT" />
+    <Content Include="Services\Checklists.asmx" />
+    <Content Include="Services\CreateDocument.asmx" />
+    <Content Include="Services\Menu.asmx" />
+    <Content Include="Services\WidgetManager.asmx" />
+    <Content Include="Static\Icons\bottom-16.png" />
+    <Content Include="Static\Icons\calendar-16.png" />
+    <Content Include="Static\Icons\checklist-16.png" />
+    <Content Include="Static\Icons\close-16.png" />
+    <Content Include="Static\Icons\delete-16.png" />
+    <Content Include="Static\Icons\email-16.png" />
+    <Content Include="Static\Icons\filter-16.png" />
+    <Content Include="Static\Icons\find-16.png" />
+    <Content Include="Static\Icons\insert-16.png" />
+    <Content Include="Static\Icons\password-16.png" />
+    <Content Include="Static\Icons\pdf-16.png" />
+    <Content Include="Static\Icons\print-16.png" />
+    <Content Include="Static\Icons\search-16.png" />
+    <Content Include="Static\Icons\signout-16.png" />
+    <Content Include="Static\Icons\top-16.png" />
+    <Content Include="Static\AccessIsDenied.html" />
+    <Content Include="Static\images\document.png" />
+    <Content Include="Static\images\mixerp-logo-light.png" />
+    <Content Include="Static\images\mixerp-logo.png" />
+    <Content Include="Static\images\not-found.png" />
+    <Content Include="Static\images\not-image-file.png" />
+    <Content Include="Static\images\powered-by.png" />
+    <Content Include="Static\images\spinner.gif" />
+    <Content Include="Static\Templates\Email\EmailHeader.html" />
+    <Content Include="Static\Templates\Email\EmailFooter.html" />
+    <Content Include="Static\Templates\ModalTemplate.html" />
+    <Content Include="robots.txt" />
+    <Content Include="packages.config" />
+    <Content Include="BackendMaster.Master" />
+    <Content Include="Resource\web.config" />
+    <Content Include="Resource\Static\Attachments\web.config" />
+    <Content Include="Resource\Configs\DbServer.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resource\Configs\Parameters.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resource\Configs\ReportApiConfiguration.config" />
+    <Content Include="Resource\Configs\ReportParameters.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resource\Configs\StockTransactionFactoryParameters.config" />
+    <Content Include="Backups\web.config" />
+    <Content Include="Handlers\LogoHandler.ashx" />
+    <Content Include="App_Themes\MixERP\mixerp.less" />
+    <Content Include="App_Themes\MixERP\mixerp.css.map">
+      <DependentUpon>mixerp.css</DependentUpon>
+    </Content>
+    <Content Include="plugins\wkhtmltopdf\LICENSE" />
+    <Content Include="Resource\Temp\Public\web.config" />
+    <Content Include="Resource\Static\Attachments\sample\readme.md" />
+    <None Include="compilerconfig.json" />
+    <Content Include="db\1.x\1.1\readme.md" />
+    <Content Include="db\1.x\1.2\readme.md" />
+    <Content Include="db\1.x\1.4\readme.md" />
+    <Content Include="db\readme.md" />
+    <Content Include="db\1.x\1.3\readme.md" />
+    <Content Include="Scripts\mixerp\core\dom\cascading-pair.js" />
+    <Content Include="Scripts\mixerp\core\dom\loader.js" />
+    <Content Include="Scripts\mixerp\core\dom\visibility.js" />
+    <Content Include="Scripts\mixerp\core\grid\print-grid.js" />
+    <Content Include="Scripts\mixerp\core\libraries\semantic-ui.js" />
+    <Content Include="Scripts\mixerp\core\location.js" />
+    <Content Include="Scripts\mixerp\core\flag.js" />
+    <Content Include="Scripts\mixerp\core\dom\popunder.js" />
+    <Content Include="Scripts\mixerp\core\dom\checkable.js" />
+    <Content Include="Scripts\mixerp\core\grid\grid.js" />
+    <Content Include="Services\Install.asmx" />
+    <Content Include="Services\Office.asmx" />
+    <Content Include="Static\Templates\Email\Sales\Delivery.html" />
+    <Content Include="Static\Templates\Email\AR\AccountStatement.html" />
+    <Content Include="Static\Templates\Email\AR\InvoiceDue.html" />
+    <Content Include="Static\Templates\Email\Sales\Receipt.html" />
+    <Content Include="Static\Templates\Email\Sales\Order.html" />
+    <Content Include="Static\Templates\Email\Sales\Quotation.html" />
+    <Content Include="Stylesheets\report.rtl.css">
+      <DependentUpon>report.rtl.less</DependentUpon>
+    </Content>
+    <Content Include="Stylesheets\report.rtl.min.css">
+      <DependentUpon>report.rtl.css</DependentUpon>
+    </Content>
+    <Content Include="Stylesheets\rtl.css" />
+    <Content Include="Tests\all-tests.js">
+      <DependentUpon>all-tests.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="Tests\all-tests.min.js">
+      <DependentUpon>all-tests.js</DependentUpon>
+    </Content>
+    <Content Include="Tests\dom\cascading-pair.js" />
+    <Content Include="Tests\dom\checkable.js" />
+    <Content Include="Tests\dom\events.js" />
+    <Content Include="Tests\dom\select.js" />
+    <Content Include="Tests\dom\visibility.js" />
+    <Content Include="Tests\grid\cell.js" />
+    <Content Include="Tests\grid\grid.js" />
+    <Content Include="Tests\localization.js" />
+    <Content Include="Tests\mixerp-core.test.html" />
+    <Content Include="Scripts\mixerp\core\transaction.js" />
+    <Content Include="Scripts\mixerp\core\mixerp-ajax.js" />
+    <Content Include="Scripts\mixerp\core\json.js" />
+    <Content Include="Scripts\mixerp\core\grid\cell.js" />
+    <Content Include="Scripts\mixerp\core\libraries\jquery-notify.js" />
+    <Content Include="Scripts\mixerp\core\prototype\string.js" />
+    <Content Include="Scripts\mixerp\core\validation.js" />
+    <Content Include="Scripts\mixerp\core\libraries\chartjs.js" />
+    <Content Include="Scripts\mixerp\core\localization.js" />
+    <Content Include="Scripts\mixerp\core\aspnet-validation.js" />
+    <Content Include="Scripts\mixerp\core\date-expressions.js" />
+    <Content Include="Scripts\mixerp\core\libraries\colorbox.js" />
+    <Content Include="Scripts\mixerp\core\window.js" />
+    <Content Include="Scripts\mixerp\core\conversion.js" />
+    <Content Include="Scripts\mixerp\core\dom\events.js" />
+    <Content Include="Scripts\mixerp\core\dom\select.js" />
+    <Content Include="Scripts\mixerp\core\dom\document.js" />
+    <Content Include="Scripts\mixerp\master-page\locale.js" />
+    <Content Include="Scripts\mixerp\utitlities\country-codes.js" />
+    <Content Include="Scripts\mixerp\master-page\declaration.js" />
+    <Content Include="Scripts\mixerp\master-page\js-tree.js" />
+    <Content Include="Scripts\mixerp\master-page\layout.js" />
+    <Content Include="Scripts\mixerp\master-page\keyboard.js" />
+    <Content Include="Scripts\mixerp\master-page\scrud.js" />
+    <Content Include="Scripts\mixerp\master-page\semantic.js" />
+    <Content Include="Scripts\mixerp\master-page\sortable.js" />
+    <Content Include="Services\User.asmx" />
+    <Content Include="Site\Account\ChangePassword.aspx" />
+    <Content Include="Site\Account\SignOut.aspx" />
+    <Content Include="Dashboard\Index.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="Site\Account\UserProfile.aspx" />
+    <Content Include="Site\Exceptions\RestrictedTransactionMode.aspx" />
+    <Content Include="Site\offline.html" />
+    <Content Include="Reports\Assets\Header.aspx" />
+    <Content Include="Reports\Assets\Header.html" />
+    <Content Include="Reports\ReportMaster.aspx" />
+    <Content Include="Reports\ReportViewer.aspx" />
+    <Content Include="Site\AccessIsDenied.aspx" />
+    <Content Include="Site\RuntimeError.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="Reports\Print.html" />
+    <Content Include="Stylesheets\report.css">
+      <DependentUpon>report.less</DependentUpon>
+    </Content>
+    <Content Include="Stylesheets\report.min.css">
+      <DependentUpon>report.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\MixERP\Skin1.skin" />
+    <Content Include="MixERPMaster.Master" />
+    <Content Include="Tests\transaction.js" />
+    <Content Include="Views\Modules\FirstSteps.aspx.html" />
+    <Content Include="Modules\ScrudFactory\Form.html" />
+    <Content Include="Modules\ScrudFactory\View.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Mix Open Foundation.snk" />
+    <Content Include="MixERPReportMaster.Master" />
+    <Content Include="MixERPBlankMaster.Master" />
+    <Content Include="..\mixerp.licenseheader">
+      <Link>mixerp.licenseheader</Link>
+    </Content>
+    <None Include="Properties\PublishProfiles\MixERPPublish.pubxml" />
+    <Content Include="Services\web.config" />
+    <Content Include="Stylesheets\report.less" />
+    <Content Include="Stylesheets\report.css.map">
+      <DependentUpon>report.css</DependentUpon>
+    </Content>
+    <Content Include="Tests\all-tests.js.bundle" />
+    <Content Include="Tests\all-tests.min.js.map">
+      <DependentUpon>all-tests.min.js</DependentUpon>
+    </Content>
+    <Content Include="Tests\all-tests.min.js.gzip">
+      <DependentUpon>all-tests.min.js</DependentUpon>
+    </Content>
+    <Content Include="Stylesheets\report.rtl.css.map">
+      <DependentUpon>report.rtl.css</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <None Include="Scripts\linq.js\jquery.linq-vsdoc.js" />
+    <None Include="Scripts\linq.js\linq-vsdoc.js" />
+    <Content Include="Scripts\semantic-ui\themes\github\assets\fonts\octicons-local.ttf" />
+    <Content Include="Scripts\semantic-ui\themes\github\assets\fonts\octicons.ttf" />
+    <Content Include="Scripts\semantic-ui\themes\github\assets\fonts\octicons.woff" />
+    <None Include="Stylesheets\report.rtl.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="General\" />
+    <Folder Include="Reports\Sources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\DAL\MixERP.Net.FrontEnd.Data\MixERP.Net.FrontEnd.Data.csproj">
+      <Project>{a84ed536-8e44-4d32-a22d-26d9924a9481}</Project>
+      <Name>MixERP.Net.FrontEnd.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Entities\Core\MixERP.Net.Entities.Core.csproj">
+      <Project>{0F0490A5-8065-4B0A-9844-905E32A05DC4}</Project>
+      <Name>MixERP.Net.Entities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Entities\Office\MixERP.Net.Entities.Office.csproj">
+      <Project>{ECE2EA15-08D3-46D6-8906-BEC973C0568B}</Project>
+      <Name>MixERP.Net.Entities.Office</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Entities\Public\MixERP.Net.Entities.Public.csproj">
+      <Project>{79397489-0963-42BE-B0C9-C0F715F7ECD6}</Project>
+      <Name>MixERP.Net.Entities.Public</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixER.Net.StateServer\MixERP.Net.ApplicationState.csproj">
+      <Project>{61AB8B69-2097-4595-97B7-4A930A70163D}</Project>
+      <Name>MixERP.Net.ApplicationState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.Net.DbFactory\MixERP.Net.DbFactory.csproj">
+      <Project>{8FD9661C-2473-4581-8722-18B08D4DB252}</Project>
+      <Name>MixERP.Net.DbFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.Net.EntityParser\MixERP.Net.EntityParser.csproj">
+      <Project>{eac19d71-3969-4b34-ad7b-8b05d4672861}</Project>
+      <Name>MixERP.Net.EntityParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.Net.Framework\MixERP.Net.Framework.csproj">
+      <Project>{1509332f-ae98-44d9-9072-5bbc59a65fc4}</Project>
+      <Name>MixERP.Net.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.Net.i18n\MixERP.Net.i18n.csproj">
+      <Project>{2ecd1c2e-d7d0-4a24-896a-e625b0566db5}</Project>
+      <Name>MixERP.Net.i18n</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.Net.Messaging\MixERP.Net.Messaging.Email.csproj">
+      <Project>{D29B7B60-76B2-4A00-A8FA-7654519AFCD4}</Project>
+      <Name>MixERP.Net.Messaging.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.Net.ReportManager\MixERP.Net.ReportManager.csproj">
+      <Project>{52F97ED7-2013-4950-8725-01E5715EB285}</Project>
+      <Name>MixERP.Net.ReportManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.Net.Updater\MixERP.Net.Updater.csproj">
+      <Project>{f5c04e5a-a4b3-40ac-8f45-318419648977}</Project>
+      <Name>MixERP.Net.Updater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969d7960-52e2-40fc-91e5-1393b71e23b0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Server Controls\Project\MixERP.Net.WebControls.AttachmentFactory\MixERP.Net.WebControls.AttachmentFactory.csproj">
+      <Project>{403f308d-10e7-4c70-9360-1027ee541495}</Project>
+      <Name>MixERP.Net.WebControls.AttachmentFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Server Controls\Project\MixERP.Net.WebControls.Common\MixERP.Net.WebControls.Common.csproj">
+      <Project>{2D961540-6597-4E7B-969C-974D71D820DD}</Project>
+      <Name>MixERP.Net.WebControls.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Server Controls\Project\MixERP.Net.WebControls.ReportEngine\MixERP.Net.WebControls.ReportEngine.csproj">
+      <Project>{81f04b78-6194-4f86-a795-5f186c602eee}</Project>
+      <Name>MixERP.Net.WebControls.ReportEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Logic\MixERP.net.Common\MixERP.Net.Common.csproj">
+      <Project>{d5a09c22-8f48-4fb2-a14d-c62c8c8fcec0}</Project>
+      <Name>MixERP.Net.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Server Controls\Project\MixERP.Net.WebControls.TransactionChecklist\MixERP.Net.WebControls.TransactionChecklist.csproj">
+      <Project>{64490B89-B228-4188-8235-71744A94C9AE}</Project>
+      <Name>MixERP.Net.WebControls.TransactionChecklist</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\WebJobs\MixERP.Net.WebJobs.BackupDatabase\MixERP.Net.WebJobs.BackupDatabase.csproj">
+      <Project>{c5846038-80fe-469e-8a64-3d3158db5fad}</Project>
+      <Name>MixERP.Net.WebJobs.BackupDatabase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2904</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8080</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:8080</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="GatherAllFilesToPublish">
+  </Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

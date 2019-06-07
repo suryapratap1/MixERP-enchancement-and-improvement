@@ -1,0 +1,4 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_hubs =
+[
+    [ "DayOperationHub", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_hubs_1_1_day_operation_hub.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_hubs_1_1_day_operation_hub" ]
+];

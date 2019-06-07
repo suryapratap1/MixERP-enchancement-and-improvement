@@ -1,0 +1,30 @@
+[
+  {
+    "outputFileName": "docs/assets/styles.css",
+    "inputFiles": [
+      "docs/assets/scripts/semantic-ui/semantic.css",
+      "docs/assets/styles/mixdoc.css"
+    ],
+    "minify": {
+      "enabled": true
+    },
+    "includeInProject": true,
+    "sourceMaps": false
+  },
+  {
+    "outputFileName": "docs/assets/script.js",
+    "inputFiles": [
+      "docs/assets/scripts/jquery-1.9.1.js",
+      "docs/assets/scripts/marked/marked.min.js",
+      "docs/assets/scripts/semantic-ui/semantic.js",
+      "docs/assets/scripts/urijs/src/URI.min.js",
+      "docs/assets/scripts/urijs/src/jquery.URI.js",
+      "docs/assets/scripts/mixdoc.js"
+    ],
+    "minify": {
+      "enabled": true
+    },
+    "includeInProject": true,
+    "sourceMaps": false
+  },
+]

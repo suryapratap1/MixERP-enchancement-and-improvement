@@ -1,0 +1,11 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin =
+[
+    [ "ChangePassword", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_change_password.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_change_password" ],
+    [ "ChangePasswordControl", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_change_password_control.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_change_password_control" ],
+    [ "CheckUpdates", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_check_updates.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_check_updates" ],
+    [ "DatabaseBackup", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_database_backup.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_database_backup" ],
+    [ "DatabaseStatistics", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_database_statistics.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_database_statistics" ],
+    [ "NewCompany", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_new_company.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_new_company" ],
+    [ "ReportWriter", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_report_writer.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_report_writer" ],
+    [ "Restore", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_restore.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_admin_1_1_restore" ]
+];

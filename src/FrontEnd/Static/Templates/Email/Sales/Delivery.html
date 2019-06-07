@@ -1,0 +1,55 @@
+﻿<div style="padding:6px 0;">
+    <p style="padding-bottom:8px;font-weight:bold;">Dear {CustomerName},</p>
+    {Header}
+    <p style="padding-bottom:8px;">We have shipped your order (Ref #{TranId}),
+    confirmation of which is attached along in this email.
+    The package should arrive within 15 business days.</p>
+
+
+    <table style="border-collapse: collapse" border="1">
+        <tbody>
+            <tr>
+                <th>Delivery #</th>
+                <td>{TranId}</td>
+            </tr>
+            <tr>
+                <th>Reference Number</th>
+                <td>{ReferenceNumber}</td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>{StoreName}</td>
+            </tr>
+            <tr>
+                <th>Shipping Company</th>
+                <td>{ShipperName}</td>
+            </tr>
+            <tr>
+                <th>Shipping Charge</th>
+                <td>{ShippingCharge}</td>
+            </tr>
+            <tr>
+                <th>Destination</th>
+                <td>{ShippingAddress}</td>
+            </tr>
+            <tr>
+                <th>Invoice Amount</th>
+                <td>{CurrencyCode} {InvoiceAmount}</td>
+            </tr>
+            <tr>
+                <th>Due Date</th>
+                <td>{DueDate}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="padding-bottom:8px;">
+        If you have any questions, please contact us at <a href="mailto:{Email}">{Email}</a>.
+    </p>
+
+    <p style="padding-bottom:8px;">
+    Thank you.
+    </p>
+
+    {Footer}
+</div>

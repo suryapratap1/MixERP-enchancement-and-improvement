@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MixERPReport>
+  <Title>All Items</Title>
+  <TopSection></TopSection>
+  <Body>
+    <Content></Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="0" />
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection></BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>SELECT item_code, item_name, cost_price, selling_price
+FROM core.items;</Query>
+    </DataSource>
+  </DataSources>
+  <Menu Code="ALLITMS" Text="All Items" ParentMenuCode="IR" />
+</MixERPReport>

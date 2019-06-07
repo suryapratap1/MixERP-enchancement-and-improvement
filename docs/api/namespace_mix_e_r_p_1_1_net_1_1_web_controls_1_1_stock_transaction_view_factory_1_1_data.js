@@ -1,0 +1,4 @@
+var namespace_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_data =
+[
+    [ "Models", "namespace_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_data_1_1_models.html", "namespace_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_data_1_1_models" ]
+];

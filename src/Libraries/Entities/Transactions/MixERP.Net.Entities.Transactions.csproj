@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{665E96EE-D5D0-426E-A8CD-22E3A9981349}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Entities.Transactions</RootNamespace>
+    <AssemblyName>MixERP.Net.Entities.Transactions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerReceipt.cs" />
+    <Compile Include="DayOperation.cs" />
+    <Compile Include="DayOperationRoutine.cs" />
+    <Compile Include="DbGetAccountStatementResult.cs" />
+    <Compile Include="DbGetBalanceSheetResult.cs" />
+    <Compile Include="DbGetEoyProfitSummaryResult.cs" />
+    <Compile Include="DbGetIncomeExpenditureStatementResult.cs" />
+    <Compile Include="DbGetInventoryTransferRequestViewResult.cs" />
+    <Compile Include="DbGetJournalViewResult.cs" />
+    <Compile Include="DbGetMergeModelResult.cs" />
+    <Compile Include="DbGetNonGlProductViewResult.cs" />
+    <Compile Include="DbGetPartyTransactionSummaryResult.cs" />
+    <Compile Include="DbGetPlAppropriationDataResult.cs" />
+    <Compile Include="DbGetProductViewResult.cs" />
+    <Compile Include="DbGetReceiptViewResult.cs" />
+    <Compile Include="DbGetReorderViewFunctionResult.cs" />
+    <Compile Include="DbGetRetainedEarningsStatementResult.cs" />
+    <Compile Include="DbGetSalesByOfficesResult.cs" />
+    <Compile Include="DbGetSalespersonReportResult.cs" />
+    <Compile Include="DbGetSalesTaxResult.cs" />
+    <Compile Include="DbGetStockAccountStatementResult.cs" />
+    <Compile Include="DbGetTopSellingProductsByOfficeResult.cs" />
+    <Compile Include="DbGetTopSellingProductsOfAllTimeResult.cs" />
+    <Compile Include="DbGetTotalSalesByOfficeResult.cs" />
+    <Compile Include="DbGetTrialBalanceResult.cs" />
+    <Compile Include="DbListClosingStockResult.cs" />
+    <Compile Include="InventoryTransferDelivery.cs" />
+    <Compile Include="InventoryTransferDeliveryDetail.cs" />
+    <Compile Include="InventoryTransferRequest.cs" />
+    <Compile Include="InventoryTransferRequestDetail.cs" />
+    <Compile Include="LateFee.cs" />
+    <Compile Include="Models\JournalDetail.cs" />
+    <Compile Include="Models\ProductDetail.cs" />
+    <Compile Include="Models\StockAdjustmentDetail.cs" />
+    <Compile Include="Models\StockDetail.cs" />
+    <Compile Include="Models\StockMaster.cs" />
+    <Compile Include="NonGlStockDetail.cs" />
+    <Compile Include="NonGlStockMaster.cs" />
+    <Compile Include="NonGlStockMasterRelation.cs" />
+    <Compile Include="NonGlStockTaxDetail.cs" />
+    <Compile Include="OpeningStockType.cs" />
+    <Compile Include="PartyItemChartView.cs" />
+    <Compile Include="PartyPurchaseChartView.cs" />
+    <Compile Include="PartySalesChartView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseReorderType.cs" />
+    <Compile Include="ReceiptView.cs" />
+    <Compile Include="Routine.cs" />
+    <Compile Include="SalesByCountryView.cs" />
+    <Compile Include="SalesDeliveryView.cs" />
+    <Compile Include="SalesOrderView.cs" />
+    <Compile Include="SalesQuotationView.cs" />
+    <Compile Include="SalesTaxType.cs" />
+    <Compile Include="StockAdjustmentType.cs" />
+    <Compile Include="StockDetail.cs" />
+    <Compile Include="StockDetailType.cs" />
+    <Compile Include="StockMaster.cs" />
+    <Compile Include="StockMasterNonGlRelation.cs" />
+    <Compile Include="StockReturn.cs" />
+    <Compile Include="StockTaxDetail.cs" />
+    <Compile Include="StockTransactionView.cs" />
+    <Compile Include="TransactionDetail.cs" />
+    <Compile Include="TransactionMaster.cs" />
+    <Compile Include="TransactionView.cs" />
+    <Compile Include="TrialBalanceView.cs" />
+    <Compile Include="Models\VerificationModel.cs" />
+    <Compile Include="VerifiedCashTransactionMatView.cs" />
+    <Compile Include="VerifiedStockDetailsView.cs" />
+    <Compile Include="VerifiedStockTransactionView.cs" />
+    <Compile Include="VerifiedTransactionMatView.cs" />
+    <Compile Include="VerifiedTransactionView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969d7960-52e2-40fc-91e5-1393b71e23b0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MixERP.Net.Entities\MixERP.Net.Entities.csproj">
+      <Project>{BDE918B1-DD9B-41C9-A41F-F3DDEC18B6D8}</Project>
+      <Name>MixERP.Net.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

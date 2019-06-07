@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MixERPReportMaster.master.cs" Inherits="MixERP.Net.FrontEnd.MixERPReportMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MixERP Report</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <script type="text/javascript">
+        //window.chartAnimation = false;
+    </script>
+    <script src="/bundles/libraries.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="ScriptManager1" />
+        <asp:ContentPlaceHolder ID="BodyContentPlaceholder" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <script type="text/javascript">
+            var closeWindow = function () {
+                parent.$.fn.colorbox.close();
+            };
+
+            function updateReportHiddenPdf() {
+                $('#ReportHidden').val("");
+                var temp = $(".container div .hide");
+                temp.remove();
+
+                //Disable chart animation on the rendered PDF output
+                var script = document.createElement('script');
+                script.type = "text/javascript";
+                script.text = "window.chartAnimation = false;";
+                $("body").append(script);
+
+                var legend = $(".legend").html();
+                $(".legend").html("");
+
+                $('#ReportHidden').val($("html").html());
+                $(".container div").append(temp);
+                $(".legend").html(legend);
+            };
+
+            function updateReportHidden() {
+                $('#ReportHidden').val("");
+                var temp = $(".container div .hide");
+                temp.remove();
+
+                $("table").attr("border", "1");
+
+                var template = "<html><head><title>Document</title><script>window.chartAnimation = false;<\/script></head><body>" + $("#report").html() + "</body></html>";
+
+                $('#ReportHidden').val(template);
+
+                $(".container div").append(temp);
+            };
+        </script>
+    </form>
+</body>
+</html>

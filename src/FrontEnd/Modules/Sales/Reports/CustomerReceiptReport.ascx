@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CustomerReceiptReport.ascx.cs" Inherits="MixERP.Net.Core.Modules.Sales.Reports.CustomerReceiptReport"
+    MasterPageId="MixERPReportMaster.Master" RemoveTheme="true" IsLandingPage="true" %>

@@ -1,0 +1,27 @@
+var class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller =
+[
+    [ "WagesSetupController", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a0ca5b3fad7d7df31edd25bcba241ded5", null ],
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#af891242de0e3ba51a83ef5be7d940940", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a143894bc0dc04433f35c7012b2917f10", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a42617bba483f5bc0922ed05b3a47e21a", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a9050242b7c741f08a10a2f76a0c034f8", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a7d46b29beaadf76203c47c88f425289c", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a14e2a2e678b6fb05105767a55ac9b2ad", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#ada469b36bcf33345981787d75eb83357", null ],
+    [ "Edit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a225e82fbc10c546b4738ee2af55c8cf5", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#af77482d58b0fc98501570a6adb7c0a03", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#aaeb024cb7ecb694c3dd70998fc7a179d", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a0b501fb3c1999fff7ca52552422a75a9", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a4069194563871cf07378043fd97f5c13", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a2b54529a0f11576581fc5ab13979b780", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#af65887a2079c9ef710a60d235559d1d6", null ],
+    [ "GetEntityView", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a11319684299a7fb0e0771a3078efc651", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a840137fb94d3a1713912bf38642bd2c2", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a3ae889cbd5f6b891bad2b6433b9b3c1f", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#aae40a50a812f9e851409f8b1b43abb05", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a45f368784b1f0806e9303566b033e95f", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a7ce639b1335ec5980c7a75be49f02b59", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a017b4d997fa9fb5494a96037221fbe5a", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a745c7d8e3d50637d10e6e81ae49684a1", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_h_r_m_1_1_wages_setup_controller.html#a65cb3bb6eee0055810937deab844c6eb", null ]
+];

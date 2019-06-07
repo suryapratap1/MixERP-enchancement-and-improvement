@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#adbb374c5ac32311940bbac52759fade8", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a5353af34c0cd8f0937f97a11b23b5dda", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#ac2c8a2b8dd2b96aed52a093a5092509d", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#ab7f4c97920c68eae23a72715106b02ed", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a25a0c5dc0d776e9f75b81634012d9f21", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a3c21070ecaf534ec3cb6236efa61ab3b", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a797bf1a5ed9cc8942b5a977b2512b45b", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a7aae37ad0be9113bd7cfaccf1ec8214d", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a3322902b55a09a59c174612eb5e2792b", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a014444bb61cdd27898192df7a1e50fc3", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#aebba6a29927b090dd2d14fe18d698e51", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#ae86b990b598b9ff2db8ade869dff59a9", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a2873bf987dd06f546231ee4e014aefbd", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#ac72acc89c6eb1dbf0b84f9286b52d075", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a12dbf6ea225644b3d2ba53cae97f6968", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a44c44d35f10d409072490b7c5e2b94de", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#af7d0135aa963b4bca2279762c117baff", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a44e19777a2b62e59017d9817b941f8f0", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a6620eeeed1ce933f6b08f96c6a40b931", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#a577d74b5b1cf111cddc690ec797ba967", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#afd4725ba1c0333947bfe60c34415410b", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_office_1_1_data_1_1_holiday.html#abd05539363b709e8b1a7efd70b43d8ab", null ]
+];

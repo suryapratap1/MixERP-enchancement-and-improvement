@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"><title>Updater.config</title><link href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css type=text/css rel=stylesheet><link href=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css type=text/css rel=stylesheet title="Featherlight Styles"><link href=/docs/assets/styles.min.css rel=stylesheet><link href="//fonts.googleapis.com/css?family=Open+Sans:300,400" rel=stylesheet type=text/css></head><body><div class="ui page grid" id=brand><div class="sixteen wide column"><a href=/index.html class><img title=MixERP alt=MixERP class=logo src=/docs/assets/images/mixerp-logo.png></a></div></div><div class="ui page stackable grid" id=story><div class="sixteen wide column"><p>﻿</p><h1>Updater.config</h1><p>MixERP can update itself when a new release is available. The update feature will download, install, and patch your ERP instance to the latest version without needing you to sit next to the operating system and do the update all by yourself. Be assured that you are notified whenever there is a new update available. MixERP will update to the latest version only when you click the button to do so.</p><pre><code class=lang-xml>﻿&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+
+&lt;!--
+Copyright (C) MixERP Inc. (http://mixof.org).
+
+This file is part of MixERP.
+
+MixERP is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 2 of the License.
+
+
+MixERP is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MixERP.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+--&gt;
+
+&lt;configuration&gt;
+  &lt;appSettings&gt;
+    &lt;add key=&quot;AutoSuggestUpdate&quot; value=&quot;true&quot; /&gt;
+    &lt;add key=&quot;ApiUrl&quot; value=&quot;https://api.github.com/repos/mixerp/mixerp/releases&quot; /&gt;
+    &lt;add key=&quot;MediaType&quot; value=&quot;application/json&quot; /&gt;
+    &lt;add key=&quot;UserAgent&quot; value=&quot;MixERP&quot;/&gt;
+    &lt;add key=&quot;DownloadDirectory&quot; value=&quot;/downloads&quot; /&gt;
+    &lt;add key=&quot;IdKey&quot; value=&quot;id&quot; /&gt;
+    &lt;add key=&quot;NameKey&quot; value=&quot;name&quot; /&gt;
+    &lt;add key=&quot;TagNameKey&quot; value=&quot;tag_name&quot; /&gt;
+    &lt;add key=&quot;BodyKey&quot; value=&quot;body&quot; /&gt;
+    &lt;add key=&quot;DraftKey&quot; value=&quot;draft&quot; /&gt;
+    &lt;add key=&quot;CreatedAtKey&quot; value=&quot;created_at&quot; /&gt;
+    &lt;add key=&quot;PublishedAtKey&quot; value=&quot;published_at&quot; /&gt;
+    &lt;add key=&quot;AssetsKey&quot; value=&quot;assets&quot; /&gt;
+    &lt;add key=&quot;AssetIdSubKey&quot; value=&quot;id&quot; /&gt;
+    &lt;add key=&quot;AssetNameSubKey&quot; value=&quot;name&quot; /&gt;
+    &lt;add key=&quot;AssetContentTypeSubKey&quot; value=&quot;content_type&quot; /&gt;
+    &lt;add key=&quot;AssetStateSubKey&quot; value=&quot;state&quot; /&gt;
+    &lt;add key=&quot;AssetSizeSubKey&quot; value=&quot;size&quot; /&gt;
+    &lt;add key=&quot;AssetCreatedAtSubKey&quot; value=&quot;created_at&quot; /&gt;
+    &lt;add key=&quot;AssetUpdatedAtSubKey&quot; value=&quot;updated_at&quot; /&gt;
+    &lt;add key=&quot;AssetDownloadUrlSubKey&quot; value=&quot;browser_download_url&quot; /&gt;
+    &lt;add key=&quot;UpdateKeyword&quot; value=&quot;update&quot;/&gt;
+    &lt;add key=&quot;TempPath&quot; value=&quot;C:\mixerp\temp\downloads&quot;/&gt;
+    &lt;add key=&quot;Migrate&quot; value=&quot;Resource/Configs/DbServer.config,Resource/Configs/Parameters.config&quot;/&gt;
+    &lt;!--Important the Migrate files should never begin with slashes--&gt;
+    &lt;add key=&quot;PatchFileLocation&quot; value=&quot;db/release-1/update-1/mixerp-patch-for-rc.sql&quot; /&gt;
+  &lt;/appSettings&gt;
+&lt;/configuration&gt;
+</code></pre><p>Do not change change anything except the <strong>TempPath</strong> unless you are absolutely sure what you are doing.</p><h2>Related Topics</h2><ul><li><a href=../admin.html>Administrator Documentation</a></li></ul></div><div class="social sharing bpad24"><div class="ui grey huge header"> Share this page </div><div class="icons vpad8"><a target=_blank href="https://www.facebook.com/sharer/sharer.php?u={url}" title="Share this on Facebook"><i class="circular inverted blue large facebook icon"></i></a><a target=_blank href="http://twitter.com/share?text={tweet}&amp;url={url}&amp;hashtags=#mixerp" title="Tweet this link"><i class="circular blue large twitter icon"></i></a><a target=_blank href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title=Updater.config" title="Share this on LinkedIn"><i class="circular inverted blue large linkedin icon"></i></a><a target=_blank href="https://plus.google.com/share?url={url}" title="Share this on Google+"><i class="circular inverted red large google plus icon"></i></a><a target=_blank href="http://www.reddit.com/submit?url={url}" title="Share this on Reddit"><i class="circular large reddit icon"></i></a><a target=_blank href="http://pinterest.com/pin/create/button/?url={url}&amp;description=Updater.config" title="Share this on Pinterest"><i class="circular inverted red large pinterest icon"></i></a><a target=_blank href="http://www.stumbleupon.com/badge/?url={url}" title="Share this on StumbleUpon"><i class="circular inverted red large stumbleupon icon"></i></a><a target=_blank href="mailto:?subject=Updater.config&amp;body={message}" title="Send this on email"><i class="circular inverted olive large mail icon"></i></a></div></div></div><footer class="ui stackable center aligned inverted divided equal height stackable page three column grid"><div class="footer-pad column"><div class="ui inverted dividing header"><i class="code icon"></i> About MixERP </div><p> MixERP is an open source and free ERP software that provides a suite of useful modules to help you manage your day to day business activities, including but not limited to, human resource management, payroll, sales, purchases, inventory management, finance, customer relationship management, manufacturing, and back-office. Developed with love by your friends at MixERP Inc. </p></div><div class="footer-pad column"><div class="ui inverted dividing header"><i class="checkmark icon"></i> Documentation & License </div><p> Some sections in this documentation site are missing. This site is a <a href=index.html#community.md> community effort </a> and work in progress. </p><p> This work is licensed under a <a href=http://creativecommons.org/licenses/by-sa/4.0/ rel=license> Creative Commons Attribution-ShareAlike 4.0 International License </a> . </p></div><div class="left aligned footer-pad column"><div class="ui inverted dividing header"><i class="external icon"></i> Links </div><ul class=footer-links><li><a href=http://mixerp.org/ target=_blank> Project Website </a></li><li><a href=http://mixerp.org/forum target=_blank> Ask a Question </a></li><li><a href=https://github.com/mixerp/mixerp/issues target=_blank> Submit an Issue </a></li><li><a href=https://github.com/mixerp/mixerp/releases target=_blank> Download MixERP </a></li><li><a href=http://demo.mixerp.org/SignIn.aspx target=_blank> View the Demo </a></li><li><a href=https://www.linkedin.com/company/mixerp target=_blank>MixERP on LinkedIn</a></li><li><a href=https://www.facebook.com/mixerp.official/ target=_blank>MixERP on Facebook </a></li><li><a href=http://www.facebook.com/groups/183076085203506/ target=_blank> Facebook Group </a></li><li><a href=http://twitter.com/mixoferp/ target=_blank> Follow MixERP on Twitter </a></li><li style="list-style: none; display: inline"><ul></ul></li></ul></div></footer><script src=/docs/assets/script.js></script><script src=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js type=text/javascript charset=utf-8></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js></script><script>
+        hljs.initHighlightingOnLoad();
+
+        var createLinkedImages = function () {
+            $("#story").find("img").each(function () {
+                var el = $(this);
+                var src = el.attr("src");
+
+                var anchor = $("<a/>");
+                anchor.prop("href", "#");
+                anchor.attr("data-featherlight", src);
+                el.wrap(anchor);
+            });
+        };
+
+        createLinkedImages();
+
+        $("table").addClass("ui celled striped table");
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65607875-1', 'auto');
+        ga('send', 'pageview');
+    </script></body></html>

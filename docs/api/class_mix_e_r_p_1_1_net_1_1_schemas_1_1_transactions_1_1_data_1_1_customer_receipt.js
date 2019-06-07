@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#ab2e0eb1ec1e034672745930489ee03e3", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#adaedbac5dd779c0844050c31c361aff3", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a9727302dbeaf15206cf724dd027f1641", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#af420241267828c3a74ab7f6fb452ec48", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#ae21b376ca2ab716b7e5d04902d945e4a", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#af23f725c05f55707ff959ba43da86e4f", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a3e1282e91991fa999a1d56715ad8a914", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a769ce2f73fc660dfb6cf437665ac540f", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#ac49612a713b49c18bbe0c74fed411685", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a4c26989addf96955183ad8392c23d9ff", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a6c8a476f545483ba07c4d2f908c643d0", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a5e52975c563bc5d78f997dd4d8a31d45", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a1970ad7bb3a0094b69c1338570b16f87", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#af380406857c8bf85edc7c5276b71e223", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a7882e02edf93717e5c3970f24a945220", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#ae04e92d968ebaa22b92d1a07d01a5ada", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a844701d122d41ddd1f256c672701aed5", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#af15670452607bd2949fee8678f467618", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#af040f3817ac9d7134805f55b7e37c88f", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#ad3b2a30f006b4e58cf4619d1d88b78eb", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a2aadf158202f0538ca62289e47394156", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_customer_receipt.html#a7c63434f26a427d31ca72fc462695d44", null ]
+];

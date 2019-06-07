@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"><title>Web Configuration File (web.config)</title><link href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css type=text/css rel=stylesheet><link href=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css type=text/css rel=stylesheet title="Featherlight Styles"><link href=/docs/assets/styles.min.css rel=stylesheet><link href="//fonts.googleapis.com/css?family=Open+Sans:300,400" rel=stylesheet type=text/css></head><body><div class="ui page grid" id=brand><div class="sixteen wide column"><a href=/index.html class><img title=MixERP alt=MixERP class=logo src=/docs/assets/images/mixerp-logo.png></a></div></div><div class="ui page stackable grid" id=story><div class="sixteen wide column"><h1>Web Configuration File (web.config)</h1><p>Web.config is the default configuration file of an IIS site. It is an XML document that provides numerous configuration possibilities for a web application. Let's dive deeper into the required sections and settings related to MixERP application configuration.</p><h2>No Viewstate</h2><p>Yes, that's right, no more ViewState craziness!!!</p><pre><code class=lang-xml>&lt;system.web&gt;
+&lt;pages enableViewState=&quot;false&quot; enableViewStateMac=&quot;false&quot; enableEventValidation=&quot;false&quot; /&gt;
+&lt;/system.web&gt;
+</code></pre><h2>No Dynamic ClientID</h2><p>Turn off the magic "dynamic ClientIDs" that ASP.net produces.</p><pre><code class=lang-xml>&lt;system.web&gt;
+&lt;pages clientIDMode=&quot;Static&quot; /&gt;
+&lt;/system.web&gt;
+</code></pre><h2>Configure IIS to Serve *.backup Files</h2><p>MixERP creates database backups using <a href=http://www.postgresql.org/docs/9.4/static/backup-dump.html>custom pg_dump format</a> with <strong>zlib compression library</strong>. Since IIS does not understand how to serve <strong>*.backup</strong> file extension, an administrator has to ensure that the backup files are properly being served as static contents.</p><p><strong>Create a static file handler for</strong> <strong>*.backup file extension</strong></p><pre><code class=lang-xml>&lt;system.webServer&gt;
+&lt;handlers&gt;
+&lt;add name=&quot;StaticHandler&quot; verb=&quot;*&quot; path=&quot;*.backup&quot; type=&quot;System.Web.StaticFileHandler&quot; preCondition=&quot;integratedMode&quot; /&gt;
+&lt;/handlers&gt;
+&lt;/system.webServer&gt;
+</code></pre><p><strong>Create a Mime Map for</strong> <strong>*.backup file extension</strong></p><pre><code class=lang-xml>&lt;system.webServer&gt;
+&lt;staticContent&gt;
+&lt;mimeMap fileExtension=&quot;.backup&quot; mimeType=&quot;application/octet-stream&quot; /&gt;
+&lt;/staticContent&gt;
+&lt;/system.webServer&gt;
+</code></pre><div class="ui info message"> This document assumes that your organization's policy allows downloading backups using a web browser software. If your organization does not allow backup files to be served via http(s), you may have to undertake extra steps to configure that, which is out of the scope of this document. </div><h2>Register AttachmentFactory Upload Handlers and Services</h2><p>AttachmentFactory exposes a couple of HTTP handlers and WebServices.</p><p><strong>HTTP Handler</strong></p><p><code>MixERP.Net.WebControls.AttachmentFactory.FileUploadHanlder</code></p><p><strong>XML Web Service</strong></p><p><code>MixERP.Net.WebControls.AttachmentFactory.Handlers.UploadService</code></p><p><strong>Create Handlers</strong></p><pre><code class=lang-xml>&lt;system.webServer&gt;
+&lt;handlers&gt;
+&lt;add name=&quot;FileUploadHanlder&quot; path=&quot;FileUploadHanlder.ashx&quot; verb=&quot;*&quot; type=&quot;MixERP.Net.WebControls.AttachmentFactory.FileUploadHanlder, MixERP.Net.WebControls.AttachmentFactory, Version=1.0.0.0, Culture=neutral&quot; /&gt;
+&lt;add name=&quot;FileUploadService&quot; path=&quot;FileUploadHanlder.asmx&quot; verb=&quot;*&quot; type=&quot;MixERP.Net.WebControls.AttachmentFactory.Handlers.UploadService, MixERP.Net.WebControls.AttachmentFactory, Version=1.0.0.0, Culture=neutral&quot; preCondition=&quot;integratedMode&quot; /&gt;
+&lt;/handlers&gt;
+&lt;/system.webServer&gt;
+</code></pre><div class="ui info message"><p> You need to instruct IIS to serve the above handlers on the paths you configured in <a href=attachment-factory-parameters.html>AttachmentFactoryParameters</a>, namely: </p><ul><li>UploadHandlerUrl</li><li>UndoUploadServiceUrl</li></ul></div><h2>Configure AppSettings</h2><p>The <strong>appSettings</strong> section is the one and only place that contains information about other configuration files.</p><pre><code class=lang-xml>&lt;appSettings&gt;
+&lt;add key=&quot;SupressMissingResourceException&quot; value=&quot;true&quot; /&gt;
+&lt;add key=&quot;DisplayErrorDetails&quot; value=&quot;false&quot; /&gt;
+&lt;add key=&quot;MaxInvalidPasswordAttempts&quot; value=&quot;10&quot; /&gt;
+&lt;add key=&quot;ReportAPIConfigFileLocation&quot; value=&quot;/Resource/Configs/ReportApiConfiguration.config&quot; /&gt;
+&lt;add key=&quot;DbServerConfigFileLocation&quot; value=&quot;/Resource/Configs/DbServer.config&quot; /&gt;
+&lt;add key=&quot;PartyControlConfigFileLocation&quot; value=&quot;/Resource/Configs/PartyControlParameters.config&quot; /&gt;
+&lt;add key=&quot;TransactionChecklistConfigFileLocation&quot; value=&quot;/Resource/Configs/TransactionChecklistParameters.config&quot; /&gt;
+&lt;add key=&quot;ParameterConfigFileLocation&quot; value=&quot;/Resource/Configs/Parameters.config&quot; /&gt;
+&lt;add key=&quot;ReportConfigFileLocation&quot; value=&quot;/Resource/Configs/ReportParameters.config&quot; /&gt;
+&lt;add key=&quot;StockTransactionFactoryConfigFileLocation&quot; value=&quot;/Resource/Configs/StockTransactionFactoryParameters.config&quot; /&gt;
+&lt;add key=&quot;UpdaterConfigFileLocation&quot; value=&quot;/Resource/Configs/Updater.config&quot; /&gt;
+&lt;/appSettings&gt;
+</code></pre><p><strong>SupressMissingResourceException</strong></p><p>Set this true if you want to supress "MissingManifestResourceException" when an i18n resource key is not found. Turn this on (true) on production site.</p><p><strong>DisplayErrorDetails</strong></p><p>Set this to true if you do not want to display the complete exception stack trace to the application user. Turn this off (false) on production site.</p><p><strong>MaxInvalidPasswordAttempts</strong></p><p>Maximum number of invalid password attempts, after which no more sign in attempt will be allowed.</p><p><strong>APIConfigFileLocation .. SwitchConfigFileLocation</strong></p><p>The path of configuration files relative to web application root directory.</p><h2>Related Topics</h2><ul><li><a href=../admin.html>Administrator Documentation</a></li></ul></div><div class="social sharing bpad24"><div class="ui grey huge header"> Share this page </div><div class="icons vpad8"><a target=_blank href="https://www.facebook.com/sharer/sharer.php?u={url}" title="Share this on Facebook"><i class="circular inverted blue large facebook icon"></i></a><a target=_blank href="http://twitter.com/share?text={tweet}&amp;url={url}&amp;hashtags=#mixerp" title="Tweet this link"><i class="circular blue large twitter icon"></i></a><a target=_blank href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title=Web Configuration File (web.config)" title="Share this on LinkedIn"><i class="circular inverted blue large linkedin icon"></i></a><a target=_blank href="https://plus.google.com/share?url={url}" title="Share this on Google+"><i class="circular inverted red large google plus icon"></i></a><a target=_blank href="http://www.reddit.com/submit?url={url}" title="Share this on Reddit"><i class="circular large reddit icon"></i></a><a target=_blank href="http://pinterest.com/pin/create/button/?url={url}&amp;description=Web Configuration File (web.config)" title="Share this on Pinterest"><i class="circular inverted red large pinterest icon"></i></a><a target=_blank href="http://www.stumbleupon.com/badge/?url={url}" title="Share this on StumbleUpon"><i class="circular inverted red large stumbleupon icon"></i></a><a target=_blank href="mailto:?subject=Web Configuration File (web.config)&amp;body={message}" title="Send this on email"><i class="circular inverted olive large mail icon"></i></a></div></div></div><footer class="ui stackable center aligned inverted divided equal height stackable page three column grid"><div class="footer-pad column"><div class="ui inverted dividing header"><i class="code icon"></i> About MixERP </div><p> MixERP is an open source and free ERP software that provides a suite of useful modules to help you manage your day to day business activities, including but not limited to, human resource management, payroll, sales, purchases, inventory management, finance, customer relationship management, manufacturing, and back-office. Developed with love by your friends at MixERP Inc. </p></div><div class="footer-pad column"><div class="ui inverted dividing header"><i class="checkmark icon"></i> Documentation & License </div><p> Some sections in this documentation site are missing. This site is a <a href=index.html#community.md> community effort </a> and work in progress. </p><p> This work is licensed under a <a href=http://creativecommons.org/licenses/by-sa/4.0/ rel=license> Creative Commons Attribution-ShareAlike 4.0 International License </a> . </p></div><div class="left aligned footer-pad column"><div class="ui inverted dividing header"><i class="external icon"></i> Links </div><ul class=footer-links><li><a href=http://mixerp.org/ target=_blank> Project Website </a></li><li><a href=http://mixerp.org/forum target=_blank> Ask a Question </a></li><li><a href=https://github.com/mixerp/mixerp/issues target=_blank> Submit an Issue </a></li><li><a href=https://github.com/mixerp/mixerp/releases target=_blank> Download MixERP </a></li><li><a href=http://demo.mixerp.org/SignIn.aspx target=_blank> View the Demo </a></li><li><a href=https://www.linkedin.com/company/mixerp target=_blank>MixERP on LinkedIn</a></li><li><a href=https://www.facebook.com/mixerp.official/ target=_blank>MixERP on Facebook </a></li><li><a href=http://www.facebook.com/groups/183076085203506/ target=_blank> Facebook Group </a></li><li><a href=http://twitter.com/mixoferp/ target=_blank> Follow MixERP on Twitter </a></li><li style="list-style: none; display: inline"><ul></ul></li></ul></div></footer><script src=/docs/assets/script.js></script><script src=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js type=text/javascript charset=utf-8></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js></script><script>
+        hljs.initHighlightingOnLoad();
+
+        var createLinkedImages = function () {
+            $("#story").find("img").each(function () {
+                var el = $(this);
+                var src = el.attr("src");
+
+                var anchor = $("<a/>");
+                anchor.prop("href", "#");
+                anchor.attr("data-featherlight", src);
+                el.wrap(anchor);
+            });
+        };
+
+        createLinkedImages();
+
+        $("table").addClass("ui celled striped table");
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65607875-1', 'auto');
+        ga('send', 'pageview');
+    </script></body></html>

@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure =
+[
+    [ "GetJournalViewProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a7337cca084ca5ad98085a27031544e5e", null ],
+    [ "GetJournalViewProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#abdc5286de0d88e19aa294c29405304a0", null ],
+    [ "Execute", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#abd99349a8e5410018e8402c14906a11b", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#ae1b94101588c97ca5c3b6c96126d7175", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a8fc366ae6faa958980685c0b315a99fc", null ],
+    [ "_LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#ae0c7f563089b21062d9b37321f5941f5", null ],
+    [ "_UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#adf7cbbee69e4ecfdeb054b02601cd1a9", null ],
+    [ "Book", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a3333a5744b1b9064c9208d9ee1b80743", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a05394edc516a9e65f12b3f8da18bf8de", null ],
+    [ "From", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a428739a88dbedee8abeaaab15513e6a0", null ],
+    [ "Office", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a43e61d4a5a7e0c053f3ad8bacdd92be4", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#aaabbafeea6f961c2f776a285d9286cbc", null ],
+    [ "PostedBy", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#ad105360255e6da28f16470950eea640d", null ],
+    [ "Reason", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#ad60dd7a34af4e5baae3dafc30dcc3ec0", null ],
+    [ "ReferenceNumber", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a17ff32a2811e1d63e8454b5af4adca4d", null ],
+    [ "StatementReference", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a3b2c6993162604a988874302ae2c6bee", null ],
+    [ "Status", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a0f21d1a3036e2faa50eb116534957fa5", null ],
+    [ "To", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a455be1afd5999bb00d1b46a625e0ccbd", null ],
+    [ "TranCode", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a5b57912bf0ff35cab12d484c546eb307", null ],
+    [ "TranId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#a28d619f7136ce17d18f2ef3ef252fcc2", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#acc09bc26f3cba292445f7a7eb6a67819", null ],
+    [ "VerifiedBy", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_get_journal_view_procedure.html#af7f893b8e1a932cc6377febaf267ab0f", null ]
+];

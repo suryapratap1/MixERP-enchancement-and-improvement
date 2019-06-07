@@ -1,0 +1,5 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_models =
+[
+    [ "Report", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_models_1_1_report.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_models_1_1_report" ],
+    [ "ReportDefinition", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_models_1_1_report_definition.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_models_1_1_report_definition" ]
+];

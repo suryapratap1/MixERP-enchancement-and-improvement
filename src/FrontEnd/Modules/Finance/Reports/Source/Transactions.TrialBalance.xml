@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MixERPReport>
+  <Title>{Resources.Titles.TrialBalance}</Title>
+  <TopSection>
+
+  </TopSection>
+  <Body>
+    <Content>
+    </Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="0">
+        </GridViewDataSource>
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection>
+  </BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>
+        SELECT 
+        account_number,
+        account,
+        previous_debit,
+        previous_credit,
+        debit,
+        credit,
+        closing_debit,
+        closing_credit
+        FROM transactions.get_trial_balance(@From::date, @To::date, @UserId::integer, @OfficeId::integer, @Compact::boolean, @Factor::decimal(24,4), @ChangeSideWhenNegative::boolean, @IncludeZeroBalanceAccounts::boolean) ORDER BY id;
+      </Query>
+      <Parameters>
+        <Parameter Name="@From" Type="Date" />
+        <Parameter Name="@To" Type="Date" />
+        <Parameter Name="@UserId" Type="Number" />
+        <Parameter Name="@Factor" Type="Number" />
+        <Parameter Name="@OfficeId" Type="Number" />
+
+        <Parameter Name="@ChangeSideWhenNegative" Type="Bool" />
+        <Parameter Name="@IncludeZeroBalanceAccounts" Type="Bool" />
+        <Parameter Name="@Compact" Type="Bool" />
+      </Parameters>
+      <RunningTotalTextColumnIndex>1</RunningTotalTextColumnIndex>
+      <RunningTotalFieldIndices>2,3,6,7</RunningTotalFieldIndices>
+    </DataSource>
+  </DataSources>
+</MixERPReport>

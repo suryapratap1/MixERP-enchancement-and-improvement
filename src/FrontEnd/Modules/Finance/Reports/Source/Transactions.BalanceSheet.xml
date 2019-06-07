@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MixERPReport>
+  <Title>{Resources.Titles.BalanceSheet}</Title>
+  <TopSection>
+
+  </TopSection>
+  <Body>
+    <Content>
+    </Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="0">
+        </GridViewDataSource>
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection>
+  </BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>
+        SELECT
+        item,
+        previous_period,
+        current_period
+        FROM transactions.get_balance_sheet(@PreviousPeriod::date, @CurrentPeriod::date, @UserId::integer, @OfficeId::integer, @Factor);
+      </Query>
+      <Parameters>
+        <Parameter Name="@PreviousPeriod" Type="Date" />
+        <Parameter Name="@CurrentPeriod" Type="Date" />
+        <Parameter Name="@UserId" Type="Number" />
+        <Parameter Name="@Factor" Type="Number" />
+        <Parameter Name="@OfficeId" Type="Number" />
+       
+      </Parameters>
+      <RunningTotalTextColumnIndex>0</RunningTotalTextColumnIndex>
+      <RunningTotalFieldIndices>1,2</RunningTotalFieldIndices>
+    </DataSource>
+  </DataSources>
+</MixERPReport>

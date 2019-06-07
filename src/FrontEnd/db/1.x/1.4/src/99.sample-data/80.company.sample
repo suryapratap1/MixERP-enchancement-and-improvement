@@ -1,0 +1,10 @@
+DO
+$$
+BEGIN
+    IF(core.get_locale() = 'en-US') THEN
+        UPDATE office.offices
+        SET logo_file = '1202303_office.png';
+    END IF;
+END
+$$
+LANGUAGE plpgsql;

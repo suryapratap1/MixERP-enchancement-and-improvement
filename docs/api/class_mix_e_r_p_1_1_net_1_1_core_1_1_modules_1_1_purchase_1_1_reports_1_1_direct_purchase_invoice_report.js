@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_purchase_1_1_reports_1_1_direct_purchase_invoice_report =
+[
+    [ "OnControlLoad", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_purchase_1_1_reports_1_1_direct_purchase_invoice_report.html#ab1e0eff593f264bab9c74765533b85d3", null ]
+];

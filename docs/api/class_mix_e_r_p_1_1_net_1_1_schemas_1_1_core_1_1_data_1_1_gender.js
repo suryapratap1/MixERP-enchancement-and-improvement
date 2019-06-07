@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#abe210b9eba609f0a52f5013360226755", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a997c47946627694d635e2a9071edf6d6", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a591f923b0e0e4b3066074828691f98c7", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#af71c8306edef62d6d4df5371a75dfb92", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a8cda0425aff8f34ed429514e2120e583", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#ab550e25b13a2904de79320b4a5251ce2", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#ace6ff52058be6957b7e4862966f00c9e", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a3d9237748e94e53eaf4723a7159be49e", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a8e9b4a5a0e44f655ac5305598aa577a5", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a73026909d3f61ef6ad380c5e8ab108e3", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a472b526a3788832c8a3c6cc779de261d", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a43b75543e3db3dc58c8392565bbc2b1d", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a19bb6ba471da07f7ef847646cfacf744", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a334280aa3837a8a343dfc1d1dd0c8976", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#acfd553e3fa917d3bce5dc118c606cf12", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#aa358d748ea5e5535ee1c1109e65f109b", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a8e5982537e7161467556b389a1e5941e", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a4ec1b722d13738540cb61ca8abeb08d2", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a9a2ad184c95b50be8dbe163393f608cf", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a1d26f903b98e4da22150d83bdeb650bd", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#a263530cfc5997925ca570dd986c64ccf", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_gender.html#ae750d6614cc66165a4494c41e2c6e325", null ]
+];

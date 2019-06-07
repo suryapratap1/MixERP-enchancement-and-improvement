@@ -1,0 +1,198 @@
+﻿<div class="ui stackable grid">
+    <div class="five wide column">
+        <div class="ui segment">
+            <div class="ui large header">
+                {{partyView.PartyName}}
+            </div>
+
+            
+            <a href="/api/core/attachment/document/{{partyView.Photo }}" target="_blank">
+                <img ng-src="/api/core/attachment/document/272/272/{{partyView.Photo }}" class="ui image"
+                     height="272"
+                     alt="{{partyView.PartyName}}" />
+            </a>
+            <br />
+            <table class="ui striped definition table">
+                <tbody>
+                    <tr>
+                        <td>
+                            {{getResource('Resources.Titles.Email')}}
+                        </td>
+                        <td>
+                            <i class="mail icon"></i>
+                            <a href="mailto:{{partyView.Email}}">{{partyView.Email}}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{getResource('Resources.Titles.Url')}}
+                        </td>
+                        <td>
+                            <i class="world icon"></i>
+                            <a href="{{partyView.Url}}" target="_blank">{{partyView.Url}}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{getResource('Resources.Titles.Phone')}}
+                        </td>
+                        <td>
+                            <i class="phone icon"></i>
+                            <a href="tel:{{partyView.Phone}}">{{partyView.Phone}}</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{getResource('Resources.Titles.Fax')}}
+                        </td>
+                        <td>
+                            <i class="fax icon"></i>
+                            <a href="tel:{{partyView.Fax}}">{{partyView.Fax}}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{getResource('Resources.ScrudResource.cell')}}
+                        </td>
+                        <td>
+                            <i class="mobile icon"></i>
+                            <a href="tel:{{partyView.Cell}}">{{partyView.Cell}}</a>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="eleven wide column">
+        <table class="ui striped definition table">
+            <tbody>
+                <tr>
+                    <td style="width: 200px;">
+                        {{getResource('Resources.ScrudResource.party_type')}}
+                    </td>
+                    <td>
+                        {{partyView.PartyType}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.account_number')}}
+                    </td>
+                    <td>
+                        <a href="/Modules/Finance/Reports/AccountStatement.mix?AccountNumber={{partyView.AccountNumber}}">
+                            {{partyView.AccountNumber}}
+                        </a>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.allow_credit')}}
+                    </td>
+                    <td>
+                        {{partyView.AllowCredit}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.maximum_credit_amount')}}
+                    </td>
+                    <td>
+                        {{partyView.MaximumCreditAmount}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.maximum_credit_period')}}
+                    </td>
+                    <td>
+                        {{partyView.MaximumCreditPeriod}}
+                        {{getResource('Resources.Labels.DaysLowerCase')}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.address_line_1')}}
+                    </td>
+                    <td>
+                        {{partyView.AddressLine1}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.address_line_2')}}
+                    </td>
+                    <td>
+                        {{partyView.AddressLine2}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.zip_code')}}
+                    </td>
+                    <td>
+                        {{partyView.ZipCode}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.street')}}
+                    </td>
+                    <td>
+                        {{partyView.Street}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.city')}}
+                    </td>
+                    <td>
+                        {{partyView.City}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.state')}}
+                    </td>
+                    <td>
+                        {{partyView.State}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.ScrudResource.country')}}
+                    </td>
+                    <td>
+                        <i class="{{getCountryCode(partyView.Country)}} flag"></i>{{partyView.Country}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.Titles.SSTNumber')}}
+                    </td>
+                    <td>
+                        {{partyView.SstNumber}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.Titles.PANNumber')}}
+                    </td>
+                    <td>
+                        {{partyView.PanNumber}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{getResource('Resources.Titles.CSTNumber')}}
+                    </td>
+                    <td>{{partyView.CstNumber}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

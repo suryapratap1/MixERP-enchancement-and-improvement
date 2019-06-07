@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a802be15e21f69c26622b3993c8132953", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a8005341be31e612478985f083b0cc307", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#ad54d6c3848216d8118a39ab79d5a6e48", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a55a5fb20870936c40b0ee60a5ba04d49", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a670c089d4cf0a806a6609c04b7414446", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a7e3a7cdb59c5d5ca807fa825d994c697", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a1e51b7309f18d2c43da8a8a58e84e24d", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a270519da545b8436890c07773268db7f", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a10be6e63c1eba863b4ff1d305452a771", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a87b8d0c46b3d7c9939bc67082d5bf158", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a2dca3d01f9d84dc0e34552e89ed07ea2", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a2f653b232c77d4fc819c877d28e60fe2", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a38ec22dc4b8cf47f2d9c5ed182e2e795", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#ae4504756b248aa150acc9f3baa5bbc19", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a685b7ae0bf054ac76d6ea801e21536d5", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a844e811581cd72b5410c5ffd30052896", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a3b5f008e6978a66541b4ddb04db3cbf5", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a4f4561dccc8e470b60f401b39e04be16", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#acd25bb9f24c764f8eff29bb8e5bdcb90", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a8966d73c7ed8a098730ba2dc727031dc", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a19bed0df46f82d6a0f5790a7060b2930", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_policy_1_1_data_1_1_voucher_verification_policy.html#a5189a3d52d69b7bf33780b7fde1ed024", null ]
+];

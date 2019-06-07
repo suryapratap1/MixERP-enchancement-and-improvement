@@ -1,0 +1,27 @@
+var class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view =
+[
+    [ "Brand", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a768c32c81c3d9281f6ba7f41f4cc1471", null ],
+    [ "CostPrice", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a0cbcd1c1aacdbd69fb9acb4cd4410fdb", null ],
+    [ "HeightInCentimeters", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a94fd61f199d5036eeb7b2c05a266ee29", null ],
+    [ "HotItem", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#af5faedf999b47a390a6ba12b67f32a65", null ],
+    [ "ItemCode", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#ae17794f30a65be7a8fac719e6ec45c03", null ],
+    [ "ItemGroup", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a597d5af776bd577ff9c9a61d5f4d5cae", null ],
+    [ "ItemId", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a049b0a63def967c3ed2f428b835ce806", null ],
+    [ "ItemName", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a454407a09ab575a0642ec68eea7d7a0f", null ],
+    [ "LeadTimeInDays", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a6640a74fec7fb59990ed38562312cece", null ],
+    [ "LengthInCentimeters", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#af04d5bd312c4dea64575b65c98f20a3c", null ],
+    [ "Machinable", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a336d96f69a16711d2aea6c058f29826a", null ],
+    [ "MaintainStock", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a27efdf855fb9a4e38470c26bf4d38f67", null ],
+    [ "PreferredShippingMailType", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a4510f9c5acc8e75220084d749dc0ffee", null ],
+    [ "PreferredShippingPackageShape", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a77084693defb13475db4fb55414d9fb5", null ],
+    [ "PreferredSupplier", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a725f2248aea4e3c4c01867b7b68aef3b", null ],
+    [ "ReorderLevel", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a94fff4d69cc4b6154b2b958106fe5d49", null ],
+    [ "ReorderQuantity", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#ab1e479d67c46fb57759317156b09c578", null ],
+    [ "ReorderUnit", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a38bfa4e1db0af779381c25581bbac5a7", null ],
+    [ "SalesTax", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#aa3f59b943703d5331df169d01853597d", null ],
+    [ "SellingPrice", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#aec0f0b8081d6a5aebce87296b084bfa8", null ],
+    [ "SellingPriceIncludesTax", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#af93f2f2b8b8c36b1ec673986b386f1f0", null ],
+    [ "Unit", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a4e1fb9092b661b58da61f07af69b3547", null ],
+    [ "WeightInGrams", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a1102933a4536ba7a15748d94e51b6a4c", null ],
+    [ "WidthInCentimeters", "class_mix_e_r_p_1_1_net_1_1_entities_1_1_core_1_1_item_scrud_view.html#a5e3d56c94b535719fbdc74b08efa75ca", null ]
+];

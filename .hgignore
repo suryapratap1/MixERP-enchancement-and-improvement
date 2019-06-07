@@ -1,0 +1,21 @@
+syntax: glob
+.git
+bin
+obj
+*.pdb
+src/FrontEnd/Backups
+src/FrontEnd/update.zip
+src/FrontEnd/Resource/Documents
+src/FrontEnd/Resource/Static/Attachments
+src/FrontEnd/Resource/Static/Emails
+src/FrontEnd/Resource/Temp
+src/FrontEnd/Resource/CustomReports
+src-beta2/Web/MixERP.Net.Web.UI/Resource/Documents
+src-beta2/Web/MixERP.Net.Web.UI/Resource/Static/Attachments
+src-beta2/Web/MixERP.Net.Web.UI/Resource/Static/Emails
+src-beta2/Web/MixERP.Net.Web.UI/Resource/Backups
+src-beta2/Web/MixERP.Net.Web.UI/Resource/Temp
+src-beta2/Web/MixERP.Net.Web.UI/Resource/CustomReports
+*.exe
+*.suo
+*.user

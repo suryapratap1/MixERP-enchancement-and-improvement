@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_currency_conversion_1_1_currencylayer_1_1_currencylayer_exception =
+[
+    [ "CurrencylayerException", "class_mix_e_r_p_1_1_net_1_1_currency_conversion_1_1_currencylayer_1_1_currencylayer_exception.html#ad21cc5982332e3653960ff20c3088b1f", null ]
+];

@@ -1,0 +1,27 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure =
+[
+    [ "PostPurchaseProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a781c02394a831ec0f5f41c49924206e0", null ],
+    [ "PostPurchaseProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a0d22a883ccc921a94972c25c23aca549", null ],
+    [ "Execute", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a7a4e6b101c24d2a72d0f41010ad28959", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#ae543d557664a86bf09c2266c598bff2f", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a7c481a429930364b645a77d4582d0135", null ],
+    [ "_LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#adac3b02fdca3787308435cbadd854267", null ],
+    [ "_UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#ae4a7be8efb46d2d86b650d7b095fa082", null ],
+    [ "Attachments", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#ac6bf9f119715801d9eb50c1d61ea5098", null ],
+    [ "BookName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#ab033ebb8e0864477e907a6a980453e78", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#aefeebe89206e21995900ad9aa1b7bdc0", null ],
+    [ "CostCenterId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#aabe093834dfe06c427537a7b4f976364", null ],
+    [ "Details", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#af3286349e8f4fd7e98f1cf8f03e191c0", null ],
+    [ "IsCredit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#aed16cda7043eef87a7c4a43a5f277822", null ],
+    [ "LoginIdParameter", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a355acb10cfb85fa25c2d925acb00f54a", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#aa5d83b218237751776d42710b6c625ae", null ],
+    [ "PartyCode", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a49f59a9c4789d78b24b3be9a6b29c1aa", null ],
+    [ "PriceTypeId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a6fa3394e4f7c2d5f83d1fbb5f810a6fc", null ],
+    [ "ReferenceNumber", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a72f8b52b5e7fac687905fa835860a237", null ],
+    [ "ShipperId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#aa9c3708bb720b8443575308bfb1079f4", null ],
+    [ "StatementReference", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a09ebf6b3a18787b6b155aeccf4497330", null ],
+    [ "StoreId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#af970213c9472ff27b711c8409da751af", null ],
+    [ "TranIds", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a2c087477ce058a18ba684d51d843ab4d", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#a73de15008d7769418da50c1ece7bdbeb", null ],
+    [ "ValueDate", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_purchase_procedure.html#aac20385e09674c2348d4c7a7ac358080", null ]
+];

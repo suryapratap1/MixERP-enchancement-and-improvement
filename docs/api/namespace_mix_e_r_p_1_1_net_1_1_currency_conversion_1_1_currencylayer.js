@@ -1,0 +1,5 @@
+var namespace_mix_e_r_p_1_1_net_1_1_currency_conversion_1_1_currencylayer =
+[
+    [ "Converter", "class_mix_e_r_p_1_1_net_1_1_currency_conversion_1_1_currencylayer_1_1_converter.html", "class_mix_e_r_p_1_1_net_1_1_currency_conversion_1_1_currencylayer_1_1_converter" ],
+    [ "CurrencylayerException", "class_mix_e_r_p_1_1_net_1_1_currency_conversion_1_1_currencylayer_1_1_currencylayer_exception.html", "class_mix_e_r_p_1_1_net_1_1_currency_conversion_1_1_currencylayer_1_1_currencylayer_exception" ]
+];

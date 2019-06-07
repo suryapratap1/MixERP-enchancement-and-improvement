@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MixERPReport>
+  <Title>Top Suppliers</Title>
+  <TopSection>
+    <Charts>
+      <Chart ID="Chart1" GridViewIndex="0" HideGridView="false" Type="Bar" BorderColor="#FFF" Width="1000" Height="300" TitleColumnIndex="1" ValueColumnIndex="3">
+      </Chart>
+    </Charts>
+  </TopSection>
+  <Body>
+    <Content></Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="0" />
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection></BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>
+        SELECT
+        core.parties.party_id,
+        CASE WHEN COALESCE(core.parties.party_name, '') = ''
+        THEN core.parties.company_name
+        ELSE core.parties.party_name
+        END as party,
+        core.countries.country_name,
+        SUM((price * quantity) - discount + tax) AS amount
+        FROM transactions.verified_stock_transaction_view
+        INNER JOIN core.parties
+        ON transactions.verified_stock_transaction_view.party_id = core.parties.party_id
+        INNER JOIN core.countries
+        ON core.countries.country_id = core.parties.country_id
+        WHERE left(book, 8) = 'Purchase'
+        GROUP BY
+        core.parties.party_id,
+        core.parties.party_name,
+        core.parties.company_name,
+        core.countries.country_name
+        ORDER BY 2 DESC
+        LIMIT 5;
+      </Query>
+    </DataSource>
+  </DataSources>
+  <Menu Code="TOPSUP" Text="Top Suppliers" ParentMenuCode="PUR" />
+</MixERPReport>

@@ -1,0 +1,6 @@
+var namespace_mix_e_r_p_1_1_net_1_1_framework_1_1_contracts_1_1_currency =
+[
+    [ "CurrencyConversionResult", "class_mix_e_r_p_1_1_net_1_1_framework_1_1_contracts_1_1_currency_1_1_currency_conversion_result.html", "class_mix_e_r_p_1_1_net_1_1_framework_1_1_contracts_1_1_currency_1_1_currency_conversion_result" ],
+    [ "CurrencyConverter", "class_mix_e_r_p_1_1_net_1_1_framework_1_1_contracts_1_1_currency_1_1_currency_converter.html", "class_mix_e_r_p_1_1_net_1_1_framework_1_1_contracts_1_1_currency_1_1_currency_converter" ],
+    [ "ICurrencyConverter", "interface_mix_e_r_p_1_1_net_1_1_framework_1_1_contracts_1_1_currency_1_1_i_currency_converter.html", "interface_mix_e_r_p_1_1_net_1_1_framework_1_1_contracts_1_1_currency_1_1_i_currency_converter" ]
+];

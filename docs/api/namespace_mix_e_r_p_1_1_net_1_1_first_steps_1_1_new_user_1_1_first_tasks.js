@@ -1,0 +1,8 @@
+var namespace_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks =
+[
+    [ "CountySalesTax", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_county_sales_tax.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_county_sales_tax" ],
+    [ "SalesTax", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_sales_tax.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_sales_tax" ],
+    [ "StateSalesTax", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_state_sales_tax.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_state_sales_tax" ],
+    [ "TaxAuthority", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_tax_authority.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_tax_authority" ],
+    [ "TaxMaster", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_tax_master.html", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_first_tasks_1_1_tax_master" ]
+];

@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a16b2f7c608fd25807bf90a4ad626b591", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#ad2064eb6cecef52d2a4a01d1bb5c54e3", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#ab77b6f96c0ac99e307dc64e953594276", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#ade6f8ff3559299c8ef5e33b966b679ee", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a16cbf748b55c4791434debbfb76b4ed8", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a25ae501daa45054b311b33ba1a909556", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#aec396b21cce3136d77651f25902d69a5", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a5e31d32d7fd8388d36bd9809512b0a74", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a5cd1a59ab66be99f96172e261a4e8a62", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a21e7a18b0cd8a0a109b0c4d87c1c9652", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a1a500d5a9c95afbb76cff104ef79db9d", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a04bcfcb4b3266f6865451cfd55325fa2", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a5d8df76d9096113789317a3fe9294e85", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#aba85669354de04177cfdb3d36088cc3b", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#afed11227fe36470496ee3eadc331fda2", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a12e2a644dcfcba324ce013d5c3ed0a8d", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a3d4f6fb56f702501c03936117b78d535", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a93c5188bfbba0af5014412b7dadc628a", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#ad8a35680d083e39d4a61dda22d0054e2", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#a69eaf4a5bc932c30621244be9594236c", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#aa689cffa2da72cae4cd2466e014c2765", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_income_tax_setup.html#aec719c1aae1c7d24e76b08c3c6aa05c4", null ]
+];

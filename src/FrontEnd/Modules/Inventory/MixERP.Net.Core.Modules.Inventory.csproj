@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{005F98DB-6410-47B4-A8AF-0C2883174E55}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Core.Modules.Inventory</RootNamespace>
+    <AssemblyName>MixERP.Net.Core.Modules.Inventory</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\MixERP.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Serilog.1.5.7\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.FullNetFx">
+      <HintPath>..\..\..\packages\Serilog.1.5.7\lib\net45\Serilog.FullNetFx.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\mixerp.licenseheader">
+      <Link>mixerp.licenseheader</Link>
+    </Content>
+    <Content Include="Confirmation\Adjustment.ascx" />
+    <Content Include="Confirmation\TransferDelivery.ascx" />
+    <Content Include="Confirmation\TransferRequest.ascx" />
+    <Content Include="Entry\TransferDelivery.ascx" />
+    <Content Include="Entry\TransferRequest.ascx" />
+    <Content Include="Mix Open Foundation.snk" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\Setup\Parties\Entry.js" />
+    <Content Include="Services\Setup\Parties.asmx" />
+    <Content Include="Services\Setup\PartyInfo.asmx" />
+    <Content Include="Services\web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adjustment.ascx" />
+    <Content Include="Confirmation\Transfer.ascx" />
+    <Content Include="Entry\Transfer.ascx" />
+    <Content Include="Index.ascx" />
+    <Content Include="Package.xml" />
+    <Content Include="Reports\AccountStatement.ascx" />
+    <Content Include="Reports\AccountStatementReport.ascx" />
+    <Content Include="Reports\InventoryAdjustmentReport.ascx" />
+    <Content Include="Reports\InventoryAdvice.ascx" />
+    <Content Include="Reports\InventoryTransferDeliveryReport.ascx" />
+    <Content Include="Reports\InventoryTransferReport.ascx" />
+    <Content Include="Reports\InventoryTransferRequestReport.ascx" />
+    <Content Include="Reports\Source\Inventory.AccountStatement.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Source\Inventory.Advice.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Source\Inventory.Adjustment.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Source\Inventory.Transfer.Delivery.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Source\Inventory.Transfer.Request.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\Source\Inventory.Transfer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\TransferRequest.js" />
+    <Content Include="Scripts\Reports\AccountStatement.js" />
+    <Content Include="Scripts\Setup\Parties.js" />
+    <Content Include="Services\Entry\Adjustment.asmx" />
+    <Content Include="Services\Entry\Transfer.asmx" />
+    <Content Include="Services\Entry\TransferDelivery.asmx" />
+    <Content Include="Services\Entry\TransferRequest.asmx" />
+    <Content Include="Services\TransferAcknowledgement.asmx" />
+    <Content Include="Services\TransferAuthorization.asmx" />
+    <Content Include="Setup\Attributes.ascx" />
+    <Content Include="Setup\CompoundItemDetails.ascx" />
+    <Content Include="Setup\CompoundItems.ascx" />
+    <Content Include="Setup\ItemTypes.ascx" />
+    <Content Include="Setup\ItemVariantDetails.ascx" />
+    <Content Include="Setup\ItemVariants.ascx" />
+    <Content Include="Setup\Parties\Entry.ascx" />
+    <Content Include="Setup\Parties\index.html" />
+    <Content Include="Setup\PartyInfo.ascx" />
+    <Content Include="Setup\PartyInfo\buttons.html" />
+    <Content Include="Setup\PartyInfo\trend\ajax.js" />
+    <Content Include="Setup\PartyInfo\trend\chart.js" />
+    <Content Include="Setup\PartyInfo\trend\index.html" />
+    <Content Include="Setup\PartyInfo\account-statement\ajax.js" />
+    <Content Include="Setup\PartyInfo\account-statement\controller.js" />
+    <Content Include="Setup\PartyInfo\popular-items\ajax.js" />
+    <Content Include="Setup\PartyInfo\popular-items\chart.js" />
+    <Content Include="Setup\PartyInfo\shipping-addresses\ajax.js" />
+    <Content Include="Setup\PartyInfo\shipping-addresses\controller.js" />
+    <Content Include="Setup\PartyInfo\shipping-addresses\index.html" />
+    <Content Include="Setup\PartyInfo\general-info\ajax.js" />
+    <Content Include="Setup\PartyInfo\general-info\controller.js" />
+    <Content Include="Setup\PartyInfo\general-info\index.html" />
+    <Content Include="Setup\PartyInfo\account-statement\index.html" />
+    <Content Include="Setup\PartyInfo\popular-items\index.html" />
+    <Content Include="Setup\Stores.ascx" />
+    <Content Include="Setup\StoreTypes.ascx" />
+    <Content Include="Services\ItemData.asmx" />
+    <Content Include="Services\PartyData.asmx" />
+    <Content Include="Setup\Brands.ascx" />
+    <Content Include="Setup\CostPrices.ascx" />
+    <Content Include="Setup\CUOM.ascx" />
+    <Content Include="Setup\ItemGroups.ascx" />
+    <Content Include="Setup\Items.ascx" />
+    <Content Include="Setup\ItemsPopup.ascx" />
+    <Content Include="Setup\Parties.ascx" />
+    <Content Include="Setup\PartiesPopup.ascx" />
+    <Content Include="Setup\PartyTypes.ascx" />
+    <Content Include="Setup\SellingPrices.ascx" />
+    <Content Include="Setup\Shippers.ascx" />
+    <Content Include="Setup\ShippingAddresses.ascx" />
+    <Content Include="Setup\UOM.ascx" />
+    <Content Include="Setup\Variants.ascx" />
+    <Content Include="Transfer.ascx" />
+    <Content Include="TransferAcknowledgement.ascx" />
+    <Content Include="TransferAuthorization.ascx" />
+    <Content Include="TransferDelivery.ascx" />
+    <Content Include="TransferRequest.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adjustment.ascx.cs">
+      <DependentUpon>Adjustment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adjustment.ascx.designer.cs">
+      <DependentUpon>Adjustment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation\Adjustment.ascx.cs">
+      <DependentUpon>Adjustment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation\Adjustment.ascx.designer.cs">
+      <DependentUpon>Adjustment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation\Transfer.ascx.cs">
+      <DependentUpon>Transfer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation\Transfer.ascx.designer.cs">
+      <DependentUpon>Transfer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation\TransferDelivery.ascx.cs">
+      <DependentUpon>TransferDelivery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation\TransferDelivery.ascx.designer.cs">
+      <DependentUpon>TransferDelivery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation\TransferRequest.ascx.cs">
+      <DependentUpon>TransferRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation\TransferRequest.ascx.designer.cs">
+      <DependentUpon>TransferRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\Transfer.ascx.cs">
+      <DependentUpon>Transfer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entry\Transfer.ascx.designer.cs">
+      <DependentUpon>Transfer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\TransferDelivery.ascx.cs">
+      <DependentUpon>TransferDelivery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entry\TransferDelivery.ascx.designer.cs">
+      <DependentUpon>TransferDelivery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\TransferRequest.ascx.cs">
+      <DependentUpon>TransferRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entry\TransferRequest.ascx.designer.cs">
+      <DependentUpon>TransferRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.ascx.cs">
+      <DependentUpon>Index.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.ascx.designer.cs">
+      <DependentUpon>Index.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\AccountStatement.ascx.cs">
+      <DependentUpon>AccountStatement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountStatement.ascx.designer.cs">
+      <DependentUpon>AccountStatement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AccountStatementReport.ascx.cs">
+      <DependentUpon>AccountStatementReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountStatementReport.ascx.designer.cs">
+      <DependentUpon>AccountStatementReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InventoryAdjustmentReport.ascx.cs">
+      <DependentUpon>InventoryAdjustmentReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\InventoryAdjustmentReport.ascx.designer.cs">
+      <DependentUpon>InventoryAdjustmentReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InventoryAdvice.ascx.cs">
+      <DependentUpon>InventoryAdvice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\InventoryAdvice.ascx.designer.cs">
+      <DependentUpon>InventoryAdvice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InventoryTransferDeliveryReport.ascx.cs">
+      <DependentUpon>InventoryTransferDeliveryReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\InventoryTransferDeliveryReport.ascx.designer.cs">
+      <DependentUpon>InventoryTransferDeliveryReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InventoryTransferReport.ascx.cs">
+      <DependentUpon>InventoryTransferReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\InventoryTransferReport.ascx.designer.cs">
+      <DependentUpon>InventoryTransferReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InventoryTransferRequestReport.ascx.cs">
+      <DependentUpon>InventoryTransferRequestReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\InventoryTransferRequestReport.ascx.designer.cs">
+      <DependentUpon>InventoryTransferRequestReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Entry\Adjustment.asmx.cs">
+      <DependentUpon>Adjustment.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Entry\Transfer.asmx.cs">
+      <DependentUpon>Transfer.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Entry\TransferDelivery.asmx.cs">
+      <DependentUpon>TransferDelivery.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Entry\TransferRequest.asmx.cs">
+      <DependentUpon>TransferRequest.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ItemData.asmx.cs">
+      <DependentUpon>ItemData.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\PartyData.asmx.cs">
+      <DependentUpon>PartyData.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Setup\Parties.asmx.cs">
+      <DependentUpon>Parties.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Setup\PartyInfo.asmx.cs">
+      <DependentUpon>PartyInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\TransferAcknowledgement.asmx.cs">
+      <DependentUpon>TransferAcknowledgement.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\TransferAuthorization.asmx.cs">
+      <DependentUpon>TransferAuthorization.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Setup\Attributes.ascx.cs">
+      <DependentUpon>Attributes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\Attributes.ascx.designer.cs">
+      <DependentUpon>Attributes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Brands.ascx.cs">
+      <DependentUpon>Brands.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\Brands.ascx.designer.cs">
+      <DependentUpon>Brands.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CompoundItemDetails.ascx.cs">
+      <DependentUpon>CompoundItemDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\CompoundItemDetails.ascx.designer.cs">
+      <DependentUpon>CompoundItemDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CompoundItems.ascx.cs">
+      <DependentUpon>CompoundItems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\CompoundItems.ascx.designer.cs">
+      <DependentUpon>CompoundItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CostPrices.ascx.cs">
+      <DependentUpon>CostPrices.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\CostPrices.ascx.designer.cs">
+      <DependentUpon>CostPrices.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\CUOM.ascx.cs">
+      <DependentUpon>CUOM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\CUOM.ascx.designer.cs">
+      <DependentUpon>CUOM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\ItemGroups.ascx.cs">
+      <DependentUpon>ItemGroups.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\ItemGroups.ascx.designer.cs">
+      <DependentUpon>ItemGroups.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\ItemsPopup.ascx.cs">
+      <DependentUpon>ItemsPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\ItemsPopup.ascx.designer.cs">
+      <DependentUpon>ItemsPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\ItemTypes.ascx.cs">
+      <DependentUpon>ItemTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\ItemTypes.ascx.designer.cs">
+      <DependentUpon>ItemTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\ItemVariantDetails.ascx.cs">
+      <DependentUpon>ItemVariantDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\ItemVariantDetails.ascx.designer.cs">
+      <DependentUpon>ItemVariantDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\ItemVariants.ascx.cs">
+      <DependentUpon>ItemVariants.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\ItemVariants.ascx.designer.cs">
+      <DependentUpon>ItemVariants.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\PartiesPopup.ascx.cs">
+      <DependentUpon>PartiesPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\PartiesPopup.ascx.designer.cs">
+      <DependentUpon>PartiesPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Parties\Entry.ascx.cs">
+      <DependentUpon>Entry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\Parties\Entry.ascx.designer.cs">
+      <DependentUpon>Entry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\PartyInfo.ascx.cs">
+      <DependentUpon>PartyInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\PartyInfo.ascx.designer.cs">
+      <DependentUpon>PartyInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\PartyTypes.ascx.cs">
+      <DependentUpon>PartyTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\PartyTypes.ascx.designer.cs">
+      <DependentUpon>PartyTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\SellingPrices.ascx.cs">
+      <DependentUpon>SellingPrices.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\SellingPrices.ascx.designer.cs">
+      <DependentUpon>SellingPrices.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Shippers.ascx.cs">
+      <DependentUpon>Shippers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\Shippers.ascx.designer.cs">
+      <DependentUpon>Shippers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\ShippingAddresses.ascx.cs">
+      <DependentUpon>ShippingAddresses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\ShippingAddresses.ascx.designer.cs">
+      <DependentUpon>ShippingAddresses.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Stores.ascx.cs">
+      <DependentUpon>Stores.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\Stores.ascx.designer.cs">
+      <DependentUpon>Stores.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\StoreTypes.ascx.cs">
+      <DependentUpon>StoreTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\StoreTypes.ascx.designer.cs">
+      <DependentUpon>StoreTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\UOM.ascx.cs">
+      <DependentUpon>UOM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\UOM.ascx.designer.cs">
+      <DependentUpon>UOM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Variants.ascx.cs">
+      <DependentUpon>Variants.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\Variants.ascx.designer.cs">
+      <DependentUpon>Variants.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer.ascx.cs">
+      <DependentUpon>Transfer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfer.ascx.designer.cs">
+      <DependentUpon>Transfer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferAcknowledgement.ascx.designer.cs">
+      <DependentUpon>TransferAcknowledgement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferAuthorization.ascx.designer.cs">
+      <DependentUpon>TransferAuthorization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferDelivery.ascx.designer.cs">
+      <DependentUpon>TransferDelivery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferRequest.ascx.cs">
+      <DependentUpon>TransferRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransferRequest.ascx.designer.cs">
+      <DependentUpon>TransferRequest.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Libraries\Entities\Core\MixERP.Net.Entities.Core.csproj">
+      <Project>{0F0490A5-8065-4B0A-9844-905E32A05DC4}</Project>
+      <Name>MixERP.Net.Entities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Entities\MixERP.Net.Entities\MixERP.Net.Entities.csproj">
+      <Project>{BDE918B1-DD9B-41C9-A41F-F3DDEC18B6D8}</Project>
+      <Name>MixERP.Net.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Entities\Office\MixERP.Net.Entities.Office.csproj">
+      <Project>{ECE2EA15-08D3-46D6-8906-BEC973C0568B}</Project>
+      <Name>MixERP.Net.Entities.Office</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Entities\Transactions\MixERP.Net.Entities.Transactions.csproj">
+      <Project>{665E96EE-D5D0-426E-A8CD-22E3A9981349}</Project>
+      <Name>MixERP.Net.Entities.Transactions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Logic\MixER.Net.StateServer\MixERP.Net.ApplicationState.csproj">
+      <Project>{61AB8B69-2097-4595-97B7-4A930A70163D}</Project>
+      <Name>MixERP.Net.ApplicationState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Logic\MixERP.net.Common\MixERP.Net.Common.csproj">
+      <Project>{d5a09c22-8f48-4fb2-a14d-c62c8c8fcec0}</Project>
+      <Name>MixERP.Net.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Logic\MixERP.Net.Framework\MixERP.Net.Framework.csproj">
+      <Project>{1509332F-AE98-44D9-9072-5BBC59A65FC4}</Project>
+      <Name>MixERP.Net.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Logic\MixERP.Net.i18n\MixERP.Net.i18n.csproj">
+      <Project>{2ECD1C2E-D7D0-4A24-896A-E625B0566DB5}</Project>
+      <Name>MixERP.Net.i18n</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Logic\MixERP.Net.TransactionGovernor\MixERP.Net.TransactionGovernor.csproj">
+      <Project>{0aacf4db-8332-4c4b-96df-2bf6aea68473}</Project>
+      <Name>MixERP.Net.TransactionGovernor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969d7960-52e2-40fc-91e5-1393b71e23b0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Server Controls\Project\MixERP.Net.WebControls.Common\MixERP.Net.WebControls.Common.csproj">
+      <Project>{2d961540-6597-4e7b-969c-974d71d820dd}</Project>
+      <Name>MixERP.Net.WebControls.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Server Controls\Project\MixERP.Net.WebControls.Flag\MixERP.Net.WebControls.Flag.csproj">
+      <Project>{F625BEFD-2BBB-48AF-A7E5-54B8E61F3282}</Project>
+      <Name>MixERP.Net.WebControls.Flag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Server Controls\Project\MixERP.Net.WebControls.ReportEngine\MixERP.Net.WebControls.ReportEngine.csproj">
+      <Project>{81F04B78-6194-4F86-A795-5F186C602EEE}</Project>
+      <Name>MixERP.Net.WebControls.ReportEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Server Controls\Project\MixERP.Net.WebControls.StockAdjustmentFactory\MixERP.Net.WebControls.StockAdjustmentFactory.csproj">
+      <Project>{935fbcef-5f6b-4bd3-b6f3-0c65fea66a15}</Project>
+      <Name>MixERP.Net.WebControls.StockAdjustmentFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\Server Controls\Project\MixERP.Net.WebControls.TransactionChecklist\MixERP.Net.WebControls.TransactionChecklist.csproj">
+      <Project>{64490B89-B228-4188-8235-71744A94C9AE}</Project>
+      <Name>MixERP.Net.WebControls.TransactionChecklist</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MixERP.Net.FrontEnd.csproj">
+      <Project>{ace1017d-71bc-4417-a906-72c4b9c55823}</Project>
+      <Name>MixERP.Net.FrontEnd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventory.Data\MixERP.Net.Core.Modules.Inventory.Data.csproj">
+      <Project>{599dd5fd-dbf7-48b1-86fc-73b5ea70aa59}</Project>
+      <Name>MixERP.Net.Core.Modules.Inventory.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Widgets\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20731</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20731/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:9000/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:8000</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

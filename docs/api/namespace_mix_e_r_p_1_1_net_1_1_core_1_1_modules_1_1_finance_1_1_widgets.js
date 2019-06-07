@@ -1,0 +1,4 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_widgets =
+[
+    [ "WorkflowWidget", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_widgets_1_1_workflow_widget.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_widgets_1_1_workflow_widget" ]
+];

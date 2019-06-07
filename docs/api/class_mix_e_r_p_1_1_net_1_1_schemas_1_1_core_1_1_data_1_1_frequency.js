@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a67c715d060314d8c51a9ad7189afbcce", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a7d8824cc3504fc843239b6483888aaf7", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a9b7e3455377dd34f682f54b7141dcb96", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a251abc010c7ce62b09ca17aa89025522", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#abd04bb1826cbbb8dec16d128bb0cd224", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a9eb40baba8bb6890e464424491f39077", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a2ec2067c8f2ef085e2cebe96f5dc8c1a", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a00cab8364e426892d451942687fe40fb", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#ad0b165df2b84932f83b778cfc3af2826", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#ab39e53f55686c22dec07b4199c8705fb", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#aed455262c7c9b46c7c8ed8deeffeb873", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a0754b6e8c36b7f219d999d3efee01735", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a33c97d437d03e6511ebac38de20d66ce", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a4c20fd68671040d7e34c1f28bc6e5120", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a83a88280ede8148768177b2f07729589", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a40bae2c51305219c52d59535341fa3f6", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#aaf092cd02eb309bbb2a8d292cbae93b6", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#aba2610b3f0f4011dd7fdd4e475420396", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#ae65fcf4551ead7ce266906d59da79118", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a273bddbf331ce02f4fbaa3a6b6ea12df", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a7941f2296dce51df79f835ab550e0463", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_frequency.html#a6bb89eb2ff842b690be57f963c96562c", null ]
+];

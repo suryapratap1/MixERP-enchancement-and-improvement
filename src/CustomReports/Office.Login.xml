@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MixERPReport>
+  <Title>{Resources.Titles.LoginView}</Title>
+  <TopSection>
+  </TopSection>
+  <Body>
+    <Content>
+    </Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="0">
+        </GridViewDataSource>
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection>
+  </BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>
+        SELECT * FROM office.sign_in_view;
+      </Query>
+    </DataSource>
+  </DataSources>
+</MixERPReport>

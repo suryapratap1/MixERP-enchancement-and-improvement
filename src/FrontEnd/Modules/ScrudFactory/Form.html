@@ -1,0 +1,78 @@
+﻿<div class="form factory" style="display: none;">
+
+    <div id="ScrudFormErrorModal" class="ui small negative modal">
+        <i class="close icon"></i>
+        <div class="orange header">
+            <i class="warning sign icon"></i>
+            Cannot Save
+        </div>
+        <div class="content">
+            <div class="ui header">Form Invalid</div>
+            <ul class="error-list error-message"></ul>
+        </div>
+        <div class="actions">
+            <div class="ui positive close button">
+                <span data-localize="Titles.Close"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui stackable grid">
+        <div class="eight wide column">
+            <div class="ui grey huge header">
+                <span class="title initial value"></span>
+                <span class="live"></span>
+                <div class="ui sub header"></div>
+            </div>
+        </div>
+        <div class="eight wide right aligned column">
+            <div class="ui mini basic icon buttons">
+                <a class="ui basic button" id="ReturnToViewButton" data-localized-resource="Titles.ReturnToView" data-localization-target="title">
+                    <i class="mini list layout icon"></i>
+                </a>
+                <a class="ui basic button" id="CreateDuplicateButton" data-localized-resource="Titles.CreateDuplicate" data-localization-target="title">
+                    <i class="mini copy icon"></i>
+                </a>
+            </div>
+            <div class="ui mini basic icon buttons">
+                <a class="ui basic button" id="FirstButton" data-localized-resource="Titles.First" data-localization-target="title">
+                    <i class="mini arrow  left icon"></i>
+                </a>
+                <div class="ui basic button" id="PreviousButton" data-localized-resource="Titles.Previous" data-localization-target="title">
+                    <i class="mini angle left icon"></i>
+                </div>
+                <div class="ui basic button" id="NextButton" data-localized-resource="Titles.Next" data-localization-target="title">
+                    <i class="mini angle right icon"></i>
+                </div>
+                <div class="ui basic button" id="LastButton" data-localized-resource="Titles.Last" data-localization-target="title">
+                    <i class="mini arrow right icon"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ui info description message" style="display: none;"></div>
+
+    <div class='ui divider'></div>
+
+    <div data-role="form-members">
+        <div class="ui stackable form" id="scrud" data-role="pre-tab" style="display: none;">
+        </div>
+        <div id="scrud-tabs">
+            <div id="scrud-tab-menus" class="ui pointing secondary tabular purple stackable menu">
+            </div>
+            <div id="scrud-tab-members">
+            </div>
+        </div>
+    </div>
+
+    <div class="big error"></div>
+    <div class="ui buttons tpad8">
+        <input type="button" class="ui purple button" id="SaveButton" data-localized-resource="Titles.Save" data-localization-target="value" />
+        <input type="button" class="ui basic purple button" id="CancelButton" data-localized-resource="Titles.Cancel" data-localization-target="value" />
+    </div>
+</div>
+
+<script src="/bundles/scrudfactory-form.js"></script>
+<script src="/Scripts/mixerp/utitlities/localizable.js"></script>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4900CBE3-7E5A-4A04-8B7E-89C0D6773354}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Api.Policy</RootNamespace>
+    <AssemblyName>MixERP.Net.Api.Policy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.assert.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.core.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessTypeController.cs" />
+    <Compile Include="ApiAccessPolicyController.cs" />
+    <Compile Include="AutoVerificationPolicyController.cs" />
+    <Compile Include="AutoVerificationPolicyScrudViewController.cs" />
+    <Compile Include="CanPostTransactionController.cs" />
+    <Compile Include="ChangePasswordController.cs" />
+    <Compile Include="CreateAccessTypesController.cs" />
+    <Compile Include="DefaultEntityAccessController.cs" />
+    <Compile Include="DefaultEntityAccessScrudViewController.cs" />
+    <Compile Include="EntityAccessController.cs" />
+    <Compile Include="EntityAccessScrudViewController.cs" />
+    <Compile Include="Fakes\AccessTypeRepository.cs" />
+    <Compile Include="Fakes\ApiAccessPolicyRepository.cs" />
+    <Compile Include="Fakes\AutoVerificationPolicyRepository.cs" />
+    <Compile Include="Fakes\AutoVerificationPolicyScrudViewRepository.cs" />
+    <Compile Include="Fakes\CanPostTransactionRepository.cs" />
+    <Compile Include="Fakes\ChangePasswordRepository.cs" />
+    <Compile Include="Fakes\CreateAccessTypesRepository.cs" />
+    <Compile Include="Fakes\DefaultEntityAccessRepository.cs" />
+    <Compile Include="Fakes\DefaultEntityAccessScrudViewRepository.cs" />
+    <Compile Include="Fakes\EntityAccessRepository.cs" />
+    <Compile Include="Fakes\EntityAccessScrudViewRepository.cs" />
+    <Compile Include="Fakes\GetMenuPolicyRepository.cs" />
+    <Compile Include="Fakes\GetMenuRepository.cs" />
+    <Compile Include="Fakes\HasAccessRepository.cs" />
+    <Compile Include="Fakes\HttpActionRepository.cs" />
+    <Compile Include="Fakes\IsElevatedUserRepository.cs" />
+    <Compile Include="Fakes\IsLockedOutTillRepository.cs" />
+    <Compile Include="Fakes\IsRestrictedModeRepository.cs" />
+    <Compile Include="Fakes\IsTransactionRestrictedRepository.cs" />
+    <Compile Include="Fakes\LockOutRepository.cs" />
+    <Compile Include="Fakes\MenuAccessRepository.cs" />
+    <Compile Include="Fakes\MenuPolicyRepository.cs" />
+    <Compile Include="Fakes\SaveMenuPolicyRepository.cs" />
+    <Compile Include="Fakes\StorePolicyDetailRepository.cs" />
+    <Compile Include="Fakes\StorePolicyRepository.cs" />
+    <Compile Include="Fakes\VoucherVerificationPolicyRepository.cs" />
+    <Compile Include="Fakes\VoucherVerificationPolicyScrudViewRepository.cs" />
+    <Compile Include="GetMenuController.cs" />
+    <Compile Include="GetMenuPolicyController.cs" />
+    <Compile Include="HasAccessController.cs" />
+    <Compile Include="HttpActionController.cs" />
+    <Compile Include="IsElevatedUserController.cs" />
+    <Compile Include="IsLockedOutTillController.cs" />
+    <Compile Include="IsRestrictedModeController.cs" />
+    <Compile Include="IsTransactionRestrictedController.cs" />
+    <Compile Include="LockOutController.cs" />
+    <Compile Include="MenuAccessController.cs" />
+    <Compile Include="MenuPolicyController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveMenuPolicyController.cs" />
+    <Compile Include="StorePolicyController.cs" />
+    <Compile Include="StorePolicyDetailController.cs" />
+    <Compile Include="Tests\AccessTypeRouteTests.cs" />
+    <Compile Include="Tests\AccessTypeTests.cs" />
+    <Compile Include="Tests\ApiAccessPolicyRouteTests.cs" />
+    <Compile Include="Tests\ApiAccessPolicyTests.cs" />
+    <Compile Include="Tests\AutoVerificationPolicyRouteTests.cs" />
+    <Compile Include="Tests\AutoVerificationPolicyScrudViewRouteTests.cs" />
+    <Compile Include="Tests\AutoVerificationPolicyScrudViewTests.cs" />
+    <Compile Include="Tests\AutoVerificationPolicyTests.cs" />
+    <Compile Include="Tests\CanPostTransactionRouteTests.cs" />
+    <Compile Include="Tests\CanPostTransactionTests.cs" />
+    <Compile Include="Tests\ChangePasswordRouteTests.cs" />
+    <Compile Include="Tests\ChangePasswordTests.cs" />
+    <Compile Include="Tests\CreateAccessTypesRouteTests.cs" />
+    <Compile Include="Tests\CreateAccessTypesTests.cs" />
+    <Compile Include="Tests\DefaultEntityAccessRouteTests.cs" />
+    <Compile Include="Tests\DefaultEntityAccessScrudViewRouteTests.cs" />
+    <Compile Include="Tests\DefaultEntityAccessScrudViewTests.cs" />
+    <Compile Include="Tests\DefaultEntityAccessTests.cs" />
+    <Compile Include="Tests\EntityAccessRouteTests.cs" />
+    <Compile Include="Tests\EntityAccessScrudViewRouteTests.cs" />
+    <Compile Include="Tests\EntityAccessScrudViewTests.cs" />
+    <Compile Include="Tests\EntityAccessTests.cs" />
+    <Compile Include="Tests\GetMenuPolicyRouteTests.cs" />
+    <Compile Include="Tests\GetMenuPolicyTests.cs" />
+    <Compile Include="Tests\GetMenuRouteTests.cs" />
+    <Compile Include="Tests\GetMenuTests.cs" />
+    <Compile Include="Tests\HasAccessRouteTests.cs" />
+    <Compile Include="Tests\HasAccessTests.cs" />
+    <Compile Include="Tests\HttpActionRouteTests.cs" />
+    <Compile Include="Tests\HttpActionTests.cs" />
+    <Compile Include="Tests\IsElevatedUserRouteTests.cs" />
+    <Compile Include="Tests\IsElevatedUserTests.cs" />
+    <Compile Include="Tests\IsLockedOutTillRouteTests.cs" />
+    <Compile Include="Tests\IsLockedOutTillTests.cs" />
+    <Compile Include="Tests\IsRestrictedModeRouteTests.cs" />
+    <Compile Include="Tests\IsRestrictedModeTests.cs" />
+    <Compile Include="Tests\IsTransactionRestrictedRouteTests.cs" />
+    <Compile Include="Tests\IsTransactionRestrictedTests.cs" />
+    <Compile Include="Tests\LockOutRouteTests.cs" />
+    <Compile Include="Tests\LockOutTests.cs" />
+    <Compile Include="Tests\MenuAccessRouteTests.cs" />
+    <Compile Include="Tests\MenuAccessTests.cs" />
+    <Compile Include="Tests\MenuPolicyRouteTests.cs" />
+    <Compile Include="Tests\MenuPolicyTests.cs" />
+    <Compile Include="Tests\SaveMenuPolicyRouteTests.cs" />
+    <Compile Include="Tests\SaveMenuPolicyTests.cs" />
+    <Compile Include="Tests\StorePolicyDetailRouteTests.cs" />
+    <Compile Include="Tests\StorePolicyDetailTests.cs" />
+    <Compile Include="Tests\StorePolicyRouteTests.cs" />
+    <Compile Include="Tests\StorePolicyTests.cs" />
+    <Compile Include="Tests\VoucherVerificationPolicyRouteTests.cs" />
+    <Compile Include="Tests\VoucherVerificationPolicyScrudViewRouteTests.cs" />
+    <Compile Include="Tests\VoucherVerificationPolicyScrudViewTests.cs" />
+    <Compile Include="Tests\VoucherVerificationPolicyTests.cs" />
+    <Compile Include="VoucherVerificationPolicyController.cs" />
+    <Compile Include="VoucherVerificationPolicyScrudViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\Policy\MixERP.Net.Schemas.Policy.Data.csproj">
+      <Project>{383bb2aa-3bde-48cf-9941-1615257ba0c8}</Project>
+      <Name>MixERP.Net.Schemas.Policy.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entities\Policy\MixERP.Net.Entities.Policy.csproj">
+      <Project>{ee57127a-29ab-4727-93fb-a854d860bcce}</Project>
+      <Name>MixERP.Net.Entities.Policy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixER.Net.StateServer\MixERP.Net.ApplicationState.csproj">
+      <Project>{61AB8B69-2097-4595-97B7-4A930A70163D}</Project>
+      <Name>MixERP.Net.ApplicationState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.net.Common\MixERP.Net.Common.csproj">
+      <Project>{D5A09C22-8F48-4FB2-A14D-C62C8C8FCEC0}</Project>
+      <Name>MixERP.Net.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.EntityParser\MixERP.Net.EntityParser.csproj">
+      <Project>{eac19d71-3969-4b34-ad7b-8b05d4672861}</Project>
+      <Name>MixERP.Net.EntityParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.Framework\MixERP.Net.Framework.csproj">
+      <Project>{1509332f-ae98-44d9-9072-5bbc59a65fc4}</Project>
+      <Name>MixERP.Net.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969D7960-52E2-40FC-91E5-1393B71E23B0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\MixERP.Net.Api.Framework.csproj">
+      <Project>{2ed31492-84c8-4c84-94ae-1818eb641a9a}</Project>
+      <Name>MixERP.Net.Api.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

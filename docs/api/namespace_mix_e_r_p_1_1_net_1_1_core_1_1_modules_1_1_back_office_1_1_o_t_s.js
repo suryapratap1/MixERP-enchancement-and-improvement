@@ -1,0 +1,12 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s =
+[
+    [ "AttachmentParameters", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_attachment_parameters.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_attachment_parameters" ],
+    [ "CurrencylayerParameters", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_currencylayer_parameters.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_currencylayer_parameters" ],
+    [ "DatabaseParameters", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_database_parameters.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_database_parameters" ],
+    [ "MixERPParameters", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_mix_e_r_p_parameters.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_mix_e_r_p_parameters" ],
+    [ "OpenExchangeRatesParameters", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_open_exchange_rates_parameters.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_open_exchange_rates_parameters" ],
+    [ "OpeningInventory", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_opening_inventory.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_opening_inventory" ],
+    [ "ScrudFactoryParameters", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_scrud_factory_parameters.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_scrud_factory_parameters" ],
+    [ "SMTP", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_s_m_t_p.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_s_m_t_p" ],
+    [ "Switches", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_switches.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_o_t_s_1_1_switches" ]
+];

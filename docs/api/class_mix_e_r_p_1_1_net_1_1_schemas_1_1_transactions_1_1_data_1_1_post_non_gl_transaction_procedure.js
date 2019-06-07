@@ -1,0 +1,28 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure =
+[
+    [ "PostNonGlTransactionProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#ad1d132dffdacb87199b04f91ea84c284", null ],
+    [ "PostNonGlTransactionProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#aa20221ff70720fc13b45a204c1dd0b97", null ],
+    [ "Execute", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#aa04e217800e768a831526bf906102690", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a7f5fae24b633cb3930d1ba77f93c6efd", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#afe69e335031a36c9f1513780354db8bd", null ],
+    [ "_LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a68c117fb2bdea1972723e4f69f10248a", null ],
+    [ "_UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#ad53bfb79d5a22478296e940fb50be4cb", null ],
+    [ "Attachments", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a565b6ed30cd31f4b04053cb84e4e55b1", null ],
+    [ "BookName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a7fe314c50a8d2b9b1a3caeb25b4848a9", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a283e1202c69ac26292e236f71582a042", null ],
+    [ "Details", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a93fcac71183e1ada7fd21f3964359657", null ],
+    [ "IsNonTaxableSales", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a7253e527e7f57eb17dafd4f27ce3430d", null ],
+    [ "LoginIdParameter", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a91335dc7e5322b23a81bce529a07fdce", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#ac04aa324550618d9996a18a92ac32909", null ],
+    [ "PartyCode", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a96945f15de5c633ccc1d7c1b14669716", null ],
+    [ "PriceTypeId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#af5c7d6e943d129b5cf9041f20ae55aea", null ],
+    [ "ReferenceNumber", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a9048950f5db045bbdcc53dd71102c133", null ],
+    [ "SalespersonId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a02fe9b155028f5fb9c6f1a9c949f91b8", null ],
+    [ "ShipperId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#ada50fab32d929923c61a9dd83e2d890f", null ],
+    [ "ShippingAddressCode", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#ad39726cbc1b363406cee7688a0b1ce8c", null ],
+    [ "StatementReference", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#aad4a94fc43a849a8284e64208637bcc5", null ],
+    [ "StoreId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#aa090b5816ff244e970a0e5aaf3bd33c7", null ],
+    [ "TranIds", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#ad0f6d5c2d30d7a89c461c49dc22149f9", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#a0671f860b18c5a4ca843fa8d848b6c09", null ],
+    [ "ValueDate", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_post_non_gl_transaction_procedure.html#aa34544d804ddf27301d2a29d56991f11", null ]
+];

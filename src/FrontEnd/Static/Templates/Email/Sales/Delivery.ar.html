@@ -1,0 +1,55 @@
+﻿<div style="padding:6px 0;">
+    <p style="padding-bottom:8px;font-weight:bold;">السيد {CustomerName},</p>
+    {Header}
+    <p style="padding-bottom:8px;">تم شحن طلبك رقم (Ref #{TranId}),
+    تم تاكيد المرفقات بهذا البريد الالكتروني.
+    الشحنة سوف تصل خلال 15 يوم عمل.</p>
+
+
+    <table style="border-collapse: collapse" border="1">
+        <tbody>
+            <tr>
+                <th>رقم المعاملة #</th>
+                <td>{TranId}</td>
+            </tr>
+            <tr>
+                <th>الرقم المرجعي</th>
+                <td>{ReferenceNumber}</td>
+            </tr>
+            <tr>
+                <th>المصدر</th>
+                <td>{StoreName}</td>
+            </tr>
+            <tr>
+                <th>شركة الشحن</th>
+                <td>{ShipperName}</td>
+            </tr>
+            <tr>
+                <th>مصاريف الشحن</th>
+                <td>{ShippingCharge}</td>
+            </tr>
+            <tr>
+                <th>عنوان الشحن</th>
+                <td>{ShippingAddress}</td>
+            </tr>
+            <tr>
+                <th>قيمة الفاتورة</th>
+                <td>{CurrencyCode} {InvoiceAmount}</td>
+            </tr>
+            <tr>
+                <th>التاريخ</th>
+                <td>{DueDate}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="padding-bottom:8px;">
+        في حالة وجود استفسارات، من فضلك اتصل بالبريد الالكتروني  <a href="mailto:{Email}">{Email}</a>.
+    </p>
+
+    <p style="padding-bottom:8px;">
+    مع خالص التقدير.
+    </p>
+
+    {Footer}
+</div>

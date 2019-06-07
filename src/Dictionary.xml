@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>Cr</Word>
+      <Word>Dr</Word>
+      <Word>Eval</Word>
+      <Word>Javascript</Word>
+      <Word>MixERP</Word>
+      <Word>Npgsql</Word>
+      <Word>Scrud</Word>
+      <Word>Sha</Word>
+    </Recognized>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>COA</Acronym>
+      <Acronym>CUOM</Acronym>
+      <Acronym>CRM</Acronym>
+      <Acronym>ERP</Acronym>
+      <Acronym>GRN</Acronym>
+      <Acronym>IP</Acronym>
+      <Acronym>jQuery</Acronym>
+      <Acronym>jQueryUI</Acronym>
+      <Acronym>KeyColumn</Acronym>
+      <Acronym>POS</Acronym>
+      <Acronym>SubTotal</Acronym>
+      <Acronym>TableSchema</Acronym>
+      <Acronym>UOM</Acronym>
+      <Acronym>ValueDate</Acronym>
+      <Acronym>ViewSchema</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

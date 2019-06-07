@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"><title>Contributing as Developer</title><link href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css type=text/css rel=stylesheet><link href=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css type=text/css rel=stylesheet title="Featherlight Styles"><link href=/docs/assets/styles.min.css rel=stylesheet><link href="//fonts.googleapis.com/css?family=Open+Sans:300,400" rel=stylesheet type=text/css></head><body><div class="ui page grid" id=brand><div class="sixteen wide column"><a href=/index.html class><img title=MixERP alt=MixERP class=logo src=/docs/assets/images/mixerp-logo.png></a></div></div><div class="ui page stackable grid" id=story><div class="sixteen wide column"><h1>Contributing as Developer</h1><p>We would love to have you with us in this project. However, you would need to sign the <a href=contributor-license-agreement.html>Contributor License Agreement</a> before submitting contributions.</p><p>Moreover, you will also need to create an account in <a href=http://mixerp.org/forum>MixERP Forum</a>, and ask your questions there.</p><h2>Dependency</h2><p>Adding a new dependency needs to discussed with and approved by the repository owner (binodnp) beforehand.</p><h1>Coding Style</h1><ul><li>Use 4 spaces instead of a tab.</li><li>Namespaces, type names, member names, and parameter names must use complete words or standard abbreviations.</li></ul><p><strong>Pascal Case</strong></p><ul><li>Function and Methods.</li><li>Resource Strings (Except ScrudResource).</li><li>Enumerators. Name and Collection.</li><li>Class, Namespace.</li><li>Properties.</li><li>ASP.net Server Control and HTML Control ids.</li><li>Javascript class objects and event names.</li></ul><p><strong>Camel Case</strong></p><ul><li>Variables, Objects, and Parameters.</li></ul><p><strong>Lower Case Underscore</strong></p><ul><li>Database objects</li><li>Scrud Resources (*.resx)</li></ul><p><strong>Naming ASP.net Server Controls and Html Controls</strong></p><p>Names should be spelled in American English. The control id attribute should suffix the control name and type to suggest the type of control.</p><p><strong>Correct</strong></p><pre><code class=lang-markup>&lt;asp:TextBox ID=&quot;FirstNameTextBox&quot; runat=&quot;server&quot; /&gt;
+
+&lt;input type=&quot;text&quot; id=&quot;FirstNameInputText&quot; runat=&quot;server&quot; /&gt;
+
+&lt;asp:Button ID=&quot;SaveButton&quot; runat=&quot;server&quot; /&gt;
+
+&lt;input type=&quot;button&quot; id=&quot;SaveInputButton&quot; /&gt;
+
+&lt;button type=&quot;button&quot; id=&quot;SaveButton&quot; /&gt;
+</code></pre><p><strong>Incorrect</strong></p><pre><code class=lang-markup>&lt;asp:TextBox ID=&quot;txt_FirstName&quot; runat=&quot;server&quot; /&gt;
+
+&lt;input type=&quot;text&quot; id=&quot;FirstNameTB&quot; runat=&quot;server&quot; /&gt;
+
+&lt;asp:Button ID=&quot;SaveBtn&quot; runat=&quot;server&quot; /&gt;
+
+&lt;input type=&quot;button&quot; id=&quot;Save_Button&quot; /&gt;
+
+&lt;button type=&quot;button&quot; id=&quot;BtnSave&quot; /&gt;
+</code></pre><h2>Other Important Rules to Follow</h2><ul><li>Functions and methods names must always begin with verbs.</li><li>Class names should be singular nouns.</li><li>Collection, array, list, IEnumerable and similar objects should be plural.</li><li>Controls implementing IDisposable should always remove event handlers. Please do not set event delegate to null on Dispose() method.</li></ul><h2>Related Topics</h2><ul><li><a href=contribution-guidelines.html>Contribution Guidelines</a></li></ul></div><div class="social sharing bpad24"><div class="ui grey huge header"> Share this page </div><div class="icons vpad8"><a target=_blank href="https://www.facebook.com/sharer/sharer.php?u={url}" title="Share this on Facebook"><i class="circular inverted blue large facebook icon"></i></a><a target=_blank href="http://twitter.com/share?text={tweet}&amp;url={url}&amp;hashtags=#mixerp" title="Tweet this link"><i class="circular blue large twitter icon"></i></a><a target=_blank href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title=Contributing as Developer" title="Share this on LinkedIn"><i class="circular inverted blue large linkedin icon"></i></a><a target=_blank href="https://plus.google.com/share?url={url}" title="Share this on Google+"><i class="circular inverted red large google plus icon"></i></a><a target=_blank href="http://www.reddit.com/submit?url={url}" title="Share this on Reddit"><i class="circular large reddit icon"></i></a><a target=_blank href="http://pinterest.com/pin/create/button/?url={url}&amp;description=Contributing as Developer" title="Share this on Pinterest"><i class="circular inverted red large pinterest icon"></i></a><a target=_blank href="http://www.stumbleupon.com/badge/?url={url}" title="Share this on StumbleUpon"><i class="circular inverted red large stumbleupon icon"></i></a><a target=_blank href="mailto:?subject=Contributing as Developer&amp;body={message}" title="Send this on email"><i class="circular inverted olive large mail icon"></i></a></div></div></div><footer class="ui stackable center aligned inverted divided equal height stackable page three column grid"><div class="footer-pad column"><div class="ui inverted dividing header"><i class="code icon"></i> About MixERP </div><p> MixERP is an open source and free ERP software that provides a suite of useful modules to help you manage your day to day business activities, including but not limited to, human resource management, payroll, sales, purchases, inventory management, finance, customer relationship management, manufacturing, and back-office. Developed with love by your friends at MixERP Inc. </p></div><div class="footer-pad column"><div class="ui inverted dividing header"><i class="checkmark icon"></i> Documentation & License </div><p> Some sections in this documentation site are missing. This site is a <a href=index.html#community.md> community effort </a> and work in progress. </p><p> This work is licensed under a <a href=http://creativecommons.org/licenses/by-sa/4.0/ rel=license> Creative Commons Attribution-ShareAlike 4.0 International License </a> . </p></div><div class="left aligned footer-pad column"><div class="ui inverted dividing header"><i class="external icon"></i> Links </div><ul class=footer-links><li><a href=http://mixerp.org/ target=_blank> Project Website </a></li><li><a href=http://mixerp.org/forum target=_blank> Ask a Question </a></li><li><a href=https://github.com/mixerp/mixerp/issues target=_blank> Submit an Issue </a></li><li><a href=https://github.com/mixerp/mixerp/releases target=_blank> Download MixERP </a></li><li><a href=http://demo.mixerp.org/SignIn.aspx target=_blank> View the Demo </a></li><li><a href=https://www.linkedin.com/company/mixerp target=_blank>MixERP on LinkedIn</a></li><li><a href=https://www.facebook.com/mixerp.official/ target=_blank>MixERP on Facebook </a></li><li><a href=http://www.facebook.com/groups/183076085203506/ target=_blank> Facebook Group </a></li><li><a href=http://twitter.com/mixoferp/ target=_blank> Follow MixERP on Twitter </a></li><li style="list-style: none; display: inline"><ul></ul></li></ul></div></footer><script src=/docs/assets/script.js></script><script src=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js type=text/javascript charset=utf-8></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js></script><script>
+        hljs.initHighlightingOnLoad();
+
+        var createLinkedImages = function () {
+            $("#story").find("img").each(function () {
+                var el = $(this);
+                var src = el.attr("src");
+
+                var anchor = $("<a/>");
+                anchor.prop("href", "#");
+                anchor.attr("data-featherlight", src);
+                el.wrap(anchor);
+            });
+        };
+
+        createLinkedImages();
+
+        $("table").addClass("ui celled striped table");
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65607875-1', 'auto');
+        ga('send', 'pageview');
+    </script></body></html>

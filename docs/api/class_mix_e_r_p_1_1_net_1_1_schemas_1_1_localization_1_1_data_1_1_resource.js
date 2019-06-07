@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a833083a64b8ead407089e19f679c694b", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#afca47b85fffe9005754a2e4316d6ed53", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a27dbd5947a47fdf79bf6ca9285ba7a04", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a711241c992d07e50118eee424dc3d761", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a50db63cf909d9a243c8f5d783fe27947", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a1365d937c7cab12865028d97088ead81", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a680f3e05caadec1d5179c7ffbc1630ee", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a111e2dfc3c9ccfa56c409e190aeaba69", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a0cbce014dc65b5363e9f4e36464c96ab", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a710f6b47f7d08891add7719320db5721", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a93ed0053b02ca8b69230a2b5d0601c94", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a0b37da0c9afea51eed8d4856a4485d4d", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a6c0c71f428f18a2c7f29d2bb68a2dba5", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a17cc7306c454973461d69f2306dfbc6c", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#ac857a5eea2ac5184e142fceca56b7ae8", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a949dcf2cea7ebb3497bc41b0b340b111", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a8ccf43914c6ff087d63875ea0f967458", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a6faa5d206252ae76b02fbb2b420cb1e4", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a533e71fbc63c0d4e1c92f001179d6afe", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a921782a423aad1cd3a1f0296fcb3c73b", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a488819f457fdcc5257621991129bc49e", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_localization_1_1_data_1_1_resource.html#a6f437df57ee9faae398c78deaa1f9463", null ]
+];

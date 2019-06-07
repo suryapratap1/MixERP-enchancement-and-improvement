@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a04202d0cf0e3eaa3eda396cea25122de", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#ae27b3c3047794fe055c6d079b42e593c", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a8dd6dd392709993742daf4904526d929", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a71c77110da63b80c2237db43c74050b3", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#ab89ee711a080092e6399b4ce6c2bb11d", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a45646879f706a05dd88c5006d2260522", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#aba4298c7cbc783f5238e43eeb07d6ac4", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#ad7726bd67875ad6507a24c6bb9e00992", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#abadc3a6981daf7eda2e43fe1cdeb2294", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a4f9dc6c9ce8c68b5cff2752576094466", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#ae4488ad15d4a583406f4eac827ae7d17", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a21524e5aa74f651bc8764d3c1c4aa51c", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a4fdf3d2d44a306206d6251a838dd379d", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#aa75b30a4e76adb443b14f5889b9a3d63", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#afa81844f3fee45a7c0af991290dafb36", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a9242c4bf76786c64f40912990224567e", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#ae18cfaeab07eff54439e0cf1d60219ba", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a74bcf2d858a74ce5d6e4fe19f1ef20f2", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a6e7eb042af22b12f2dba678afa34bc90", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#a5b692b2381434a7ce263f5d55f4e82bd", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#ae7b4ad40dbc264770eca7bc3bccbcdc4", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_fiscal_year.html#ac5e938cefae8889e0c33d2c852dde94c", null ]
+];

@@ -1,0 +1,7 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation =
+[
+    [ "Adjustment", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_adjustment.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_adjustment" ],
+    [ "Transfer", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_transfer.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_transfer" ],
+    [ "TransferDelivery", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_transfer_delivery.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_transfer_delivery" ],
+    [ "TransferRequest", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_transfer_request.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_confirmation_1_1_transfer_request" ]
+];

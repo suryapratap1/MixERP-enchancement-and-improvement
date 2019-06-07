@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{324B6D7F-6782-49D5-AB80-09F6251B13D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Api.Transactions</RootNamespace>
+    <AssemblyName>MixERP.Net.Api.Transactions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\FrontEnd\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.assert.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.core.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArePurchaseOrdersAlreadyMergedController.cs" />
+    <Compile Include="AreSalesOrdersAlreadyMergedController.cs" />
+    <Compile Include="AreSalesQuotationsAlreadyMergedController.cs" />
+    <Compile Include="AutoVerifyController.cs" />
+    <Compile Include="ContainsIncompatibleTaxesController.cs" />
+    <Compile Include="CreateRecurringInvoicesController.cs" />
+    <Compile Include="CreateRoutineController.cs" />
+    <Compile Include="CustomerReceiptController.cs" />
+    <Compile Include="DayOperationController.cs" />
+    <Compile Include="DayOperationRoutineController.cs" />
+    <Compile Include="Fakes\ArePurchaseOrdersAlreadyMergedRepository.cs" />
+    <Compile Include="Fakes\AreSalesOrdersAlreadyMergedRepository.cs" />
+    <Compile Include="Fakes\AreSalesQuotationsAlreadyMergedRepository.cs" />
+    <Compile Include="Fakes\AutoVerifyRepository.cs" />
+    <Compile Include="Fakes\ContainsIncompatibleTaxesRepository.cs" />
+    <Compile Include="Fakes\CreateRecurringInvoicesRepository.cs" />
+    <Compile Include="Fakes\CreateRoutineRepository.cs" />
+    <Compile Include="Fakes\CustomerReceiptRepository.cs" />
+    <Compile Include="Fakes\DayOperationRepository.cs" />
+    <Compile Include="Fakes\DayOperationRoutineRepository.cs" />
+    <Compile Include="Fakes\GetAccountStatementRepository.cs" />
+    <Compile Include="Fakes\GetAveragePartyTransactionRepository.cs" />
+    <Compile Include="Fakes\GetBalanceSheetRepository.cs" />
+    <Compile Include="Fakes\GetCashFlowStatementRepository.cs" />
+    <Compile Include="Fakes\GetCashRepositoryBalanceRepository.cs" />
+    <Compile Include="Fakes\GetClosingStockRepository.cs" />
+    <Compile Include="Fakes\GetCostOfGoodsSoldRepository.cs" />
+    <Compile Include="Fakes\GetDefaultCurrencyCodeByOfficeIdRepository.cs" />
+    <Compile Include="Fakes\GetDefaultCurrencyCodeRepository.cs" />
+    <Compile Include="Fakes\GetDueDateRepository.cs" />
+    <Compile Include="Fakes\GetEoyProfitSummaryRepository.cs" />
+    <Compile Include="Fakes\GetExchangeRateRepository.cs" />
+    <Compile Include="Fakes\GetIncomeExpenditureStatementRepository.cs" />
+    <Compile Include="Fakes\GetInventoryTransferRequestViewRepository.cs" />
+    <Compile Include="Fakes\GetInvoiceAmountRepository.cs" />
+    <Compile Include="Fakes\GetJournalViewRepository.cs" />
+    <Compile Include="Fakes\GetLastReceiptDateRepository.cs" />
+    <Compile Include="Fakes\GetMavcogsRepository.cs" />
+    <Compile Include="Fakes\GetMergeModelRepository.cs" />
+    <Compile Include="Fakes\GetNetProfitRepository.cs" />
+    <Compile Include="Fakes\GetNewTransactionCounterRepository.cs" />
+    <Compile Include="Fakes\GetNonGlProductViewRepository.cs" />
+    <Compile Include="Fakes\GetPartyTransactionSummaryRepository.cs" />
+    <Compile Include="Fakes\GetPlAppropriationDataRepository.cs" />
+    <Compile Include="Fakes\GetProductViewRepository.cs" />
+    <Compile Include="Fakes\GetProfitAndLossStatementRepository.cs" />
+    <Compile Include="Fakes\GetPurchaseRepository.cs" />
+    <Compile Include="Fakes\GetReceiptViewRepository.cs" />
+    <Compile Include="Fakes\GetReorderViewFunctionRepository.cs" />
+    <Compile Include="Fakes\GetRetainedEarningsRepository.cs" />
+    <Compile Include="Fakes\GetRetainedEarningsStatementRepository.cs" />
+    <Compile Include="Fakes\GetSalesByOfficesRepository.cs" />
+    <Compile Include="Fakes\GetSalespersonReportRepository.cs" />
+    <Compile Include="Fakes\GetSalesTaxIdRepository.cs" />
+    <Compile Include="Fakes\GetSalesTaxRepository.cs" />
+    <Compile Include="Fakes\GetStockAccountStatementRepository.cs" />
+    <Compile Include="Fakes\GetStockMasterIdByTransactionMasterIdRepository.cs" />
+    <Compile Include="Fakes\GetTopSellingProductsByOfficeRepository.cs" />
+    <Compile Include="Fakes\GetTopSellingProductsOfAllTimeRepository.cs" />
+    <Compile Include="Fakes\GetTotalDueRepository.cs" />
+    <Compile Include="Fakes\GetTotalSalesByOfficeRepository.cs" />
+    <Compile Include="Fakes\GetTransactionCodeRepository.cs" />
+    <Compile Include="Fakes\GetTransactionMasterIdByStockMasterIdRepository.cs" />
+    <Compile Include="Fakes\GetTrialBalanceRepository.cs" />
+    <Compile Include="Fakes\GetValueDateRepository.cs" />
+    <Compile Include="Fakes\GetVerificationStatusRepository.cs" />
+    <Compile Include="Fakes\GetWriteOffCostOfGoodsSoldRepository.cs" />
+    <Compile Include="Fakes\HasNexusRepository.cs" />
+    <Compile Include="Fakes\InitializeEodOperationRepository.cs" />
+    <Compile Include="Fakes\InventoryTransferDeliveryDetailRepository.cs" />
+    <Compile Include="Fakes\InventoryTransferDeliveryRepository.cs" />
+    <Compile Include="Fakes\InventoryTransferRequestDetailRepository.cs" />
+    <Compile Include="Fakes\InventoryTransferRequestRepository.cs" />
+    <Compile Include="Fakes\IsEodInitializedRepository.cs" />
+    <Compile Include="Fakes\IsNormallyDebitRepository.cs" />
+    <Compile Include="Fakes\IsPurchaseRepository.cs" />
+    <Compile Include="Fakes\IsValidPartyByStockMasterIdRepository.cs" />
+    <Compile Include="Fakes\IsValidPartyByTransactionMasterIdRepository.cs" />
+    <Compile Include="Fakes\IsValidStockTransactionByStockMasterIdRepository.cs" />
+    <Compile Include="Fakes\IsValidStockTransactionByTransactionMasterIdRepository.cs" />
+    <Compile Include="Fakes\LateFeeRepository.cs" />
+    <Compile Include="Fakes\ListClosingStockRepository.cs" />
+    <Compile Include="Fakes\NonGlStockDetailRepository.cs" />
+    <Compile Include="Fakes\NonGlStockMasterRelationRepository.cs" />
+    <Compile Include="Fakes\NonGlStockMasterRepository.cs" />
+    <Compile Include="Fakes\NonGlStockTaxDetailRepository.cs" />
+    <Compile Include="Fakes\OpeningInventoryExistsRepository.cs" />
+    <Compile Include="Fakes\PartyItemChartViewRepository.cs" />
+    <Compile Include="Fakes\PartyPurchaseChartViewRepository.cs" />
+    <Compile Include="Fakes\PartySalesChartViewRepository.cs" />
+    <Compile Include="Fakes\PerformEodOperationRepository.cs" />
+    <Compile Include="Fakes\PostBonusRepository.cs" />
+    <Compile Include="Fakes\PostErFluctuationRepository.cs" />
+    <Compile Include="Fakes\PostInventoryTransferDeliveryRepository.cs" />
+    <Compile Include="Fakes\PostInventoryTransferRequestRepository.cs" />
+    <Compile Include="Fakes\PostLateFeeRepository.cs" />
+    <Compile Include="Fakes\PostNonGlTransactionRepository.cs" />
+    <Compile Include="Fakes\PostOpeningInventoryRepository.cs" />
+    <Compile Include="Fakes\PostPurchaseRepository.cs" />
+    <Compile Include="Fakes\PostPurchaseReturnRepository.cs" />
+    <Compile Include="Fakes\PostPurhcaseReorderRepository.cs" />
+    <Compile Include="Fakes\PostReceiptRepository.cs" />
+    <Compile Include="Fakes\PostRecurringInvoicesRepository.cs" />
+    <Compile Include="Fakes\PostSalesRepository.cs" />
+    <Compile Include="Fakes\PostSalesReturnRepository.cs" />
+    <Compile Include="Fakes\PostStockAdjustmentRepository.cs" />
+    <Compile Include="Fakes\PostStockJournalRepository.cs" />
+    <Compile Include="Fakes\PostStockTransferAcknowledgementRepository.cs" />
+    <Compile Include="Fakes\ReceiptViewRepository.cs" />
+    <Compile Include="Fakes\RefreshMaterializedViewsRepository.cs" />
+    <Compile Include="Fakes\RoutineRepository.cs" />
+    <Compile Include="Fakes\SalesByCountryViewRepository.cs" />
+    <Compile Include="Fakes\SalesDeliveryViewRepository.cs" />
+    <Compile Include="Fakes\SalesOrderViewRepository.cs" />
+    <Compile Include="Fakes\SalesQuotationViewRepository.cs" />
+    <Compile Include="Fakes\SettlePartyDueRepository.cs" />
+    <Compile Include="Fakes\StockDetailRepository.cs" />
+    <Compile Include="Fakes\StockMasterNonGlRelationRepository.cs" />
+    <Compile Include="Fakes\StockMasterRepository.cs" />
+    <Compile Include="Fakes\StockReturnRepository.cs" />
+    <Compile Include="Fakes\StockTaxDetailRepository.cs" />
+    <Compile Include="Fakes\StockTransactionViewRepository.cs" />
+    <Compile Include="Fakes\TransactionDetailRepository.cs" />
+    <Compile Include="Fakes\TransactionMasterRepository.cs" />
+    <Compile Include="Fakes\TransactionViewRepository.cs" />
+    <Compile Include="Fakes\ValidateItemsForReturnRepository.cs" />
+    <Compile Include="Fakes\VerifiedStockDetailsViewRepository.cs" />
+    <Compile Include="Fakes\VerifiedTransactionViewRepository.cs" />
+    <Compile Include="Fakes\VerifyTransactionRepository.cs" />
+    <Compile Include="GetAccountStatementController.cs" />
+    <Compile Include="GetAveragePartyTransactionController.cs" />
+    <Compile Include="GetBalanceSheetController.cs" />
+    <Compile Include="GetCashFlowStatementController.cs" />
+    <Compile Include="GetCashRepositoryBalanceController.cs" />
+    <Compile Include="GetClosingStockController.cs" />
+    <Compile Include="GetCostOfGoodsSoldController.cs" />
+    <Compile Include="GetDefaultCurrencyCodeByOfficeIdController.cs" />
+    <Compile Include="GetDefaultCurrencyCodeController.cs" />
+    <Compile Include="GetDueDateController.cs" />
+    <Compile Include="GetEoyProfitSummaryController.cs" />
+    <Compile Include="GetExchangeRateController.cs" />
+    <Compile Include="GetIncomeExpenditureStatementController.cs" />
+    <Compile Include="GetInventoryTransferRequestViewController.cs" />
+    <Compile Include="GetInvoiceAmountController.cs" />
+    <Compile Include="GetJournalViewController.cs" />
+    <Compile Include="GetLastReceiptDateController.cs" />
+    <Compile Include="GetMavcogsController.cs" />
+    <Compile Include="GetMergeModelController.cs" />
+    <Compile Include="GetNetProfitController.cs" />
+    <Compile Include="GetNewTransactionCounterController.cs" />
+    <Compile Include="GetNonGlProductViewController.cs" />
+    <Compile Include="GetPartyTransactionSummaryController.cs" />
+    <Compile Include="GetPlAppropriationDataController.cs" />
+    <Compile Include="GetProductViewController.cs" />
+    <Compile Include="GetProfitAndLossStatementController.cs" />
+    <Compile Include="GetPurchaseController.cs" />
+    <Compile Include="GetReceiptViewController.cs" />
+    <Compile Include="GetReorderViewFunctionController.cs" />
+    <Compile Include="GetRetainedEarningsController.cs" />
+    <Compile Include="GetRetainedEarningsStatementController.cs" />
+    <Compile Include="GetSalesByOfficesController.cs" />
+    <Compile Include="GetSalespersonReportController.cs" />
+    <Compile Include="GetSalesTaxController.cs" />
+    <Compile Include="GetSalesTaxIdController.cs" />
+    <Compile Include="GetStockAccountStatementController.cs" />
+    <Compile Include="GetStockMasterIdByTransactionMasterIdController.cs" />
+    <Compile Include="GetTopSellingProductsByOfficeController.cs" />
+    <Compile Include="GetTopSellingProductsOfAllTimeController.cs" />
+    <Compile Include="GetTotalDueController.cs" />
+    <Compile Include="GetTotalSalesByOfficeController.cs" />
+    <Compile Include="GetTransactionCodeController.cs" />
+    <Compile Include="GetTransactionMasterIdByStockMasterIdController.cs" />
+    <Compile Include="GetTrialBalanceController.cs" />
+    <Compile Include="GetValueDateController.cs" />
+    <Compile Include="GetVerificationStatusController.cs" />
+    <Compile Include="GetWriteOffCostOfGoodsSoldController.cs" />
+    <Compile Include="HasNexusController.cs" />
+    <Compile Include="InitializeEodOperationController.cs" />
+    <Compile Include="InventoryTransferDeliveryController.cs" />
+    <Compile Include="InventoryTransferDeliveryDetailController.cs" />
+    <Compile Include="InventoryTransferRequestController.cs" />
+    <Compile Include="InventoryTransferRequestDetailController.cs" />
+    <Compile Include="IsEodInitializedController.cs" />
+    <Compile Include="IsNormallyDebitController.cs" />
+    <Compile Include="IsPurchaseController.cs" />
+    <Compile Include="IsValidPartyByStockMasterIdController.cs" />
+    <Compile Include="IsValidPartyByTransactionMasterIdController.cs" />
+    <Compile Include="IsValidStockTransactionByStockMasterIdController.cs" />
+    <Compile Include="IsValidStockTransactionByTransactionMasterIdController.cs" />
+    <Compile Include="ListClosingStockController.cs" />
+    <Compile Include="NonGlStockDetailController.cs" />
+    <Compile Include="NonGlStockMasterController.cs" />
+    <Compile Include="NonGlStockMasterRelationController.cs" />
+    <Compile Include="NonGlStockTaxDetailController.cs" />
+    <Compile Include="OpeningInventoryExistsController.cs" />
+    <Compile Include="PartyItemChartViewController.cs" />
+    <Compile Include="PartyPurchaseChartViewController.cs" />
+    <Compile Include="PartySalesChartViewController.cs" />
+    <Compile Include="PerformEodOperationController.cs" />
+    <Compile Include="PostBonusController.cs" />
+    <Compile Include="PostErFluctuationController.cs" />
+    <Compile Include="PostInventoryTransferDeliveryController.cs" />
+    <Compile Include="PostInventoryTransferRequestController.cs" />
+    <Compile Include="PostLateFeeController.cs" />
+    <Compile Include="PostNonGlTransactionController.cs" />
+    <Compile Include="PostOpeningInventoryController.cs" />
+    <Compile Include="PostPurchaseController.cs" />
+    <Compile Include="PostPurchaseReturnController.cs" />
+    <Compile Include="PostPurhcaseReorderController.cs" />
+    <Compile Include="PostReceiptController.cs" />
+    <Compile Include="PostRecurringInvoicesController.cs" />
+    <Compile Include="PostSalesController.cs" />
+    <Compile Include="PostSalesReturnController.cs" />
+    <Compile Include="PostStockAdjustmentController.cs" />
+    <Compile Include="PostStockJournalController.cs" />
+    <Compile Include="PostStockTransferAcknowledgementController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptViewController.cs" />
+    <Compile Include="RefreshMaterializedViewsController.cs" />
+    <Compile Include="SalesByCountryViewController.cs" />
+    <Compile Include="SalesDeliveryViewController.cs" />
+    <Compile Include="SalesOrderViewController.cs" />
+    <Compile Include="SalesQuotationViewController.cs" />
+    <Compile Include="SettlePartyDueController.cs" />
+    <Compile Include="StockDetailController.cs" />
+    <Compile Include="StockMasterController.cs" />
+    <Compile Include="StockMasterNonGlRelationController.cs" />
+    <Compile Include="StockReturnController.cs" />
+    <Compile Include="StockTaxDetailController.cs" />
+    <Compile Include="StockTransactionViewController.cs" />
+    <Compile Include="Tests\ArePurchaseOrdersAlreadyMergedRouteTests.cs" />
+    <Compile Include="Tests\ArePurchaseOrdersAlreadyMergedTests.cs" />
+    <Compile Include="Tests\AreSalesOrdersAlreadyMergedRouteTests.cs" />
+    <Compile Include="Tests\AreSalesOrdersAlreadyMergedTests.cs" />
+    <Compile Include="Tests\AreSalesQuotationsAlreadyMergedRouteTests.cs" />
+    <Compile Include="Tests\AreSalesQuotationsAlreadyMergedTests.cs" />
+    <Compile Include="Tests\AutoVerifyRouteTests.cs" />
+    <Compile Include="Tests\AutoVerifyTests.cs" />
+    <Compile Include="Tests\ContainsIncompatibleTaxesRouteTests.cs" />
+    <Compile Include="Tests\ContainsIncompatibleTaxesTests.cs" />
+    <Compile Include="Tests\CreateRecurringInvoicesRouteTests.cs" />
+    <Compile Include="Tests\CreateRecurringInvoicesTests.cs" />
+    <Compile Include="Tests\CreateRoutineRouteTests.cs" />
+    <Compile Include="Tests\CreateRoutineTests.cs" />
+    <Compile Include="Tests\CustomerReceiptRouteTests.cs" />
+    <Compile Include="Tests\CustomerReceiptTests.cs" />
+    <Compile Include="Tests\DayOperationRouteTests.cs" />
+    <Compile Include="Tests\DayOperationRoutineRouteTests.cs" />
+    <Compile Include="Tests\DayOperationRoutineTests.cs" />
+    <Compile Include="Tests\DayOperationTests.cs" />
+    <Compile Include="Tests\GetAccountStatementRouteTests.cs" />
+    <Compile Include="Tests\GetAccountStatementTests.cs" />
+    <Compile Include="Tests\GetAveragePartyTransactionRouteTests.cs" />
+    <Compile Include="Tests\GetAveragePartyTransactionTests.cs" />
+    <Compile Include="Tests\GetBalanceSheetRouteTests.cs" />
+    <Compile Include="Tests\GetBalanceSheetTests.cs" />
+    <Compile Include="Tests\GetCashFlowStatementRouteTests.cs" />
+    <Compile Include="Tests\GetCashFlowStatementTests.cs" />
+    <Compile Include="Tests\GetCashRepositoryBalanceRouteTests.cs" />
+    <Compile Include="Tests\GetCashRepositoryBalanceTests.cs" />
+    <Compile Include="Tests\GetClosingStockRouteTests.cs" />
+    <Compile Include="Tests\GetClosingStockTests.cs" />
+    <Compile Include="Tests\GetCostOfGoodsSoldRouteTests.cs" />
+    <Compile Include="Tests\GetCostOfGoodsSoldTests.cs" />
+    <Compile Include="Tests\GetDefaultCurrencyCodeByOfficeIdRouteTests.cs" />
+    <Compile Include="Tests\GetDefaultCurrencyCodeByOfficeIdTests.cs" />
+    <Compile Include="Tests\GetDefaultCurrencyCodeRouteTests.cs" />
+    <Compile Include="Tests\GetDefaultCurrencyCodeTests.cs" />
+    <Compile Include="Tests\GetDueDateRouteTests.cs" />
+    <Compile Include="Tests\GetDueDateTests.cs" />
+    <Compile Include="Tests\GetEoyProfitSummaryRouteTests.cs" />
+    <Compile Include="Tests\GetEoyProfitSummaryTests.cs" />
+    <Compile Include="Tests\GetExchangeRateRouteTests.cs" />
+    <Compile Include="Tests\GetExchangeRateTests.cs" />
+    <Compile Include="Tests\GetIncomeExpenditureStatementRouteTests.cs" />
+    <Compile Include="Tests\GetIncomeExpenditureStatementTests.cs" />
+    <Compile Include="Tests\GetInventoryTransferRequestViewRouteTests.cs" />
+    <Compile Include="Tests\GetInventoryTransferRequestViewTests.cs" />
+    <Compile Include="Tests\GetInvoiceAmountRouteTests.cs" />
+    <Compile Include="Tests\GetInvoiceAmountTests.cs" />
+    <Compile Include="Tests\GetJournalViewRouteTests.cs" />
+    <Compile Include="Tests\GetJournalViewTests.cs" />
+    <Compile Include="Tests\GetLastReceiptDateRouteTests.cs" />
+    <Compile Include="Tests\GetLastReceiptDateTests.cs" />
+    <Compile Include="Tests\GetMavcogsRouteTests.cs" />
+    <Compile Include="Tests\GetMavcogsTests.cs" />
+    <Compile Include="Tests\GetMergeModelRouteTests.cs" />
+    <Compile Include="Tests\GetMergeModelTests.cs" />
+    <Compile Include="Tests\GetNetProfitRouteTests.cs" />
+    <Compile Include="Tests\GetNetProfitTests.cs" />
+    <Compile Include="Tests\GetNewTransactionCounterRouteTests.cs" />
+    <Compile Include="Tests\GetNewTransactionCounterTests.cs" />
+    <Compile Include="Tests\GetNonGlProductViewRouteTests.cs" />
+    <Compile Include="Tests\GetNonGlProductViewTests.cs" />
+    <Compile Include="Tests\GetPartyTransactionSummaryRouteTests.cs" />
+    <Compile Include="Tests\GetPartyTransactionSummaryTests.cs" />
+    <Compile Include="Tests\GetPlAppropriationDataRouteTests.cs" />
+    <Compile Include="Tests\GetPlAppropriationDataTests.cs" />
+    <Compile Include="Tests\GetProductViewRouteTests.cs" />
+    <Compile Include="Tests\GetProductViewTests.cs" />
+    <Compile Include="Tests\GetProfitAndLossStatementRouteTests.cs" />
+    <Compile Include="Tests\GetProfitAndLossStatementTests.cs" />
+    <Compile Include="Tests\GetPurchaseRouteTests.cs" />
+    <Compile Include="Tests\GetPurchaseTests.cs" />
+    <Compile Include="Tests\GetReceiptViewRouteTests.cs" />
+    <Compile Include="Tests\GetReceiptViewTests.cs" />
+    <Compile Include="Tests\GetReorderViewFunctionRouteTests.cs" />
+    <Compile Include="Tests\GetReorderViewFunctionTests.cs" />
+    <Compile Include="Tests\GetRetainedEarningsRouteTests.cs" />
+    <Compile Include="Tests\GetRetainedEarningsStatementRouteTests.cs" />
+    <Compile Include="Tests\GetRetainedEarningsStatementTests.cs" />
+    <Compile Include="Tests\GetRetainedEarningsTests.cs" />
+    <Compile Include="Tests\GetSalesByOfficesRouteTests.cs" />
+    <Compile Include="Tests\GetSalesByOfficesTests.cs" />
+    <Compile Include="Tests\GetSalespersonReportRouteTests.cs" />
+    <Compile Include="Tests\GetSalespersonReportTests.cs" />
+    <Compile Include="Tests\GetSalesTaxIdRouteTests.cs" />
+    <Compile Include="Tests\GetSalesTaxIdTests.cs" />
+    <Compile Include="Tests\GetSalesTaxRouteTests.cs" />
+    <Compile Include="Tests\GetSalesTaxTests.cs" />
+    <Compile Include="Tests\GetStockAccountStatementRouteTests.cs" />
+    <Compile Include="Tests\GetStockAccountStatementTests.cs" />
+    <Compile Include="Tests\GetStockMasterIdByTransactionMasterIdRouteTests.cs" />
+    <Compile Include="Tests\GetStockMasterIdByTransactionMasterIdTests.cs" />
+    <Compile Include="Tests\GetTopSellingProductsByOfficeRouteTests.cs" />
+    <Compile Include="Tests\GetTopSellingProductsByOfficeTests.cs" />
+    <Compile Include="Tests\GetTopSellingProductsOfAllTimeRouteTests.cs" />
+    <Compile Include="Tests\GetTopSellingProductsOfAllTimeTests.cs" />
+    <Compile Include="Tests\GetTotalDueRouteTests.cs" />
+    <Compile Include="Tests\GetTotalDueTests.cs" />
+    <Compile Include="Tests\GetTotalSalesByOfficeRouteTests.cs" />
+    <Compile Include="Tests\GetTotalSalesByOfficeTests.cs" />
+    <Compile Include="Tests\GetTransactionCodeRouteTests.cs" />
+    <Compile Include="Tests\GetTransactionCodeTests.cs" />
+    <Compile Include="Tests\GetTransactionMasterIdByStockMasterIdRouteTests.cs" />
+    <Compile Include="Tests\GetTransactionMasterIdByStockMasterIdTests.cs" />
+    <Compile Include="Tests\GetTrialBalanceRouteTests.cs" />
+    <Compile Include="Tests\GetTrialBalanceTests.cs" />
+    <Compile Include="Tests\GetValueDateRouteTests.cs" />
+    <Compile Include="Tests\GetValueDateTests.cs" />
+    <Compile Include="Tests\GetVerificationStatusRouteTests.cs" />
+    <Compile Include="Tests\GetVerificationStatusTests.cs" />
+    <Compile Include="Tests\GetWriteOffCostOfGoodsSoldRouteTests.cs" />
+    <Compile Include="Tests\GetWriteOffCostOfGoodsSoldTests.cs" />
+    <Compile Include="Tests\HasNexusRouteTests.cs" />
+    <Compile Include="Tests\HasNexusTests.cs" />
+    <Compile Include="Tests\InitializeEodOperationRouteTests.cs" />
+    <Compile Include="Tests\InitializeEodOperationTests.cs" />
+    <Compile Include="Tests\InventoryTransferDeliveryDetailRouteTests.cs" />
+    <Compile Include="Tests\InventoryTransferDeliveryDetailTests.cs" />
+    <Compile Include="Tests\InventoryTransferDeliveryRouteTests.cs" />
+    <Compile Include="Tests\InventoryTransferDeliveryTests.cs" />
+    <Compile Include="Tests\InventoryTransferRequestDetailRouteTests.cs" />
+    <Compile Include="Tests\InventoryTransferRequestDetailTests.cs" />
+    <Compile Include="Tests\InventoryTransferRequestRouteTests.cs" />
+    <Compile Include="Tests\InventoryTransferRequestTests.cs" />
+    <Compile Include="Tests\IsEodInitializedRouteTests.cs" />
+    <Compile Include="Tests\IsEodInitializedTests.cs" />
+    <Compile Include="Tests\IsNormallyDebitRouteTests.cs" />
+    <Compile Include="Tests\IsNormallyDebitTests.cs" />
+    <Compile Include="Tests\IsPurchaseRouteTests.cs" />
+    <Compile Include="Tests\IsPurchaseTests.cs" />
+    <Compile Include="Tests\IsValidPartyByStockMasterIdRouteTests.cs" />
+    <Compile Include="Tests\IsValidPartyByStockMasterIdTests.cs" />
+    <Compile Include="Tests\IsValidPartyByTransactionMasterIdRouteTests.cs" />
+    <Compile Include="Tests\IsValidPartyByTransactionMasterIdTests.cs" />
+    <Compile Include="Tests\IsValidStockTransactionByStockMasterIdRouteTests.cs" />
+    <Compile Include="Tests\IsValidStockTransactionByStockMasterIdTests.cs" />
+    <Compile Include="Tests\IsValidStockTransactionByTransactionMasterIdRouteTests.cs" />
+    <Compile Include="Tests\IsValidStockTransactionByTransactionMasterIdTests.cs" />
+    <Compile Include="Tests\LateFeeRouteTests.cs" />
+    <Compile Include="Tests\LateFeeTests.cs" />
+    <Compile Include="Tests\ListClosingStockRouteTests.cs" />
+    <Compile Include="Tests\ListClosingStockTests.cs" />
+    <Compile Include="Tests\NonGlStockDetailRouteTests.cs" />
+    <Compile Include="Tests\NonGlStockDetailTests.cs" />
+    <Compile Include="Tests\NonGlStockMasterRelationRouteTests.cs" />
+    <Compile Include="Tests\NonGlStockMasterRelationTests.cs" />
+    <Compile Include="Tests\NonGlStockMasterRouteTests.cs" />
+    <Compile Include="Tests\NonGlStockMasterTests.cs" />
+    <Compile Include="Tests\NonGlStockTaxDetailRouteTests.cs" />
+    <Compile Include="Tests\NonGlStockTaxDetailTests.cs" />
+    <Compile Include="Tests\OpeningInventoryExistsRouteTests.cs" />
+    <Compile Include="Tests\OpeningInventoryExistsTests.cs" />
+    <Compile Include="Tests\PartyItemChartViewRouteTests.cs" />
+    <Compile Include="Tests\PartyItemChartViewTests.cs" />
+    <Compile Include="Tests\PartyPurchaseChartViewRouteTests.cs" />
+    <Compile Include="Tests\PartyPurchaseChartViewTests.cs" />
+    <Compile Include="Tests\PartySalesChartViewRouteTests.cs" />
+    <Compile Include="Tests\PartySalesChartViewTests.cs" />
+    <Compile Include="Tests\PerformEodOperationRouteTests.cs" />
+    <Compile Include="Tests\PerformEodOperationTests.cs" />
+    <Compile Include="Tests\PostBonusRouteTests.cs" />
+    <Compile Include="Tests\PostBonusTests.cs" />
+    <Compile Include="Tests\PostErFluctuationRouteTests.cs" />
+    <Compile Include="Tests\PostErFluctuationTests.cs" />
+    <Compile Include="Tests\PostInventoryTransferDeliveryRouteTests.cs" />
+    <Compile Include="Tests\PostInventoryTransferDeliveryTests.cs" />
+    <Compile Include="Tests\PostInventoryTransferRequestRouteTests.cs" />
+    <Compile Include="Tests\PostInventoryTransferRequestTests.cs" />
+    <Compile Include="Tests\PostLateFeeRouteTests.cs" />
+    <Compile Include="Tests\PostLateFeeTests.cs" />
+    <Compile Include="Tests\PostNonGlTransactionRouteTests.cs" />
+    <Compile Include="Tests\PostNonGlTransactionTests.cs" />
+    <Compile Include="Tests\PostOpeningInventoryRouteTests.cs" />
+    <Compile Include="Tests\PostOpeningInventoryTests.cs" />
+    <Compile Include="Tests\PostPurchaseReturnRouteTests.cs" />
+    <Compile Include="Tests\PostPurchaseReturnTests.cs" />
+    <Compile Include="Tests\PostPurchaseRouteTests.cs" />
+    <Compile Include="Tests\PostPurchaseTests.cs" />
+    <Compile Include="Tests\PostPurhcaseReorderRouteTests.cs" />
+    <Compile Include="Tests\PostPurhcaseReorderTests.cs" />
+    <Compile Include="Tests\PostReceiptRouteTests.cs" />
+    <Compile Include="Tests\PostReceiptTests.cs" />
+    <Compile Include="Tests\PostRecurringInvoicesRouteTests.cs" />
+    <Compile Include="Tests\PostRecurringInvoicesTests.cs" />
+    <Compile Include="Tests\PostSalesReturnRouteTests.cs" />
+    <Compile Include="Tests\PostSalesReturnTests.cs" />
+    <Compile Include="Tests\PostSalesRouteTests.cs" />
+    <Compile Include="Tests\PostSalesTests.cs" />
+    <Compile Include="Tests\PostStockAdjustmentRouteTests.cs" />
+    <Compile Include="Tests\PostStockAdjustmentTests.cs" />
+    <Compile Include="Tests\PostStockJournalRouteTests.cs" />
+    <Compile Include="Tests\PostStockJournalTests.cs" />
+    <Compile Include="Tests\PostStockTransferAcknowledgementRouteTests.cs" />
+    <Compile Include="Tests\PostStockTransferAcknowledgementTests.cs" />
+    <Compile Include="Tests\ReceiptViewRouteTests.cs" />
+    <Compile Include="Tests\ReceiptViewTests.cs" />
+    <Compile Include="Tests\RefreshMaterializedViewsRouteTests.cs" />
+    <Compile Include="Tests\RefreshMaterializedViewsTests.cs" />
+    <Compile Include="Tests\RoutineRouteTests.cs" />
+    <Compile Include="Tests\RoutineTests.cs" />
+    <Compile Include="Tests\SalesByCountryViewRouteTests.cs" />
+    <Compile Include="Tests\SalesByCountryViewTests.cs" />
+    <Compile Include="Tests\SalesDeliveryViewRouteTests.cs" />
+    <Compile Include="Tests\SalesDeliveryViewTests.cs" />
+    <Compile Include="Tests\SalesOrderViewRouteTests.cs" />
+    <Compile Include="Tests\SalesOrderViewTests.cs" />
+    <Compile Include="Tests\SalesQuotationViewRouteTests.cs" />
+    <Compile Include="Tests\SalesQuotationViewTests.cs" />
+    <Compile Include="Tests\SettlePartyDueRouteTests.cs" />
+    <Compile Include="Tests\SettlePartyDueTests.cs" />
+    <Compile Include="Tests\StockDetailRouteTests.cs" />
+    <Compile Include="Tests\StockDetailTests.cs" />
+    <Compile Include="Tests\StockMasterNonGlRelationRouteTests.cs" />
+    <Compile Include="Tests\StockMasterNonGlRelationTests.cs" />
+    <Compile Include="Tests\StockMasterRouteTests.cs" />
+    <Compile Include="Tests\StockMasterTests.cs" />
+    <Compile Include="Tests\StockReturnRouteTests.cs" />
+    <Compile Include="Tests\StockReturnTests.cs" />
+    <Compile Include="Tests\StockTaxDetailRouteTests.cs" />
+    <Compile Include="Tests\StockTaxDetailTests.cs" />
+    <Compile Include="Tests\StockTransactionViewRouteTests.cs" />
+    <Compile Include="Tests\StockTransactionViewTests.cs" />
+    <Compile Include="Tests\TransactionDetailRouteTests.cs" />
+    <Compile Include="Tests\TransactionDetailTests.cs" />
+    <Compile Include="Tests\TransactionMasterRouteTests.cs" />
+    <Compile Include="Tests\TransactionMasterTests.cs" />
+    <Compile Include="Tests\TransactionViewRouteTests.cs" />
+    <Compile Include="Tests\TransactionViewTests.cs" />
+    <Compile Include="Tests\ValidateItemsForReturnRouteTests.cs" />
+    <Compile Include="Tests\ValidateItemsForReturnTests.cs" />
+    <Compile Include="Tests\VerifiedStockDetailsViewRouteTests.cs" />
+    <Compile Include="Tests\VerifiedStockDetailsViewTests.cs" />
+    <Compile Include="Tests\VerifiedTransactionViewRouteTests.cs" />
+    <Compile Include="Tests\VerifiedTransactionViewTests.cs" />
+    <Compile Include="Tests\VerifyTransactionRouteTests.cs" />
+    <Compile Include="Tests\VerifyTransactionTests.cs" />
+    <Compile Include="TransactionDetailController.cs" />
+    <Compile Include="TransactionMasterController.cs" />
+    <Compile Include="TransactionsLateFeeController.cs" />
+    <Compile Include="TransactionsRoutineController.cs" />
+    <Compile Include="TransactionViewController.cs" />
+    <Compile Include="ValidateItemsForReturnController.cs" />
+    <Compile Include="VerifiedStockDetailsViewController.cs" />
+    <Compile Include="VerifiedTransactionViewController.cs" />
+    <Compile Include="VerifyTransactionController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\Transactions\MixERP.Net.Schemas.Transactions.Data.csproj">
+      <Project>{c59ef4ce-7cd4-46e1-9182-5a62deeff86f}</Project>
+      <Name>MixERP.Net.Schemas.Transactions.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entities\Core\MixERP.Net.Entities.Core.csproj">
+      <Project>{0F0490A5-8065-4B0A-9844-905E32A05DC4}</Project>
+      <Name>MixERP.Net.Entities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Entities\Transactions\MixERP.Net.Entities.Transactions.csproj">
+      <Project>{665e96ee-d5d0-426e-a8cd-22e3a9981349}</Project>
+      <Name>MixERP.Net.Entities.Transactions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixER.Net.StateServer\MixERP.Net.ApplicationState.csproj">
+      <Project>{61AB8B69-2097-4595-97B7-4A930A70163D}</Project>
+      <Name>MixERP.Net.ApplicationState</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.net.Common\MixERP.Net.Common.csproj">
+      <Project>{D5A09C22-8F48-4FB2-A14D-C62C8C8FCEC0}</Project>
+      <Name>MixERP.Net.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.EntityParser\MixERP.Net.EntityParser.csproj">
+      <Project>{eac19d71-3969-4b34-ad7b-8b05d4672861}</Project>
+      <Name>MixERP.Net.EntityParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\MixERP.Net.Framework\MixERP.Net.Framework.csproj">
+      <Project>{1509332f-ae98-44d9-9072-5bbc59a65fc4}</Project>
+      <Name>MixERP.Net.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969D7960-52E2-40FC-91E5-1393B71E23B0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\MixERP.Net.Api.Framework.csproj">
+      <Project>{2ed31492-84c8-4c84-94ae-1818eb641a9a}</Project>
+      <Name>MixERP.Net.Api.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

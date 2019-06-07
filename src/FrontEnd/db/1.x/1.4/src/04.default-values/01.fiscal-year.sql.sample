@@ -1,0 +1,27 @@
+DO
+$$
+BEGIN
+    IF(core.get_locale() = 'en-US') THEN
+        DELETE FROM core.frequency_setups;
+        DELETE FROM core.fiscal_year;
+
+        INSERT INTO core.fiscal_year (fiscal_year_code, fiscal_year_name, starts_from, ends_on) 
+        VALUES ('FY15', 'FY2015', '2014-10-1'::date, '2015-09-30'::date);
+
+        INSERT INTO core.frequency_setups (fiscal_year_code, frequency_setup_code, value_date, frequency_id) 
+        SELECT 'FY15', 'Oct', '2014-10-31'::date, 2 UNION ALL
+        SELECT 'FY15', 'Nov', '2014-11-30'::date, 2 UNION ALL
+        SELECT 'FY15', 'Dec', '2014-12-31'::date, 3 UNION ALL
+        SELECT 'FY15', 'Jan', '2015-01-31'::date, 2 UNION ALL
+        SELECT 'FY15', 'Feb', '2015-02-28'::date, 2 UNION ALL
+        SELECT 'FY15', 'Mar', '2015-03-31'::date, 4 UNION ALL
+        SELECT 'FY15', 'Apr', '2015-04-30'::date, 2 UNION ALL
+        SELECT 'FY15', 'May', '2015-05-31'::date, 2 UNION ALL
+        SELECT 'FY15', 'Jun', '2015-06-30'::date, 3 UNION ALL
+        SELECT 'FY15', 'Jul', '2015-07-31'::date, 2 UNION ALL
+        SELECT 'FY15', 'Aug', '2015-08-31'::date, 2 UNION ALL
+        SELECT 'FY15', 'Sep', '2015-09-30'::date, 5;
+    END IF;
+END
+$$
+LANGUAGE plpgsql;

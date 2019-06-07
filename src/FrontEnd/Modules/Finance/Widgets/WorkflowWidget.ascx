@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="WorkflowWidget.ascx.cs" Inherits="MixERP.Net.Core.Modules.Finance.Widgets.WorkflowWidget" %>
+<asp:PlaceHolder runat="server" ID="Placeholder1"></asp:PlaceHolder>

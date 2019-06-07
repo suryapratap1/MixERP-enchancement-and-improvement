@@ -1,0 +1,11 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy =
+[
+    [ "ApiAccess", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_api_access.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_api_access" ],
+    [ "AutoVerification", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_auto_verification.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_auto_verification" ],
+    [ "DefaultEntityAccess", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_default_entity_access.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_default_entity_access" ],
+    [ "EntityAccess", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_entity_access.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_entity_access" ],
+    [ "GLAccess", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_g_l_access.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_g_l_access" ],
+    [ "MenuAccess", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_menu_access.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_menu_access" ],
+    [ "StoreAccess", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_store_access.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_store_access" ],
+    [ "VoucherVerification", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_voucher_verification.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_policy_1_1_voucher_verification" ]
+];

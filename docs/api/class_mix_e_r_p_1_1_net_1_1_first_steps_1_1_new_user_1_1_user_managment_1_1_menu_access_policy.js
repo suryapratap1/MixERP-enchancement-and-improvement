@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_menu_access_policy =
+[
+    [ "MenuAccessPolicy", "class_mix_e_r_p_1_1_net_1_1_first_steps_1_1_new_user_1_1_user_managment_1_1_menu_access_policy.html#a1de60dd80df23eae4b0f336ce06fd332", null ]
+];

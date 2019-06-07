@@ -1,0 +1,26 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a2ceb924cf637dc826c1fe80559dbe9c0", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#ad68e19fb82005f0765f6f9c55dd56fd5", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a299d2d8844f79e4eef454c6ad6fc3dd3", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a76a147e3beba73d12800587643245913", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#ae5e554d57b5d61fcb85f7dc78550d326", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a79194f152088dac0ac27042b9d86600f", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a33e1b5b67daca31442a0a70179a95e05", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#afc5eb14a484af328563180936ac8e0d3", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a584d707a14f7bdc1157e807c96fdd45d", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#acf94ca57b387a9ccdeac8f335615bd9b", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a876b035b5423e2070caf64512ac45826", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#ae95112f2b21a1be6435a2180b205e338", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#ae65078f89958aa853d39343cdcaecfdf", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a22613662ab3874494c3787a82939775e", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a218e17f0d6e5312ba399a52ec868ff67", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a27f7b5dbb8f4a2763da11bae2595f2d5", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#aa061b83a0c9a895944654a379adfa60a", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#ad3de8a236b68d640c5c6743eee18b57e", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a0193e840f84ee00f56ddc915f57816f5", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#a4dedc01e505454248f56a9c87b53a509", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#acb1d754c61a32346046fa51d5f75bab7", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#ad6d7aaa41d544fe60d74d47d3582ac2e", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_kanban_detail.html#ae0ed8b87288fb2911b22ea0cf00ab5b6", null ]
+];

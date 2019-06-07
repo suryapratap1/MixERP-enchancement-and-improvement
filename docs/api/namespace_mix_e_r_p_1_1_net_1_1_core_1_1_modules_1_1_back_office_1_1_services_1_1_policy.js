@@ -1,0 +1,4 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_policy =
+[
+    [ "EntityAccess", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_policy_1_1_entity_access.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_policy_1_1_entity_access" ]
+];

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F0490A5-8065-4B0A-9844-905E32A05DC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Entities.Core</RootNamespace>
+    <AssemblyName>MixERP.Net.Entities.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountMaster.cs" />
+    <Compile Include="AccountMasterSelectorView.cs" />
+    <Compile Include="AccountScrudView.cs" />
+    <Compile Include="AccountSelectorView.cs" />
+    <Compile Include="AccountView.cs" />
+    <Compile Include="AgeingSlab.cs" />
+    <Compile Include="AgeingSlabScrudView.cs" />
+    <Compile Include="Attachment.cs" />
+    <Compile Include="AttachmentLookup.cs" />
+    <Compile Include="AttachmentType.cs" />
+    <Compile Include="AttachmentView.cs" />
+    <Compile Include="Attribute.cs" />
+    <Compile Include="BankAccount.cs" />
+    <Compile Include="BankAccountScrudView.cs" />
+    <Compile Include="BankAccountSelectorView.cs" />
+    <Compile Include="BankAccountsScrudView.cs" />
+    <Compile Include="BankAccountView.cs" />
+    <Compile Include="BonusSlab.cs" />
+    <Compile Include="BonusSlabAccountSelectorView.cs" />
+    <Compile Include="BonusSlabDetail.cs" />
+    <Compile Include="BonusSlabDetailScrudView.cs" />
+    <Compile Include="BonusSlabScrudView.cs" />
+    <Compile Include="BonusSlabSelectorView.cs" />
+    <Compile Include="Brand.cs" />
+    <Compile Include="BrandScrudView.cs" />
+    <Compile Include="BrandSelectorView.cs" />
+    <Compile Include="CardType.cs" />
+    <Compile Include="CashAccountSelectorView.cs" />
+    <Compile Include="CashFlowHeading.cs" />
+    <Compile Include="CashFlowHeadingScrudView.cs" />
+    <Compile Include="CashFlowSetup.cs" />
+    <Compile Include="CashFlowSetupScrudView.cs" />
+    <Compile Include="CompoundItem.cs" />
+    <Compile Include="CompoundItemDetail.cs" />
+    <Compile Include="CompoundItemDetailScrudView.cs" />
+    <Compile Include="CompoundItemScrudView.cs" />
+    <Compile Include="CompoundItemSelectorView.cs" />
+    <Compile Include="CompoundUnit.cs" />
+    <Compile Include="CompoundUnitScrudView.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="CostOfSalesAccountSelectorView.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="CountryScrudView.cs" />
+    <Compile Include="County.cs" />
+    <Compile Include="CountySalesTax.cs" />
+    <Compile Include="CountySalesTaxScrudView.cs" />
+    <Compile Include="CountyScrudView.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="CurrencyScrudView.cs" />
+    <Compile Include="CurrencySelectorView.cs" />
+    <Compile Include="CustomField.cs" />
+    <Compile Include="CustomFieldDataType.cs" />
+    <Compile Include="CustomFieldDefinitionView.cs" />
+    <Compile Include="CustomFieldForm.cs" />
+    <Compile Include="CustomFieldSetup.cs" />
+    <Compile Include="CustomFieldView.cs" />
+    <Compile Include="DbGetAccountViewByAccountMasterIdResult.cs" />
+    <Compile Include="DbGetAssociatedUnitsFromItemCodeResult.cs" />
+    <Compile Include="DbGetAssociatedUnitsFromItemIdResult.cs" />
+    <Compile Include="DbGetAssociatedUnitsResult.cs" />
+    <Compile Include="DbGetCompoundItemDetailsResult.cs" />
+    <Compile Include="DbGetCustomFieldDefinitionResult.cs" />
+    <Compile Include="DbGetWorkflowModelResult.cs" />
+    <Compile Include="DefaultWidgetSetupView.cs" />
+    <Compile Include="DiscountReceivedAccountSelectorView.cs" />
+    <Compile Include="EmailQueue.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="EntityScrudView.cs" />
+    <Compile Include="ExchangeRate.cs" />
+    <Compile Include="ExchangeRateDetail.cs" />
+    <Compile Include="ExpensesAccountSelectorView.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FilterNameView.cs" />
+    <Compile Include="FiscalYear.cs" />
+    <Compile Include="FiscalYearScrudView.cs" />
+    <Compile Include="FiscalYearSelectorView.cs" />
+    <Compile Include="Flag.cs" />
+    <Compile Include="FlagType.cs" />
+    <Compile Include="FlagTypeScrudView.cs" />
+    <Compile Include="FlagView.cs" />
+    <Compile Include="Frequency.cs" />
+    <Compile Include="FrequencySelectorView.cs" />
+    <Compile Include="FrequencySetup.cs" />
+    <Compile Include="FrequencySetupScrudView.cs" />
+    <Compile Include="Gender.cs" />
+    <Compile Include="IdentificationType.cs" />
+    <Compile Include="IncomeTaxSetup.cs" />
+    <Compile Include="Industry.cs" />
+    <Compile Include="IndustryScrudView.cs" />
+    <Compile Include="InventoryAccountSelectorView.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemCostPrice.cs" />
+    <Compile Include="ItemCostPriceScrudView.cs" />
+    <Compile Include="ItemGroup.cs" />
+    <Compile Include="ItemGroupScrudView.cs" />
+    <Compile Include="ItemGroupSelectorView.cs" />
+    <Compile Include="ItemScrudView.cs" />
+    <Compile Include="ItemSelectorView.cs" />
+    <Compile Include="ItemSellingPrice.cs" />
+    <Compile Include="ItemSellingPriceScrudView.cs" />
+    <Compile Include="ItemType.cs" />
+    <Compile Include="ItemTypeScrudView.cs" />
+    <Compile Include="ItemVariant.cs" />
+    <Compile Include="ItemVariantScrudView.cs" />
+    <Compile Include="ItemView.cs" />
+    <Compile Include="Kanban.cs" />
+    <Compile Include="KanbanDetail.cs" />
+    <Compile Include="LateFee.cs" />
+    <Compile Include="LateFeeAccountSelectorView.cs" />
+    <Compile Include="LateFeeScrudView.cs" />
+    <Compile Include="MaritalStatus.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="MenuLocale.cs" />
+    <Compile Include="MerchantAccountSelectorView.cs" />
+    <Compile Include="MerchantFeeSetup.cs" />
+    <Compile Include="MerchantFeeSetupAccountSelectorView.cs" />
+    <Compile Include="MerchantFeeSetupScrudView.cs" />
+    <Compile Include="Nationality.cs" />
+    <Compile Include="Party.cs" />
+    <Compile Include="PartyScrudView.cs" />
+    <Compile Include="PartySelectorView.cs" />
+    <Compile Include="PartyType.cs" />
+    <Compile Include="PartyTypeAccountSelectorView.cs" />
+    <Compile Include="PartyTypeScrudView.cs" />
+    <Compile Include="PartyTypeSelectorView.cs" />
+    <Compile Include="PartyUserControlView.cs" />
+    <Compile Include="PartyView.cs" />
+    <Compile Include="PaymentCard.cs" />
+    <Compile Include="PaymentCardScrudView.cs" />
+    <Compile Include="PaymentTerm.cs" />
+    <Compile Include="PaymentTermScrudView.cs" />
+    <Compile Include="Period.cs" />
+    <Compile Include="PriceType.cs" />
+    <Compile Include="PriceTypeSelectorView.cs" />
+    <Compile Include="PrintedReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurcahseAccountSelectorView.cs" />
+    <Compile Include="PurchaseAccountSelectorView.cs" />
+    <Compile Include="PurchaseDiscountAccountSelectorView.cs" />
+    <Compile Include="RecurrenceType.cs" />
+    <Compile Include="RecurrenceTypeScrudView.cs" />
+    <Compile Include="RecurringInvoice.cs" />
+    <Compile Include="RecurringInvoiceAccountSelectorView.cs" />
+    <Compile Include="RecurringInvoiceScrudView.cs" />
+    <Compile Include="RecurringInvoiceSetup.cs" />
+    <Compile Include="RecurringInvoiceSetupScrudView.cs" />
+    <Compile Include="RevenueAccountSelectorView.cs" />
+    <Compile Include="RoundingMethod.cs" />
+    <Compile Include="RoundingMethodSelectorView.cs" />
+    <Compile Include="SalesDiscountAccountSelectorView.cs" />
+    <Compile Include="Salesperson.cs" />
+    <Compile Include="SalespersonAccountSelectorView.cs" />
+    <Compile Include="SalespersonBonusSetup.cs" />
+    <Compile Include="SalespersonBonusSetupScrudView.cs" />
+    <Compile Include="SalespersonScrudView.cs" />
+    <Compile Include="SalespersonSelectorView.cs" />
+    <Compile Include="SalesReturnAccountSelectorView.cs" />
+    <Compile Include="SalesTax.cs" />
+    <Compile Include="SalesTaxDetail.cs" />
+    <Compile Include="SalesTaxDetailScrudView.cs" />
+    <Compile Include="SalesTaxExempt.cs" />
+    <Compile Include="SalesTaxExemptDetail.cs" />
+    <Compile Include="SalesTaxExemptDetailScrudView.cs" />
+    <Compile Include="SalesTaxExemptScrudView.cs" />
+    <Compile Include="SalesTaxScrudView.cs" />
+    <Compile Include="SalesTaxSelectorView.cs" />
+    <Compile Include="SalesTaxType.cs" />
+    <Compile Include="SalesTaxTypeScrudView.cs" />
+    <Compile Include="SalesTeam.cs" />
+    <Compile Include="SalesTeamScrudView.cs" />
+    <Compile Include="SalesTeamSelectorView.cs" />
+    <Compile Include="Shipper.cs" />
+    <Compile Include="ShipperScrudView.cs" />
+    <Compile Include="ShippingAddress.cs" />
+    <Compile Include="ShippingAddressScrudView.cs" />
+    <Compile Include="ShippingAddressView.cs" />
+    <Compile Include="ShippingMailType.cs" />
+    <Compile Include="ShippingMailTypeSelectorView.cs" />
+    <Compile Include="ShippingPackageShape.cs" />
+    <Compile Include="ShippingPackageShapeSelectorView.cs" />
+    <Compile Include="SocialNetwork.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="StateSalesTax.cs" />
+    <Compile Include="StateSalesTaxScrudView.cs" />
+    <Compile Include="StateScrudView.cs" />
+    <Compile Include="SupplierSelectorView.cs" />
+    <Compile Include="SupplierView.cs" />
+    <Compile Include="TaxAuthority.cs" />
+    <Compile Include="TaxAuthorityScrudView.cs" />
+    <Compile Include="TaxBaseAmountType.cs" />
+    <Compile Include="TaxBaseAmountTypeSelectorView.cs" />
+    <Compile Include="TaxExemptType.cs" />
+    <Compile Include="TaxExemptTypeScrudView.cs" />
+    <Compile Include="TaxMaster.cs" />
+    <Compile Include="TaxMasterScrudView.cs" />
+    <Compile Include="TaxRateType.cs" />
+    <Compile Include="TaxRateTypeSelectorView.cs" />
+    <Compile Include="TransactionType.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="UnitScrudView.cs" />
+    <Compile Include="UnitSelectorView.cs" />
+    <Compile Include="UnitView.cs" />
+    <Compile Include="Variant.cs" />
+    <Compile Include="VariantScrudView.cs" />
+    <Compile Include="VerificationStatus.cs" />
+    <Compile Include="WeekDay.cs" />
+    <Compile Include="Widget.cs" />
+    <Compile Include="WidgetGroup.cs" />
+    <Compile Include="WidgetSetup.cs" />
+    <Compile Include="WidgetSetupView.cs" />
+    <Compile Include="ZipCode.cs" />
+    <Compile Include="ZipCodeType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logic\PetaPoco\PetaPoco.csproj">
+      <Project>{969d7960-52e2-40fc-91e5-1393b71e23b0}</Project>
+      <Name>PetaPoco</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Mix Open Foundation.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

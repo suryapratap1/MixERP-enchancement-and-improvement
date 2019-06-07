@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_reports_1_1_stock_transaction_report =
+[
+    [ "OnControlLoad", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_reports_1_1_stock_transaction_report.html#ac1bbb1c329465722350697ca2fbfe81a", null ]
+];

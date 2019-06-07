@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2"><title>Editing DB Configuration</title><link href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css type=text/css rel=stylesheet><link href=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css type=text/css rel=stylesheet title="Featherlight Styles"><link href=/docs/assets/styles.min.css rel=stylesheet><link href="//fonts.googleapis.com/css?family=Open+Sans:300,400" rel=stylesheet type=text/css></head><body><div class="ui page grid" id=brand><div class="sixteen wide column"><a href=/index.html class><img title=MixERP alt=MixERP class=logo src=/docs/assets/images/mixerp-logo.png></a></div></div><div class="ui page stackable grid" id=story><div class="sixteen wide column"><h1>Editing DB Configuration</h1><p>Edit one of the following files using Visual Studio or any text editor of your choice.</p><p><strong>WebForms</strong></p><p><code>src/FrontEnd/Resource/Configs/DbServer.xml</code></p><p><strong>MVC</strong></p><p><code>src-beta2/Web/MixERP.Net.Web.UI/Resource/Configs/DbServer.xml</code></p><h2>File Contents</h2><pre><code class=lang-xml>&lt;configuration&gt;
+  &lt;appSettings&gt;
+    &lt;add key=&quot;Server&quot; value=&quot;localhost&quot; /&gt;
+    &lt;add key=&quot;Port&quot; value=&quot;5432&quot; /&gt;
+    &lt;add key=&quot;Database&quot; value=&quot;mixerp&quot; /&gt;
+    &lt;add key=&quot;UserId&quot; value=&quot;mix_erp&quot; /&gt;
+    &lt;add key=&quot;Password&quot; value=&quot;change-on-deployment&quot; /&gt;
+    &lt;add key=&quot;Catalogs&quot; value=&quot;mixerp, mixerp2, mixerp4&quot; /&gt;
+    &lt;add key=&quot;MetaDatabase&quot; value=&quot;postgres&quot; /&gt;
+    &lt;add key=&quot;ReportUserId&quot; value=&quot;report_user&quot; /&gt;
+    &lt;add key=&quot;ReportUserPassword&quot; value=&quot;change-on-deployment&quot; /&gt;
+    &lt;add key=&quot;AutoBackupEveryNMinutes&quot; value=&quot;720&quot; /&gt;
+
+    &lt;add key=&quot;PostgreSQLBinDirectory&quot; value=&quot;C:\Program Files\PostgreSQL\9.4\bin\&quot; /&gt;
+    &lt;add key=&quot;DatabaseBackupDirectory&quot; value=&quot;/Backups/&quot; /&gt;
+  &lt;/appSettings&gt;
+&lt;/configuration&gt;
+</code></pre><h3>Configuration Explained</h3><table><thead><tr><th>Key</th><th>Configuration</th></tr></thead><tbody><tr><td>Server</td><td>The hostname or IP address of your development PostgreSQL Server instance. Usually "localhost".</td></tr><tr><td>Port</td><td>The port on which the PostgreSQL server is listening. Usually "5432".</td></tr><tr><td>Database</td><td>The default MixERP database.</td></tr><tr><td>UserId</td><td>MixERP database script will create a user mix_erp. Leave it as it is unless you are sure what you are doing.</td></tr><tr><td>Password</td><td>Password for the above user. The default password is "change-on-deployment". If you happen to change the password, change it here as well.</td></tr><tr><td>Catalogs</td><td>Comma separated list of MixERP databases including the default database. These databases will be shown on the <strong><em>sign in page</em></strong>.</td></tr><tr><td>MetaCatalog</td><td>The <strong>master database</strong> which contains multi-company meta information.</td></tr><tr><td>ReportUserId</td><td>MixERP database script will create a user report_user. This user <strong>must have a read-only access to the database</strong>.</td></tr><tr><td>ReportUserPassword</td><td>Password for the above user. The default password is "change-on-deployment". If you happen to change the password, change it here as well.</td></tr><tr><td>AutoBackupEveryNMinutes</td><td>By default, MixERP performs automated backups every 12 hours or 720 minutes.</td></tr><tr><td>PostgreSQLBinDirectory</td><td>Depending upon where you installed PostgreSQL server, enter the correct location of the bin directory.</td></tr><tr><td>DatabaseBackupDirectory</td><td>Enter the path where you want to keep your database backups. If you host MixERP on IIS, make sure that the ApplicationPoolIdentity/IIS user has write access to the path.</td></tr></tbody></table><h2>Related Topics</h2><ul><li><a href=part-1-installing-database.html>Part 1: Installing Database</a></li><li><a href=../../../index.html>Documentation Home</a></li></ul></div><div class="social sharing bpad24"><div class="ui grey huge header"> Share this page </div><div class="icons vpad8"><a target=_blank href="https://www.facebook.com/sharer/sharer.php?u={url}" title="Share this on Facebook"><i class="circular inverted blue large facebook icon"></i></a><a target=_blank href="http://twitter.com/share?text={tweet}&amp;url={url}&amp;hashtags=#mixerp" title="Tweet this link"><i class="circular blue large twitter icon"></i></a><a target=_blank href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title=Editing DB Configuration" title="Share this on LinkedIn"><i class="circular inverted blue large linkedin icon"></i></a><a target=_blank href="https://plus.google.com/share?url={url}" title="Share this on Google+"><i class="circular inverted red large google plus icon"></i></a><a target=_blank href="http://www.reddit.com/submit?url={url}" title="Share this on Reddit"><i class="circular large reddit icon"></i></a><a target=_blank href="http://pinterest.com/pin/create/button/?url={url}&amp;description=Editing DB Configuration" title="Share this on Pinterest"><i class="circular inverted red large pinterest icon"></i></a><a target=_blank href="http://www.stumbleupon.com/badge/?url={url}" title="Share this on StumbleUpon"><i class="circular inverted red large stumbleupon icon"></i></a><a target=_blank href="mailto:?subject=Editing DB Configuration&amp;body={message}" title="Send this on email"><i class="circular inverted olive large mail icon"></i></a></div></div></div><footer class="ui stackable center aligned inverted divided equal height stackable page three column grid"><div class="footer-pad column"><div class="ui inverted dividing header"><i class="code icon"></i> About MixERP </div><p> MixERP is an open source and free ERP software that provides a suite of useful modules to help you manage your day to day business activities, including but not limited to, human resource management, payroll, sales, purchases, inventory management, finance, customer relationship management, manufacturing, and back-office. Developed with love by your friends at MixERP Inc. </p></div><div class="footer-pad column"><div class="ui inverted dividing header"><i class="checkmark icon"></i> Documentation & License </div><p> Some sections in this documentation site are missing. This site is a <a href=index.html#community.md> community effort </a> and work in progress. </p><p> This work is licensed under a <a href=http://creativecommons.org/licenses/by-sa/4.0/ rel=license> Creative Commons Attribution-ShareAlike 4.0 International License </a> . </p></div><div class="left aligned footer-pad column"><div class="ui inverted dividing header"><i class="external icon"></i> Links </div><ul class=footer-links><li><a href=http://mixerp.org/ target=_blank> Project Website </a></li><li><a href=http://mixerp.org/forum target=_blank> Ask a Question </a></li><li><a href=https://github.com/mixerp/mixerp/issues target=_blank> Submit an Issue </a></li><li><a href=https://github.com/mixerp/mixerp/releases target=_blank> Download MixERP </a></li><li><a href=http://demo.mixerp.org/SignIn.aspx target=_blank> View the Demo </a></li><li><a href=https://www.linkedin.com/company/mixerp target=_blank>MixERP on LinkedIn</a></li><li><a href=https://www.facebook.com/mixerp.official/ target=_blank>MixERP on Facebook </a></li><li><a href=http://www.facebook.com/groups/183076085203506/ target=_blank> Facebook Group </a></li><li><a href=http://twitter.com/mixoferp/ target=_blank> Follow MixERP on Twitter </a></li><li style="list-style: none; display: inline"><ul></ul></li></ul></div></footer><script src=/docs/assets/script.js></script><script src=//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js type=text/javascript charset=utf-8></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js></script><script>
+        hljs.initHighlightingOnLoad();
+
+        var createLinkedImages = function () {
+            $("#story").find("img").each(function () {
+                var el = $(this);
+                var src = el.attr("src");
+
+                var anchor = $("<a/>");
+                anchor.prop("href", "#");
+                anchor.attr("data-featherlight", src);
+                el.wrap(anchor);
+            });
+        };
+
+        createLinkedImages();
+
+        $("table").addClass("ui celled striped table");
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-65607875-1', 'auto');
+        ga('send', 'pageview');
+    </script></body></html>

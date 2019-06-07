@@ -1,0 +1,25 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab =
+[
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a3c9ee5a0ae1fa6237dbdaf22ef84200a", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#ad44fa09aa4de318225277bbb52e45618", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#ab6a19a9a3463c0e15b4d976bdc43c3c3", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a4093fbda04b81c422d517aadd322ca74", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a494993a461a904587d397efc6ff3f9d4", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#afd23b4270d58d51a8bf7f0f275b51706", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#afb6f148a6618c75cb7c3d2daaba96af8", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a125b68942a851bd54b04f6d3cb0b1f88", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a421d98281f03c92e412764fb7b67af3d", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a2468d6b38e6ddac5174a28accdebe6f6", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a24ab6840e4fd995c67d7ee148ac3bf35", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a48f6eaa3c6bd49109b98c433ca486f68", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#aa1b6abfb11818158d1080b7b4f47f3d9", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#ae0c1a724c05a13dd6d475d4ac1d9ab7f", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#aef8c58574525fe6a9f249ade2e2501fe", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a9312ad92c7a6e94f0b0d6f683571c16e", null ],
+    [ "Update", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#ac5f90a193e9e26f8bcd6c7b84da68d8d", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#afbe283d539d56100189ba9cbfd8531c3", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a80206b714fc6fa0a47eb62ef6bd35854", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a41f7ef7f787640148e6f71b052e5fd64", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#adb0482b54bfd9eab7092311a2c7079de", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_core_1_1_data_1_1_ageing_slab.html#a23c48308b5d6e4f7c334455eec7f71a8", null ]
+];

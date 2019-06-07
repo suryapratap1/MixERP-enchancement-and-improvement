@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C735512E-69AB-4852-8740-49036A1FDF9A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixERP.Net.Core.Modules.HRM</RootNamespace>
+    <AssemblyName>MixERP.Net.Core.Modules.HRM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MixERP.Net.ApplicationState, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\MixERP.Net.ApplicationState.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.Common, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\MixERP.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.Framework">
+      <HintPath>..\..\bin\MixERP.Net.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.FrontEnd">
+      <HintPath>..\..\bin\MixERP.Net.FrontEnd.dll</HintPath>
+    </Reference>
+    <Reference Include="MixERP.Net.i18n, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\MixERP.Net.i18n.dll</HintPath>
+    </Reference>
+    <Reference Include="PetaPoco, Version=1.5.0.0, Culture=neutral, PublicKeyToken=a724a47a0879d02f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\PetaPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Mix Open Foundation.snk" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\Attendances.ascx" />
+    <Content Include="Setup\EducationLevels.ascx" />
+    <Content Include="Setup\EmployeeTypes.ascx" />
+    <Content Include="Setup\EmploymentStatuses.ascx" />
+    <Content Include="Setup\ExitTypes.ascx" />
+    <Content Include="Setup\JobTitles.ascx" />
+    <Content Include="Setup\LeaveBenefits.ascx" />
+    <Content Include="Setup\LeaveTypes.ascx" />
+    <Content Include="Setup\OfficeHours.ascx" />
+    <Content Include="Setup\PayGrades.ascx" />
+    <Content Include="Setup\Shifts.ascx" />
+    <Content Include="Tasks\Attendance.ascx" />
+    <Content Include="Tasks\Contracts.ascx" />
+    <Content Include="Tasks\EmployeeInfo.ascx" />
+    <Content Include="Tasks\Employees.ascx" />
+    <Content Include="Tasks\Employee\Experiences.ascx" />
+    <Content Include="Tasks\Employee\IdentificationDetails.ascx" />
+    <Content Include="Tasks\Employee\LeaveApplication.ascx" />
+    <Content Include="Tasks\Employee\Qualifications.ascx" />
+    <Content Include="Tasks\Employee\SocialNetworks.ascx" />
+    <Content Include="Tasks\Entry\Employees.ascx" />
+    <Content Include="Tasks\Exits.ascx" />
+    <Content Include="Tasks\LeaveApplications.ascx" />
+    <Content Include="Tasks\Resignations.ascx" />
+    <Content Include="Tasks\Terminations.ascx" />
+    <Content Include="Verification\Contracts.ascx" />
+    <Content Include="Verification\Exits.ascx" />
+    <Content Include="Verification\LeaveApplications.ascx" />
+    <Content Include="Verification\Resignations.ascx" />
+    <Content Include="Verification\Terminations.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FirstSteps\EducationLevel.cs" />
+    <Compile Include="Reports\Attendances.ascx.cs">
+      <DependentUpon>Attendances.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Attendances.ascx.designer.cs">
+      <DependentUpon>Attendances.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup\EducationLevels.ascx.cs">
+      <DependentUpon>EducationLevels.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\EducationLevels.ascx.designer.cs">
+      <DependentUpon>EducationLevels.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\EmployeeTypes.ascx.cs">
+      <DependentUpon>EmployeeTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\EmployeeTypes.ascx.designer.cs">
+      <DependentUpon>EmployeeTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\EmploymentStatuses.ascx.cs">
+      <DependentUpon>EmploymentStatuses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\EmploymentStatuses.ascx.designer.cs">
+      <DependentUpon>EmploymentStatuses.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\ExitTypes.ascx.cs">
+      <DependentUpon>ExitTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\ExitTypes.ascx.designer.cs">
+      <DependentUpon>ExitTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\JobTitles.ascx.cs">
+      <DependentUpon>JobTitles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\JobTitles.ascx.designer.cs">
+      <DependentUpon>JobTitles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\LeaveBenefits.ascx.cs">
+      <DependentUpon>LeaveBenefits.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\LeaveBenefits.ascx.designer.cs">
+      <DependentUpon>LeaveBenefits.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\LeaveTypes.ascx.cs">
+      <DependentUpon>LeaveTypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\LeaveTypes.ascx.designer.cs">
+      <DependentUpon>LeaveTypes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\OfficeHours.ascx.cs">
+      <DependentUpon>OfficeHours.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\OfficeHours.ascx.designer.cs">
+      <DependentUpon>OfficeHours.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\PayGrades.ascx.cs">
+      <DependentUpon>PayGrades.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\PayGrades.ascx.designer.cs">
+      <DependentUpon>PayGrades.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup\Shifts.ascx.cs">
+      <DependentUpon>Shifts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup\Shifts.ascx.designer.cs">
+      <DependentUpon>Shifts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Attendance.ascx.cs">
+      <DependentUpon>Attendance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Attendance.ascx.designer.cs">
+      <DependentUpon>Attendance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Contracts.ascx.cs">
+      <DependentUpon>Contracts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Contracts.ascx.designer.cs">
+      <DependentUpon>Contracts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\EmployeeInfo.ascx.cs">
+      <DependentUpon>EmployeeInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\EmployeeInfo.ascx.designer.cs">
+      <DependentUpon>EmployeeInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Employees.ascx.cs">
+      <DependentUpon>Employees.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Employees.ascx.designer.cs">
+      <DependentUpon>Employees.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Employee\Experiences.ascx.cs">
+      <DependentUpon>Experiences.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Employee\Experiences.ascx.designer.cs">
+      <DependentUpon>Experiences.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Employee\IdentificationDetails.ascx.cs">
+      <DependentUpon>IdentificationDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Employee\IdentificationDetails.ascx.designer.cs">
+      <DependentUpon>IdentificationDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Employee\LeaveApplication.ascx.cs">
+      <DependentUpon>LeaveApplication.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Employee\LeaveApplication.ascx.designer.cs">
+      <DependentUpon>LeaveApplication.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Employee\Qualifications.ascx.cs">
+      <DependentUpon>Qualifications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Employee\Qualifications.ascx.designer.cs">
+      <DependentUpon>Qualifications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Employee\SocialNetworks.ascx.cs">
+      <DependentUpon>SocialNetworks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Employee\SocialNetworks.ascx.designer.cs">
+      <DependentUpon>SocialNetworks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Entry\Employees.ascx.cs">
+      <DependentUpon>Employees.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Entry\Employees.ascx.designer.cs">
+      <DependentUpon>Employees.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Exits.ascx.cs">
+      <DependentUpon>Exits.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Exits.ascx.designer.cs">
+      <DependentUpon>Exits.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\LeaveApplications.ascx.cs">
+      <DependentUpon>LeaveApplications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\LeaveApplications.ascx.designer.cs">
+      <DependentUpon>LeaveApplications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Resignations.ascx.cs">
+      <DependentUpon>Resignations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Resignations.ascx.designer.cs">
+      <DependentUpon>Resignations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Terminations.ascx.cs">
+      <DependentUpon>Terminations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\Terminations.ascx.designer.cs">
+      <DependentUpon>Terminations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Verification\Contracts.ascx.cs">
+      <DependentUpon>Contracts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verification\Contracts.ascx.designer.cs">
+      <DependentUpon>Contracts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Verification\Exits.ascx.cs">
+      <DependentUpon>Exits.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verification\Exits.ascx.designer.cs">
+      <DependentUpon>Exits.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Verification\LeaveApplications.ascx.cs">
+      <DependentUpon>LeaveApplications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verification\LeaveApplications.ascx.designer.cs">
+      <DependentUpon>LeaveApplications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Verification\Resignations.ascx.cs">
+      <DependentUpon>Resignations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verification\Resignations.ascx.designer.cs">
+      <DependentUpon>Resignations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Verification\Terminations.ascx.cs">
+      <DependentUpon>Terminations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verification\Terminations.ascx.designer.cs">
+      <DependentUpon>Terminations.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRM.Data\MixERP.Net.Core.Modules.HRM.Data.csproj">
+      <Project>{baed8523-9388-42c4-881d-34720fe8e4ae}</Project>
+      <Name>MixERP.Net.Core.Modules.HRM.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Mix Open Foundation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51315</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51315/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:8000</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

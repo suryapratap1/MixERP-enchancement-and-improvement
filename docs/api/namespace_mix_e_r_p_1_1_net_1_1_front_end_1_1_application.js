@@ -1,0 +1,5 @@
+var namespace_mix_e_r_p_1_1_net_1_1_front_end_1_1_application =
+[
+    [ "ClassicAssemblyResolver", "class_mix_e_r_p_1_1_net_1_1_front_end_1_1_application_1_1_classic_assembly_resolver.html", "class_mix_e_r_p_1_1_net_1_1_front_end_1_1_application_1_1_classic_assembly_resolver" ],
+    [ "MixERPAssemblyResolver", "class_mix_e_r_p_1_1_net_1_1_front_end_1_1_application_1_1_mix_e_r_p_assembly_resolver.html", "class_mix_e_r_p_1_1_net_1_1_front_end_1_1_application_1_1_mix_e_r_p_assembly_resolver" ]
+];

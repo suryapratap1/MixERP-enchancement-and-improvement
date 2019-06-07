@@ -1,0 +1,74 @@
+SELECT policy.create_access_types(1,   'Read');
+SELECT policy.create_access_types(2,   'Create');
+SELECT policy.create_access_types(3,   'Edit');
+SELECT policy.create_access_types(4,   'Delete');
+SELECT policy.create_access_types(5,   'Create Filter');
+SELECT policy.create_access_types(6,   'Delete Filter');
+SELECT policy.create_access_types(7,   'Export');
+SELECT policy.create_access_types(8,   'Export Data');
+SELECT policy.create_access_types(9,  'Import Data');
+
+INSERT INTO core.genders
+SELECT 'F', 'Female' UNION ALL
+SELECT 'M', 'Male' UNION ALL
+SELECT 'O', 'Other';
+
+INSERT INTO core.identification_types
+SELECT 'DVL', 'Driving License', true UNION ALL
+SELECT 'SSN', 'Social Security Number', false UNION ALL
+SELECT 'PAS', 'Passport Number', true;
+
+INSERT INTO core.social_networks(social_network_name, semantic_css_class, base_url, profile_url)
+SELECT 'Twitter',   'twitter',      'https://twitter.com/',             'https://twitter.com/{0}' UNION ALL
+SELECT 'Facebook',  'facebook',     'https://www.facebook.com/',        'https://www.facebook.com/{0}' UNION ALL
+SELECT 'Google+',   'google plus',  '',                                 '' UNION ALL
+SELECT 'LinkedIn',  'linkedin',     '',                                 '' UNION ALL
+SELECT 'Instagram', 'instagram',    '',                                 '' UNION ALL
+SELECT 'WeChat',    'wechat',       '',                                 '' UNION ALL
+SELECT 'Viber',     '',             '',                                 '' UNION ALL
+SELECT 'WhatsApp',  'whatsapp',     '',                                 '' UNION ALL
+SELECT 'Skype',     'skype',        '',                                 '' UNION ALL
+SELECT 'Hike',      '',             '',                                 '';
+
+INSERT INTO core.week_days
+SELECT 1, 'SUN', 'Sunday' UNION ALL
+SELECT 2, 'MON', 'Monday' UNION ALL
+SELECT 3, 'TUE', 'Tuesday' UNION ALL
+SELECT 4, 'WED', 'Wednesday' UNION ALL
+SELECT 5, 'THU', 'Thursday' UNION ALL
+SELECT 6, 'FRI', 'Firday' UNION ALL
+SELECT 7, 'SAT', 'Saturday';
+
+INSERT INTO core.marital_statuses(marital_status_code, marital_status_name, is_legally_recognized_marriage)
+SELECT 'NEM', 'Never Married',          false UNION ALL
+SELECT 'SEP', 'Separated',              false UNION ALL
+SELECT 'MAR', 'Married',                true UNION ALL
+SELECT 'LIV', 'Living Relationship',    false UNION ALL
+SELECT 'DIV', 'Divorced',               false UNION ALL
+SELECT 'WID', 'Widower',                false UNION ALL
+SELECT 'CIV', 'Civil Union',            true;
+
+DO
+$$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM core.fiscal_year WHERE fiscal_year_code = 'FY16') THEN
+        INSERT INTO core.fiscal_year(fiscal_year_code, fiscal_year_name, starts_from, ends_on)
+        SELECT 'FY16', 'FY2016', '2015-10-1', '2016-9-30';
+
+        INSERT INTO core.frequency_setups(fiscal_year_code, frequency_setup_code, value_date, frequency_id)
+        SELECT 'FY16', frequency_setup_code, value_date + INTERVAL '1 year', frequency_id
+        FROM core.frequency_setups
+        WHERE fiscal_year_code = 'FY15';
+        
+        DELETE FROM core.frequency_setups
+        WHERE fiscal_year_code = 'FY15';
+
+        DELETE FROM core.fiscal_year
+        WHERE fiscal_year_code = 'FY15';
+        
+        UPDATE office.offices
+        SET transaction_start_date = '2015-10-01';
+    END IF;
+END
+$$
+LANGUAGE plpgsql;

@@ -1,0 +1,12 @@
+var class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure =
+[
+    [ "IsValidStockTransactionByStockMasterIdProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#a10098640c127a4234de561467f0bfd7b", null ],
+    [ "IsValidStockTransactionByStockMasterIdProcedure", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#a695c0620e9bfb735dab3e8e781d7d360", null ],
+    [ "Execute", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#a9caa9740f77c5f304f40d3a40cd7ca7b", null ],
+    [ "ObjectName", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#a4cacb577e254aa5e20a11ac4d3b62b6a", null ],
+    [ "ObjectNamespace", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#a72691a27595f252936e3139d13e5c216", null ],
+    [ "_LoginId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#ab921e9c7ed5723ec4eb7318a96165735", null ],
+    [ "_UserId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#a98eb217cfb7d1b1791e7926217252826", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#ab87c782f701fa51a436f550fed754e41", null ],
+    [ "StockMasterId", "class_mix_e_r_p_1_1_net_1_1_schemas_1_1_transactions_1_1_data_1_1_is_valid_stock_transaction_by_stock_master_id_procedure.html#a2655dc2e9924a080ec975471287d6369", null ]
+];

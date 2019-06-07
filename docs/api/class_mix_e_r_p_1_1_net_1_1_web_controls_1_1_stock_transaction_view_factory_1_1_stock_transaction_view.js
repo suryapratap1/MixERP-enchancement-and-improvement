@@ -1,0 +1,26 @@
+var class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view =
+[
+    [ "CreateChildControls", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a489d0ff10fd5202905e68c79416dd7a8", null ],
+    [ "RecreateChildControls", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a74cf91cbeb85821554df681c2204192d", null ],
+    [ "Render", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#af0be2142e84be0930aa1353819ad68f2", null ],
+    [ "AddNewUrl", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#aeb9bfb0da754b56cd2b310a174de7104", null ],
+    [ "Book", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a4616f47c2ffd0e23219bad15add8d75b", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#add5cf55f0696e618d95e9e5fd525acb7", null ],
+    [ "ChecklistUrl", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#aeb52d83c370cf51fe2391a5b3599ee51", null ],
+    [ "DbTableName", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a2159e3815ab67a327eac0863fd5c2175", null ],
+    [ "IsNonGlTransaction", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a8b330bc5e67c1b6264e4b56e10767f79", null ],
+    [ "MergeToDeliveryButtonUrl", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#af7a391039955da4d78862bb972a99d1f", null ],
+    [ "MergeToGRNButtonUrl", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a7b4d7ff6e55fa9b2cc002da3098c9c3f", null ],
+    [ "MergeToOrderButtonUrl", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#afc2eb98aaa457f37eaf996379898c17c", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#aacc8aa69955bb41ac17bc4add4b5acec", null ],
+    [ "PreviewUrl", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a6be485096f2e7ef17fba86fcc26db14c", null ],
+    [ "PrimaryKey", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#aaae5d719f6de06ddbd9ef3bbbc5cfd2a", null ],
+    [ "ReturnButtonUrl", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#ad08f8098ab91ad32b47995bd836e8aff", null ],
+    [ "ShowMergeToDeliveryButton", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a28b07f92140cebc83d9b3e19efce5402", null ],
+    [ "ShowMergeToGRNButton", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a1266e8c562ab599d45c6466c459f8d55", null ],
+    [ "ShowMergeToOrderButton", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#ae05dcbe430299ded4d4dc13052c7db49", null ],
+    [ "ShowReturnButton", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a865d1dff4d7069d8477e0f4f99af7ae4", null ],
+    [ "SubBook", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a73c7ac23509afaf13ff5569aa32b1ca0", null ],
+    [ "Text", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a21ba40a8782627eeed0850bf3749e2d1", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_web_controls_1_1_stock_transaction_view_factory_1_1_stock_transaction_view.html#a91c0ce752a4d2ad78f4768e493d1bc21", null ]
+];

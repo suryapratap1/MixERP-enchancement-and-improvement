@@ -1,0 +1,42 @@
+﻿<table class="ui striped attached compact table">
+    <thead>
+        <tr>
+            <th>
+                {{getResource('Resources.Titles.ValueDate')}}
+            </th>
+            <th>
+                {{getResource('Resources.Titles.BookDate')}}
+            </th>
+            <th>
+                {{getResource('Resources.Titles.TranCode')}}
+            </th>
+            <th>
+                {{getResource('Resources.Titles.ReferenceNumberAbbreviated')}}
+            </th>
+            <th>
+                {{getResource('Resources.Titles.StatementReference')}}
+            </th>
+            <th>
+                {{getResource('Resources.Titles.Debit')}}
+            </th>
+            <th>
+                {{getResource('Resources.Titles.Credit')}}
+            </th>
+            <th>
+                {{getResource('Resources.Titles.Balance')}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="lines in statement">
+            <td>{{lines.ValueDate | ConvertDate | date : 'longDate'}}</td>
+            <td>{{lines.BookDate | ConvertDate | date : 'longDate'}}</td>
+            <td>{{lines.TranCode}}</td>
+            <td>{{lines.ReferenceNumber}}</td>
+            <td>{{lines.StatementReference}}</td>
+            <td>{{lines.Debit}}</td>
+            <td>{{lines.Credit}}</td>
+            <td>{{lines.Balance}}</td>
+        </tr>
+    </tbody>
+</table>

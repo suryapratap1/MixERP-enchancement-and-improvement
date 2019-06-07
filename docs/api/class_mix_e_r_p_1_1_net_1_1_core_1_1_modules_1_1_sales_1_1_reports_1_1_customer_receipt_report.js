@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_customer_receipt_report =
+[
+    [ "OnControlLoad", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_sales_1_1_reports_1_1_customer_receipt_report.html#a5e7b2c5d03fbeb7854ca860fe40b8123", null ]
+];

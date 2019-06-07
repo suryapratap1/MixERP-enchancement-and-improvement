@@ -1,0 +1,5 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_data_1_1_domains =
+[
+    [ "SalesItem", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_data_1_1_domains_1_1_sales_item.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_data_1_1_domains_1_1_sales_item" ],
+    [ "StockTransferDeliveryModel", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_data_1_1_domains_1_1_stock_transfer_delivery_model.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_inventory_1_1_data_1_1_domains_1_1_stock_transfer_delivery_model" ]
+];

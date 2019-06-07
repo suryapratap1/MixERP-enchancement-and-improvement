@@ -1,0 +1,27 @@
+var class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller =
+[
+    [ "InventoryTransferDeliveryDetailController", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#ac1d726c7919c310ae97911b699653d19", null ],
+    [ "Add", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#ae9d87a13f186434676102f9b6e590fbd", null ],
+    [ "AddOrEdit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a934cf2f7bec97f78f12446af4aa84e1c", null ],
+    [ "BulkImport", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a7d9f24b92dd751c94d37ced4f48f9ae7", null ],
+    [ "Count", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#afa842848dd04cdb3e4721945be3606d5", null ],
+    [ "CountFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a24988d31be2fa8661df584a62506e9e9", null ],
+    [ "CountWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#ac5df0f8ab94ded5022273cd9f28beb8e", null ],
+    [ "Delete", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#ad8955b4193bd620a6611de0ff0672702", null ],
+    [ "Edit", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a1a36f779b45a1b17e928784fd00b9297", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a7d65e5eb2fbd4f8548aa50460be26dec", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a4f91af2834ef4d9e2b64244aec2f6594", null ],
+    [ "Get", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a7beae83c909c9540fc2b395cf52156ed", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a862445cc1db7fda93a9b39d3e416680e", null ],
+    [ "GetCustomFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a86608169945015501efaacc6e0a8e965", null ],
+    [ "GetDisplayFields", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a85537daf38539104c224cb139c29eec8", null ],
+    [ "GetEntityView", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a516ba967d9cfd15b8f7129ba8d0c6d63", null ],
+    [ "GetFiltered", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#aabefc0d01831395d3970d6dd4e08e53d", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#adaf94e3325fb49593cf7394c5630c45d", null ],
+    [ "GetPagedResult", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#af65ac23143680fadd9e92c71edad0919", null ],
+    [ "GetWhere", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#ad3b4cb9835555d53c83da3e025e38729", null ],
+    [ "Catalog", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#af92819a4a2cd73eb4b37723562b3d012", null ],
+    [ "LoginId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a372b91208b0f43794ec83a8bda91f398", null ],
+    [ "OfficeId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a298d017c60052cd522fd2aa8ffe1ef6d", null ],
+    [ "UserId", "class_mix_e_r_p_1_1_net_1_1_api_1_1_transactions_1_1_inventory_transfer_delivery_detail_controller.html#a78e43d7bdd833cf75952cb3d1442fdad", null ]
+];

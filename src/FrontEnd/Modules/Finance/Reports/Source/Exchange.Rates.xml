@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MixERPReport>
+  <Title>{Resources.Titles.ExchangeRates}</Title>
+  <TopSection>
+    <table class="table horizontal">
+      <tr>
+        <td>{Resources.Titles.OfficeCode}</td>
+        <td>{DataSource[0].office_code}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.OfficeName}</td>
+        <td>{DataSource[0].office_name}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.BaseCurrency}</td>
+        <td>{DataSource[0].currency_code}</td>
+      </tr>
+      <tr>
+        <td>{Resources.Titles.UpdatedOn}</td>
+        <td>{DataSource[0].updated_on}</td>
+      </tr>
+    </table>
+    <br />
+  </TopSection>
+  <Body>
+    <Content>
+      <h2>{DataSource[0].currency_code}</h2>
+    </Content>
+    <GridViews>
+      <GridView>
+        <GridViewDataSource Index="1" Style="white-space:nowrap;">
+        </GridViewDataSource>
+      </GridView>
+    </GridViews>
+  </Body>
+  <BottomSection>
+  </BottomSection>
+  <DataSources>
+    <DataSource>
+      <Query>
+        SELECT *
+        FROM core.exchange_rates
+        INNER JOIN office.offices
+        ON core.exchange_rates.office_id = office.offices.office_id
+        WHERE core.exchange_rates.office_id = @OfficeId
+        AND status
+        ORDER BY updated_on DESC, exchange_rate_id DESC
+        LIMIT 1;
+      </Query>
+      <Parameters>
+        <Parameter Name="@OfficeId" Type="Number" />
+      </Parameters>
+    </DataSource>
+    <DataSource>
+      <Query>
+        SELECT foreign_currency_code, exchange_rate
+        FROM core.exchange_rate_details
+        WHERE exchange_rate_id =
+        (
+        SELECT exchange_rate_id
+        FROM core.exchange_rates
+        WHERE office_id = @OfficeId
+        AND status
+        ORDER BY updated_on DESC, exchange_rate_id DESC
+        LIMIT 1
+        );
+      </Query>
+      <Parameters>
+        <Parameter Name="@OfficeId" Type="Number" />
+      </Parameters>
+    </DataSource>
+  </DataSources>
+</MixERPReport>

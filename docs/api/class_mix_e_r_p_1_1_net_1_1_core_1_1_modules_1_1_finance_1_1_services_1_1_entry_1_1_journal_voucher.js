@@ -1,0 +1,4 @@
+var class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_services_1_1_entry_1_1_journal_voucher =
+[
+    [ "Save", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_finance_1_1_services_1_1_entry_1_1_journal_voucher.html#a05d81a73b5bdf37843d1ca4bc0e873de", null ]
+];

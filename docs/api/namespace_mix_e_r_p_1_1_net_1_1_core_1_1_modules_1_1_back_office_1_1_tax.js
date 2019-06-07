@@ -1,0 +1,13 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax =
+[
+    [ "CountySalesTaxes", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_county_sales_taxes.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_county_sales_taxes" ],
+    [ "SalesTaxDetails", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_details.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_details" ],
+    [ "SalesTaxes", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_taxes.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_taxes" ],
+    [ "SalesTaxExemptDetails", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_exempt_details.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_exempt_details" ],
+    [ "SalesTaxExempts", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_exempts.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_exempts" ],
+    [ "SalesTaxTypes", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_types.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_sales_tax_types" ],
+    [ "StateSalesTaxes", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_state_sales_taxes.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_state_sales_taxes" ],
+    [ "TaxAuthorities", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_tax_authorities.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_tax_authorities" ],
+    [ "TaxExemptTypes", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_tax_exempt_types.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_tax_exempt_types" ],
+    [ "TaxMaster", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_tax_master.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_tax_1_1_tax_master" ]
+];

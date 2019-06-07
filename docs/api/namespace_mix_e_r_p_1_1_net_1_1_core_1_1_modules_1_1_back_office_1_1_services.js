@@ -1,0 +1,9 @@
+var namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services =
+[
+    [ "Admin", "namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_admin.html", "namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_admin" ],
+    [ "OTS", "namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_o_t_s.html", "namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_o_t_s" ],
+    [ "Policy", "namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_policy.html", "namespace_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_policy" ],
+    [ "Attachments", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_attachments.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_attachments" ],
+    [ "CustomFields", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_custom_fields.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_custom_fields" ],
+    [ "TaxData", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_tax_data.html", "class_mix_e_r_p_1_1_net_1_1_core_1_1_modules_1_1_back_office_1_1_services_1_1_tax_data" ]
+];
